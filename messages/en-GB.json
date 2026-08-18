@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Continuous Disaster Recovery Readiness",
+    "description": "Discover dependencies, prove recoverability and orchestrate auditable recovery across Terraform, Google Cloud, Kubernetes and GitOps."
+  },
+  "language": {
+    "choose": "Choose language",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Spanish",
+    "ca-ES": "Catalan",
+    "pt-PT": "Portuguese (PT)",
+    "pt-BR": "Portuguese (BR)",
+    "it-IT": "Italian",
+    "ru-RU": "Russian",
+    "de-DE": "German",
+    "fr-FR": "French"
+  },
+  "nav": {
+    "primaryLabel": "Primary navigation",
+    "skipContent": "Skip to content",
+    "product": "Product",
+    "capabilities": "Capabilities",
+    "architecture": "Architecture",
+    "openSource": "Open source",
+    "docs": "Documentation",
+    "github": "View on GitHub",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "Open-source continuous DR readiness",
+    "status": "Safe simulation scaffold",
+    "title": "Recovery stops being",
+    "titleAccent": "a promise.",
+    "body": "Storm Harbor connects code, cloud, clusters, backups and policy into one continuously reconciled view of what can recover — and what stands in the way.",
+    "primaryCta": "Explore the control plane",
+    "secondaryCta": "View the source",
+    "noLockIn": "No source-of-truth lock-in"
+  },
+  "integrations": {
+    "label": "Federates the tools you already run"
+  },
+  "problem": {
+    "eyebrow": "The operational gap",
+    "title": "A runbook is not proof.",
+    "body": "Repositories describe intent. APIs expose actual state. Backups live elsewhere. Test evidence is scattered across pipelines and tickets. Storm Harbor correlates those fragments without taking authority away from the systems that own them.",
+    "question": "Can this service recover now, within its agreed RTO and RPO?"
+  },
+  "capabilities": {
+    "eyebrow": "One control plane · three outcomes",
+    "title": "Know. Prove. Recover.",
+    "body": "Move from disconnected disaster-recovery plans to a living, evidence-driven operating model.",
+    "discoverTitle": "Discover dependencies",
+    "discoverBody": "Build a service-first inventory and typed dependency graph from GitHub, Terraform, GCP, Kubernetes and GitOps — with provenance and freshness attached.",
+    "proveTitle": "Prove recoverability",
+    "proveBody": "Evaluate coverage, drift, recovery points, access, test recency and measured objectives. A score never hides a mandatory blocked gate.",
+    "orchestrateTitle": "Orchestrate safely",
+    "orchestrateBody": "Freeze immutable revisions, execute idempotent phases through health gates, stop safely and preserve cleanup and evidence on every outcome."
+  },
+  "dashboard": {
+    "ariaLabel": "Storm Harbor recovery-readiness product preview",
+    "graphAriaLabel": "Dependency graph connecting authoritative sources to recovery evidence",
+    "reconciled": "Reconciled",
+    "dependencyGraph": "Dependency graph",
+    "readiness": "Recovery readiness",
+    "blocked": "Blocked",
+    "coverage": "Plan coverage",
+    "sourceFreshness": "Source freshness",
+    "lastExercise": "Last exercise",
+    "recoveryPoint": "Recovery point",
+    "unknown": "Unknown",
+    "evidence": "Evidence"
+  },
+  "readiness": {
+    "eyebrow": "Readiness, not theatre",
+    "title": "A score with consequences.",
+    "body": "See the headline without losing the engineering truth underneath. Storm Harbor keeps binary controls visible, explains every finding and shows exactly why a service is blocked.",
+    "pointOne": "Service-level RTO and RPO tied to actual recovery points",
+    "pointTwo": "Every relationship includes source, confidence and observed time",
+    "pointThree": "Signed evidence links input, decision, actor, action and outcome"
+  },
+  "architecture": {
+    "eyebrow": "Architecture",
+    "title": "Federated by design. Outside the blast radius.",
+    "body": "Each system remains authoritative in its own domain. The control plane materialises a current operational index, freezes a recovery plan and coordinates work through versioned adapters.",
+    "sourcesTitle": "Authoritative sources",
+    "sourcesBody": "Read desired state, runtime state, policies and recovery points where they live.",
+    "controlTitle": "Correlate and assess",
+    "controlBody": "Normalise assets, map dependencies, evaluate freshness, drift and policy.",
+    "recoverTitle": "Recover through gates",
+    "recoverBody": "Execute idempotent phases with approvals, timeouts, allowlists and a kill switch.",
+    "proofTitle": "Validate and prove",
+    "proofBody": "Measure objectives and retain signed, immutable evidence outside the failure domain.",
+    "outside": "The recovery brain runs outside the cluster it may need to rebuild."
+  },
+  "principles": {
+    "eyebrow": "Guardrails built in",
+    "title": "Safe by architecture, not convention.",
+    "body": "Real recovery is never enabled implicitly. Permissions are short-lived, decisions fail closed and every mutation is interruptible and auditable.",
+    "federatedTitle": "Federated authority",
+    "federatedBody": "Git, cloud APIs, vaults and evidence stores keep ownership of their own domains.",
+    "identityTitle": "Ephemeral identity",
+    "identityBody": "OIDC and workload identity replace persistent cloud keys and phase-wide credentials.",
+    "closedTitle": "Fail closed",
+    "closedBody": "Missing evidence, stale data, policy failure or an unavailable source never appears healthy.",
+    "evidenceTitle": "Evidence first",
+    "evidenceBody": "Inputs, policy decisions, timing, actions and outcomes are linked and integrity checked."
+  },
+  "audience": {
+    "eyebrow": "Built for shared confidence",
+    "title": "One view. Different decisions.",
+    "body": "Technical depth for the people who recover systems; clear outcomes for the people accountable for continuity.",
+    "platformTitle": "Platform teams",
+    "platformBody": "Map Terraform, GCP, GKE and GitOps into repeatable recovery paths without replacing existing workflows.",
+    "sreTitle": "SRE and operations",
+    "sreBody": "Exercise runbooks, expose dependency gaps and measure recovery objectives from real checkpoints.",
+    "riskTitle": "Risk and audit",
+    "riskBody": "Trace each decision to its source, policy, approval, identity, evidence and immutable revision.",
+    "leadersTitle": "Engineering leaders",
+    "leadersBody": "Prioritise investment with a service-level view of readiness, blockers and test recency."
+  },
+  "openSource": {
+    "eyebrow": "Open source · Apache License 2.0",
+    "title": "Inspect the recovery brain.",
+    "body": "Critical continuity infrastructure should be understandable, extensible and reviewable. Explore the architecture, run safe simulations and help shape provider contracts in the open.",
+    "githubCta": "Explore on GitHub"
+  },
+  "finalCta": {
+    "title": "Make recoverability a fact.",
+    "body": "Start with the architecture and safe simulation scaffold. See how Storm Harbor turns fragmented state into continuous recovery readiness.",
+    "docs": "Read the documentation",
+    "github": "Open the repository"
+  },
+  "footer": {
+    "tagline": "Discover dependencies. Prove recoverability. Orchestrate recovery.",
+    "openSource": "Open-source continuous disaster-recovery readiness"
+  }
+}

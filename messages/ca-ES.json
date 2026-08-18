@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Preparació contínua per a Disaster Recovery",
+    "description": "Descobreix dependències, demostra la recuperabilitat i orquestra recuperacions auditables amb Terraform, Google Cloud, Kubernetes i GitOps."
+  },
+  "language": {
+    "choose": "Tria l'idioma",
+    "en-GB": "Anglès (Regne Unit)",
+    "en-US": "Anglès (EUA)",
+    "es-ES": "Espanyol",
+    "ca-ES": "Català",
+    "pt-PT": "Portuguès (PT)",
+    "pt-BR": "Portuguès (BR)",
+    "it-IT": "Italià",
+    "ru-RU": "Rus",
+    "de-DE": "Alemany",
+    "fr-FR": "Francès"
+  },
+  "nav": {
+    "primaryLabel": "Navegació principal",
+    "skipContent": "Ves al contingut",
+    "product": "Producte",
+    "capabilities": "Capacitats",
+    "architecture": "Arquitectura",
+    "openSource": "Codi obert",
+    "docs": "Documentació",
+    "github": "Veure a GitHub",
+    "openMenu": "Obre el menú",
+    "closeMenu": "Tanca el menú"
+  },
+  "hero": {
+    "eyebrow": "Preparació contínua per a DR en codi obert",
+    "status": "Base de simulació segura",
+    "title": "La recuperació deixa de ser",
+    "titleAccent": "una promesa.",
+    "body": "Storm Harbor connecta codi, cloud, clústers, còpies de seguretat i polítiques en una visió contínuament reconciliada de què es pot recuperar i què ho impedeix.",
+    "primaryCta": "Explora el control plane",
+    "secondaryCta": "Consulta el codi font",
+    "noLockIn": "Sense dependència d'una única font de veritat"
+  },
+  "integrations": {"label": "Federa les eines que ja utilitzes"},
+  "problem": {
+    "eyebrow": "La bretxa operativa",
+    "title": "Un runbook no és una prova.",
+    "body": "Els repositoris descriuen la intenció. Les API mostren l'estat real. Les còpies viuen en un altre lloc. Les evidències de proves es dispersen entre pipelines i tiquets. Storm Harbor correlaciona aquests fragments sense treure autoritat als sistemes responsables.",
+    "question": "Es pot recuperar aquest servei ara, dins de l'RTO i l'RPO acordats?"
+  },
+  "capabilities": {
+    "eyebrow": "Un control plane · tres resultats",
+    "title": "Coneix. Demostra. Recupera.",
+    "body": "Passa de plans de disaster recovery desconnectats a un model operatiu viu i basat en evidències.",
+    "discoverTitle": "Descobreix dependències",
+    "discoverBody": "Crea un inventari centrat en serveis i un graf tipat des de GitHub, Terraform, GCP, Kubernetes i GitOps, amb procedència i vigència associades.",
+    "proveTitle": "Demostra la recuperació",
+    "proveBody": "Avalua cobertura, drift, punts de recuperació, accés, vigència de les proves i objectius mesurats. Una puntuació mai no oculta un bloqueig obligatori.",
+    "orchestrateTitle": "Orquestra amb seguretat",
+    "orchestrateBody": "Congela revisions immutables, executa fases idempotents mitjançant health gates, atura't amb seguretat i conserva neteja i evidències en cada resultat."
+  },
+  "dashboard": {
+    "ariaLabel": "Vista prèvia de Storm Harbor per a la preparació de recuperació",
+    "graphAriaLabel": "Graf de dependències que connecta fonts autoritatives amb evidències de recuperació",
+    "reconciled": "Reconciliat",
+    "dependencyGraph": "Graf de dependències",
+    "readiness": "Preparació de recuperació",
+    "blocked": "Bloquejat",
+    "coverage": "Cobertura del pla",
+    "sourceFreshness": "Vigència de les fonts",
+    "lastExercise": "Últim exercici",
+    "recoveryPoint": "Punt de recuperació",
+    "unknown": "Desconegut",
+    "evidence": "Evidències"
+  },
+  "readiness": {
+    "eyebrow": "Preparació, no teatre",
+    "title": "Una puntuació amb conseqüències.",
+    "body": "Consulta l'indicador principal sense perdre la veritat tècnica subjacent. Storm Harbor manté visibles els controls binaris, explica cada troballa i mostra exactament per què un servei està bloquejat.",
+    "pointOne": "RTO i RPO per servei vinculats a punts de recuperació reals",
+    "pointTwo": "Cada relació inclou font, confiança i moment d'observació",
+    "pointThree": "L'evidència signada connecta entrada, decisió, actor, acció i resultat"
+  },
+  "architecture": {
+    "eyebrow": "Arquitectura",
+    "title": "Federat per disseny. Fora del radi d'impacte.",
+    "body": "Cada sistema continua sent autoritatiu en el seu domini. El control plane materialitza un índex operatiu actual, congela un pla de recuperació i coordina el treball mitjançant adaptadors versionats.",
+    "sourcesTitle": "Fonts autoritatives",
+    "sourcesBody": "Llegeix l'estat desitjat, l'estat real, les polítiques i els punts de recuperació on resideixen.",
+    "controlTitle": "Correlaciona i avalua",
+    "controlBody": "Normalitza actius, mapeja dependències i avalua vigència, drift i polítiques.",
+    "recoverTitle": "Recupera mitjançant gates",
+    "recoverBody": "Executa fases idempotents amb aprovacions, timeouts, allowlists i kill switch.",
+    "proofTitle": "Valida i demostra",
+    "proofBody": "Mesura objectius i conserva evidències signades i immutables fora del domini de la fallada.",
+    "outside": "El cervell de recuperació s'executa fora del clúster que potser haurà de reconstruir."
+  },
+  "principles": {
+    "eyebrow": "Guardrails incorporats",
+    "title": "Segur per arquitectura, no per convenció.",
+    "body": "La recuperació real mai no s'habilita implícitament. Els permisos són efímers, les decisions fallen de manera segura i tota mutació es pot interrompre i auditar.",
+    "federatedTitle": "Autoritat federada",
+    "federatedBody": "Git, les API cloud, els magatzems de secrets i les evidències conserven el control dels seus dominis.",
+    "identityTitle": "Identitat efímera",
+    "identityBody": "OIDC i workload identity substitueixen claus cloud persistents i credencials àmplies.",
+    "closedTitle": "Fallada segura",
+    "closedBody": "La manca d'evidència, dades obsoletes, una fallada de política o una font no disponible mai no apareixen com a saludables.",
+    "evidenceTitle": "Primer l'evidència",
+    "evidenceBody": "Entrades, decisions de política, temps, accions i resultats queden vinculats i amb la integritat verificada."
+  },
+  "audience": {
+    "eyebrow": "Creat per a una confiança compartida",
+    "title": "Una visió. Decisions diferents.",
+    "body": "Profunditat tècnica per a qui recupera sistemes; resultats clars per a qui respon per la continuïtat.",
+    "platformTitle": "Equips de plataforma",
+    "platformBody": "Mapeja Terraform, GCP, GKE i GitOps en rutes de recuperació repetibles sense substituir els fluxos existents.",
+    "sreTitle": "SRE i operacions",
+    "sreBody": "Exercita runbooks, exposa bretxes de dependències i mesura objectius des de punts de control reals.",
+    "riskTitle": "Risc i auditoria",
+    "riskBody": "Rastreja cada decisió fins a la font, política, aprovació, identitat, evidència i revisió immutable.",
+    "leadersTitle": "Líders d'enginyeria",
+    "leadersBody": "Prioritza inversions amb una visió per servei de la preparació, els bloquejos i la vigència de les proves."
+  },
+  "openSource": {
+    "eyebrow": "Codi obert · Llicència Apache 2.0",
+    "title": "Inspecciona el cervell de recuperació.",
+    "body": "La infraestructura crítica de continuïtat ha de ser comprensible, extensible i revisable. Explora l'arquitectura, executa simulacions segures i ajuda a definir contractes de proveïdors obertament.",
+    "githubCta": "Explora a GitHub"
+  },
+  "finalCta": {
+    "title": "Fes de la recuperabilitat un fet.",
+    "body": "Comença per l'arquitectura i la base de simulació segura. Descobreix com Storm Harbor converteix estats fragmentats en preparació contínua per a la recuperació.",
+    "docs": "Llegeix la documentació",
+    "github": "Obre el repositori"
+  },
+  "footer": {
+    "tagline": "Descobreix dependències. Demostra la recuperabilitat. Orquestra la recuperació.",
+    "openSource": "Preparació contínua per a disaster recovery en codi obert"
+  }
+}

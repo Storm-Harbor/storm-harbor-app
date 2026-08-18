@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Préparation continue à la reprise d'activité",
+    "description": "Découvrez les dépendances, prouvez la récupérabilité et orchestrez une reprise auditable sur Terraform, Google Cloud, Kubernetes et GitOps."
+  },
+  "language": {
+    "choose": "Choisir la langue",
+    "en-GB": "Anglais (Royaume-Uni)",
+    "en-US": "Anglais (États-Unis)",
+    "es-ES": "Espagnol",
+    "ca-ES": "Catalan",
+    "pt-PT": "Portugais (PT)",
+    "pt-BR": "Portugais (BR)",
+    "it-IT": "Italien",
+    "ru-RU": "Russe",
+    "de-DE": "Allemand",
+    "fr-FR": "Français"
+  },
+  "nav": {
+    "primaryLabel": "Navigation principale",
+    "skipContent": "Aller au contenu",
+    "product": "Produit",
+    "capabilities": "Capacités",
+    "architecture": "Architecture",
+    "openSource": "Open source",
+    "docs": "Documentation",
+    "github": "Voir sur GitHub",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "eyebrow": "Préparation continue au DR en open source",
+    "status": "Base de simulation sécurisée",
+    "title": "La reprise cesse d'être",
+    "titleAccent": "une promesse.",
+    "body": "Storm Harbor relie code, cloud, clusters, sauvegardes et politiques dans une vue continuellement réconciliée de ce qui peut être restauré — et de ce qui l'empêche.",
+    "primaryCta": "Explorer le control plane",
+    "secondaryCta": "Voir le code source",
+    "noLockIn": "Aucun verrouillage de la source de vérité"
+  },
+  "integrations": {"label": "Fédère les outils que vous utilisez déjà"},
+  "problem": {
+    "eyebrow": "L'écart opérationnel",
+    "title": "Un runbook n'est pas une preuve.",
+    "body": "Les dépôts décrivent l'intention. Les API exposent l'état réel. Les sauvegardes résident ailleurs. Les preuves de test sont dispersées entre pipelines et tickets. Storm Harbor corrèle ces fragments sans retirer leur autorité aux systèmes responsables.",
+    "question": "Ce service peut-il être restauré maintenant, dans les RTO et RPO convenus ?"
+  },
+  "capabilities": {
+    "eyebrow": "Un control plane · trois résultats",
+    "title": "Connaître. Prouver. Restaurer.",
+    "body": "Passez de plans de reprise déconnectés à un modèle opérationnel vivant et piloté par les preuves.",
+    "discoverTitle": "Découvrir les dépendances",
+    "discoverBody": "Créez un inventaire centré sur les services et un graphe typé depuis GitHub, Terraform, GCP, Kubernetes et GitOps, avec provenance et fraîcheur associées.",
+    "proveTitle": "Prouver la récupérabilité",
+    "proveBody": "Évaluez couverture, drift, points de reprise, accès, récence des tests et objectifs mesurés. Un score ne masque jamais un blocage obligatoire.",
+    "orchestrateTitle": "Orchestrer en sécurité",
+    "orchestrateBody": "Figez les révisions immuables, exécutez des phases idempotentes via des health gates, arrêtez proprement et conservez nettoyage et preuves pour chaque résultat."
+  },
+  "dashboard": {
+    "ariaLabel": "Aperçu du produit Storm Harbor pour la préparation à la reprise",
+    "graphAriaLabel": "Graphe de dépendances reliant les sources faisant autorité aux preuves de reprise",
+    "reconciled": "Réconcilié",
+    "dependencyGraph": "Graphe de dépendances",
+    "readiness": "Préparation à la reprise",
+    "blocked": "Bloqué",
+    "coverage": "Couverture du plan",
+    "sourceFreshness": "Fraîcheur des sources",
+    "lastExercise": "Dernier exercice",
+    "recoveryPoint": "Point de reprise",
+    "unknown": "Inconnu",
+    "evidence": "Preuves"
+  },
+  "readiness": {
+    "eyebrow": "Préparation, pas mise en scène",
+    "title": "Un score qui a des conséquences.",
+    "body": "Visualisez l'indicateur principal sans perdre la vérité technique sous-jacente. Storm Harbor garde les contrôles binaires visibles, explique chaque constat et montre précisément pourquoi un service est bloqué.",
+    "pointOne": "RTO et RPO par service liés à de véritables points de reprise",
+    "pointTwo": "Chaque relation inclut sa source, sa confiance et l'heure d'observation",
+    "pointThree": "La preuve signée relie entrée, décision, acteur, action et résultat"
+  },
+  "architecture": {
+    "eyebrow": "Architecture",
+    "title": "Fédéré par conception. Hors du rayon d'impact.",
+    "body": "Chaque système reste la référence dans son domaine. Le control plane matérialise un index opérationnel actuel, fige un plan de reprise et coordonne le travail via des adaptateurs versionnés.",
+    "sourcesTitle": "Sources faisant autorité",
+    "sourcesBody": "Lit l'état souhaité, l'état réel, les politiques et les points de reprise là où ils résident.",
+    "controlTitle": "Corréler et évaluer",
+    "controlBody": "Normalise les actifs, cartographie les dépendances et évalue fraîcheur, drift et politiques.",
+    "recoverTitle": "Restaurer via des gates",
+    "recoverBody": "Exécute des phases idempotentes avec approbations, délais, listes autorisées et kill switch.",
+    "proofTitle": "Valider et prouver",
+    "proofBody": "Mesure les objectifs et conserve des preuves signées et immuables hors du domaine de défaillance.",
+    "outside": "Le cerveau de la reprise s'exécute hors du cluster qu'il pourrait devoir reconstruire."
+  },
+  "principles": {
+    "eyebrow": "Garde-fous intégrés",
+    "title": "Sûr par architecture, pas par convention.",
+    "body": "La reprise réelle n'est jamais activée implicitement. Les autorisations sont éphémères, les décisions échouent de façon sûre et chaque mutation peut être interrompue et auditée.",
+    "federatedTitle": "Autorité fédérée",
+    "federatedBody": "Git, API cloud, coffres et magasins de preuves conservent le contrôle de leurs domaines.",
+    "identityTitle": "Identité éphémère",
+    "identityBody": "OIDC et workload identity remplacent les clés cloud persistantes et les identifiants étendus.",
+    "closedTitle": "Échec sécurisé",
+    "closedBody": "Une preuve absente, des données obsolètes, un échec de politique ou une source indisponible ne paraissent jamais sains.",
+    "evidenceTitle": "La preuve d'abord",
+    "evidenceBody": "Entrées, décisions de politique, temps, actions et résultats sont reliés et leur intégrité vérifiée."
+  },
+  "audience": {
+    "eyebrow": "Conçu pour une confiance partagée",
+    "title": "Une vue. Des décisions différentes.",
+    "body": "La profondeur technique pour ceux qui restaurent les systèmes ; des résultats clairs pour les responsables de la continuité.",
+    "platformTitle": "Équipes plateforme",
+    "platformBody": "Cartographiez Terraform, GCP, GKE et GitOps en parcours de reprise répétables sans remplacer les workflows existants.",
+    "sreTitle": "SRE et opérations",
+    "sreBody": "Testez les runbooks, exposez les lacunes de dépendances et mesurez les objectifs depuis des points de contrôle réels.",
+    "riskTitle": "Risque et audit",
+    "riskBody": "Retracez chaque décision jusqu'à sa source, sa politique, son approbation, son identité, sa preuve et sa révision immuable.",
+    "leadersTitle": "Direction de l'ingénierie",
+    "leadersBody": "Priorisez les investissements avec une vue par service de la préparation, des blocages et de la récence des tests."
+  },
+  "openSource": {
+    "eyebrow": "Open source · Licence Apache 2.0",
+    "title": "Inspectez le cerveau de la reprise.",
+    "body": "Une infrastructure critique de continuité doit être compréhensible, extensible et vérifiable. Explorez l'architecture, lancez des simulations sûres et façonnez ouvertement les contrats de fournisseurs.",
+    "githubCta": "Explorer sur GitHub"
+  },
+  "finalCta": {
+    "title": "Faites de la récupérabilité un fait.",
+    "body": "Commencez par l'architecture et la base de simulation sécurisée. Découvrez comment Storm Harbor transforme des états fragmentés en préparation continue à la reprise.",
+    "docs": "Lire la documentation",
+    "github": "Ouvrir le dépôt"
+  },
+  "footer": {
+    "tagline": "Découvrez les dépendances. Prouvez la récupérabilité. Orchestrez la reprise.",
+    "openSource": "Préparation continue open source à la reprise après sinistre"
+  }
+}

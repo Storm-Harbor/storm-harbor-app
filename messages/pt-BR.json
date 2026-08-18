@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Prontidão contínua para Disaster Recovery",
+    "description": "Descubra dependências, comprove a recuperabilidade e orquestre recuperações auditáveis com Terraform, Google Cloud, Kubernetes e GitOps."
+  },
+  "language": {
+    "choose": "Escolher idioma",
+    "en-GB": "Inglês (Reino Unido)",
+    "en-US": "Inglês (EUA)",
+    "es-ES": "Espanhol",
+    "ca-ES": "Catalão",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Russo",
+    "de-DE": "Alemão",
+    "fr-FR": "Francês"
+  },
+  "nav": {
+    "primaryLabel": "Navegação principal",
+    "skipContent": "Pular para o conteúdo",
+    "product": "Produto",
+    "capabilities": "Capacidades",
+    "architecture": "Arquitetura",
+    "openSource": "Open source",
+    "docs": "Documentação",
+    "github": "Ver no GitHub",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "hero": {
+    "eyebrow": "Prontidão contínua para DR em open source",
+    "status": "Base de simulação segura",
+    "title": "Recuperação deixa de ser",
+    "titleAccent": "uma promessa.",
+    "body": "Storm Harbor conecta código, cloud, clusters, backups e políticas em uma visão continuamente reconciliada do que pode ser recuperado — e do que está no caminho.",
+    "primaryCta": "Explorar o control plane",
+    "secondaryCta": "Ver o código-fonte",
+    "noLockIn": "Sem lock-in da fonte de verdade"
+  },
+  "integrations": {"label": "Federa as ferramentas que você já opera"},
+  "problem": {
+    "eyebrow": "A lacuna operacional",
+    "title": "Runbook não é prova.",
+    "body": "Repositórios descrevem a intenção. APIs expõem o estado real. Backups vivem em outro lugar. Evidências de testes ficam espalhadas por pipelines e tickets. Storm Harbor correlaciona esses fragmentos sem retirar a autoridade dos sistemas responsáveis por eles.",
+    "question": "Este serviço pode ser recuperado agora, dentro do RTO e RPO acordados?"
+  },
+  "capabilities": {
+    "eyebrow": "Um control plane · três resultados",
+    "title": "Conheça. Comprove. Recupere.",
+    "body": "Evolua de planos de disaster recovery desconectados para um modelo operacional vivo e orientado por evidências.",
+    "discoverTitle": "Descubra dependências",
+    "discoverBody": "Crie um inventário centrado em serviços e um grafo tipado a partir de GitHub, Terraform, GCP, Kubernetes e GitOps — com origem e atualidade anexadas.",
+    "proveTitle": "Comprove a recuperação",
+    "proveBody": "Avalie cobertura, drift, pontos de recuperação, acesso, recência de testes e objetivos medidos. Uma nota nunca esconde um bloqueio obrigatório.",
+    "orchestrateTitle": "Orquestre com segurança",
+    "orchestrateBody": "Congele revisões imutáveis, execute fases idempotentes com health gates, pare com segurança e preserve limpeza e evidências em qualquer resultado."
+  },
+  "dashboard": {
+    "ariaLabel": "Prévia do produto Storm Harbor para prontidão de recuperação",
+    "graphAriaLabel": "Grafo de dependências ligando fontes autoritativas às evidências de recuperação",
+    "reconciled": "Reconciliado",
+    "dependencyGraph": "Grafo de dependências",
+    "readiness": "Prontidão de recuperação",
+    "blocked": "Bloqueado",
+    "coverage": "Cobertura do plano",
+    "sourceFreshness": "Atualidade das fontes",
+    "lastExercise": "Último exercício",
+    "recoveryPoint": "Ponto de recuperação",
+    "unknown": "Desconhecido",
+    "evidence": "Evidências"
+  },
+  "readiness": {
+    "eyebrow": "Prontidão, não teatro",
+    "title": "Uma nota com consequências.",
+    "body": "Veja o indicador principal sem perder a verdade técnica por trás dele. Storm Harbor mantém controles binários visíveis, explica cada finding e mostra exatamente por que um serviço está bloqueado.",
+    "pointOne": "RTO e RPO por serviço ligados a pontos de recuperação reais",
+    "pointTwo": "Cada relação inclui fonte, confiança e momento da observação",
+    "pointThree": "Evidência assinada conecta entrada, decisão, ator, ação e resultado"
+  },
+  "architecture": {
+    "eyebrow": "Arquitetura",
+    "title": "Federado por design. Fora do blast radius.",
+    "body": "Cada sistema continua autoritativo no seu domínio. O control plane materializa um índice operacional atual, congela um plano de recuperação e coordena o trabalho por adaptadores versionados.",
+    "sourcesTitle": "Fontes autoritativas",
+    "sourcesBody": "Leia estado desejado, estado real, políticas e pontos de recuperação onde eles vivem.",
+    "controlTitle": "Correlacione e avalie",
+    "controlBody": "Normalize ativos, mapeie dependências e avalie atualidade, drift e políticas.",
+    "recoverTitle": "Recupere por gates",
+    "recoverBody": "Execute fases idempotentes com aprovações, timeouts, allowlists e kill switch.",
+    "proofTitle": "Valide e comprove",
+    "proofBody": "Meça objetivos e retenha evidências assinadas e imutáveis fora do domínio da falha.",
+    "outside": "O cérebro da recuperação opera fora do cluster que talvez precise reconstruir."
+  },
+  "principles": {
+    "eyebrow": "Guardrails incorporados",
+    "title": "Seguro pela arquitetura, não por convenção.",
+    "body": "A recuperação real nunca é ativada implicitamente. Permissões duram pouco, decisões falham de forma segura e toda mutação pode ser interrompida e auditada.",
+    "federatedTitle": "Autoridade federada",
+    "federatedBody": "Git, APIs de cloud, cofres e stores de evidência mantêm o controle dos próprios domínios.",
+    "identityTitle": "Identidade efêmera",
+    "identityBody": "OIDC e workload identity substituem chaves persistentes de cloud e credenciais amplas.",
+    "closedTitle": "Falhe com segurança",
+    "closedBody": "Evidência ausente, dado obsoleto, falha de política ou fonte indisponível nunca aparece como saudável.",
+    "evidenceTitle": "Evidência primeiro",
+    "evidenceBody": "Entradas, decisões de política, tempos, ações e resultados ficam ligados e têm integridade verificada."
+  },
+  "audience": {
+    "eyebrow": "Feito para confiança compartilhada",
+    "title": "Uma visão. Decisões diferentes.",
+    "body": "Profundidade técnica para quem recupera sistemas; resultados claros para quem responde pela continuidade.",
+    "platformTitle": "Times de plataforma",
+    "platformBody": "Mapeie Terraform, GCP, GKE e GitOps em caminhos repetíveis de recuperação sem substituir os fluxos existentes.",
+    "sreTitle": "SRE e operações",
+    "sreBody": "Exercite runbooks, exponha lacunas de dependências e meça objetivos a partir de checkpoints reais.",
+    "riskTitle": "Risco e auditoria",
+    "riskBody": "Rastreie cada decisão até sua fonte, política, aprovação, identidade, evidência e revisão imutável.",
+    "leadersTitle": "Liderança de engenharia",
+    "leadersBody": "Priorize investimentos com uma visão por serviço da prontidão, bloqueios e recência dos testes."
+  },
+  "openSource": {
+    "eyebrow": "Open source · Licença Apache 2.0",
+    "title": "Inspecione o cérebro da recuperação.",
+    "body": "Infraestrutura crítica de continuidade deve ser compreensível, extensível e revisável. Explore a arquitetura, rode simulações seguras e ajude a definir contratos de provedores abertamente.",
+    "githubCta": "Explorar no GitHub"
+  },
+  "finalCta": {
+    "title": "Torne a recuperabilidade um fato.",
+    "body": "Comece pela arquitetura e pela base de simulação segura. Veja como Storm Harbor transforma estados fragmentados em prontidão contínua para recuperação.",
+    "docs": "Ler a documentação",
+    "github": "Abrir o repositório"
+  },
+  "footer": {
+    "tagline": "Descubra dependências. Comprove a recuperabilidade. Orquestre a recuperação.",
+    "openSource": "Prontidão contínua para disaster recovery em open source"
+  }
+}

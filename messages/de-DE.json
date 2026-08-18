@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Kontinuierliche Disaster-Recovery-Bereitschaft",
+    "description": "Abhängigkeiten erkennen, Wiederherstellbarkeit belegen und auditierbare Recovery über Terraform, Google Cloud, Kubernetes und GitOps orchestrieren."
+  },
+  "language": {
+    "choose": "Sprache wählen",
+    "en-GB": "Englisch (UK)",
+    "en-US": "Englisch (US)",
+    "es-ES": "Spanisch",
+    "ca-ES": "Katalanisch",
+    "pt-PT": "Portugiesisch (PT)",
+    "pt-BR": "Portugiesisch (BR)",
+    "it-IT": "Italienisch",
+    "ru-RU": "Russisch",
+    "de-DE": "Deutsch",
+    "fr-FR": "Französisch"
+  },
+  "nav": {
+    "primaryLabel": "Hauptnavigation",
+    "skipContent": "Zum Inhalt springen",
+    "product": "Produkt",
+    "capabilities": "Funktionen",
+    "architecture": "Architektur",
+    "openSource": "Open Source",
+    "docs": "Dokumentation",
+    "github": "Auf GitHub ansehen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "hero": {
+    "eyebrow": "Kontinuierliche Open-Source-DR-Bereitschaft",
+    "status": "Sichere Simulationsbasis",
+    "title": "Recovery ist nicht länger",
+    "titleAccent": "nur ein Versprechen.",
+    "body": "Storm Harbor verbindet Code, Cloud, Cluster, Backups und Richtlinien zu einer laufend abgeglichenen Sicht darauf, was wiederherstellbar ist — und was im Weg steht.",
+    "primaryCta": "Control Plane erkunden",
+    "secondaryCta": "Quellcode ansehen",
+    "noLockIn": "Kein Lock-in der Source of Truth"
+  },
+  "integrations": {"label": "Föderiert die bereits genutzten Werkzeuge"},
+  "problem": {
+    "eyebrow": "Die operative Lücke",
+    "title": "Ein Runbook ist kein Beweis.",
+    "body": "Repositories beschreiben die Absicht. APIs zeigen den Ist-Zustand. Backups liegen anderswo. Testnachweise verteilen sich auf Pipelines und Tickets. Storm Harbor korreliert diese Fragmente, ohne den zuständigen Systemen ihre Autorität zu nehmen.",
+    "question": "Kann dieser Service jetzt innerhalb seiner vereinbarten RTO und RPO wiederhergestellt werden?"
+  },
+  "capabilities": {
+    "eyebrow": "Eine Control Plane · drei Ergebnisse",
+    "title": "Erkennen. Belegen. Wiederherstellen.",
+    "body": "Von getrennten Disaster-Recovery-Plänen zu einem lebendigen, evidenzbasierten Betriebsmodell.",
+    "discoverTitle": "Abhängigkeiten erkennen",
+    "discoverBody": "Erstellen Sie ein serviceorientiertes Inventar und einen typisierten Graphen aus GitHub, Terraform, GCP, Kubernetes und GitOps — mit Herkunft und Aktualität.",
+    "proveTitle": "Wiederherstellbarkeit belegen",
+    "proveBody": "Bewerten Sie Abdeckung, Drift, Recovery Points, Zugriff, Testaktualität und gemessene Ziele. Ein Score verbirgt niemals eine zwingende Sperre.",
+    "orchestrateTitle": "Sicher orchestrieren",
+    "orchestrateBody": "Fixieren Sie unveränderliche Revisionen, führen Sie idempotente Phasen über Health Gates aus und bewahren Sie Cleanup und Nachweise bei jedem Ergebnis."
+  },
+  "dashboard": {
+    "ariaLabel": "Storm-Harbor-Produktvorschau zur Recovery-Bereitschaft",
+    "graphAriaLabel": "Abhängigkeitsgraph von autoritativen Quellen bis zum Recovery-Nachweis",
+    "reconciled": "Abgeglichen",
+    "dependencyGraph": "Abhängigkeitsgraph",
+    "readiness": "Recovery-Bereitschaft",
+    "blocked": "Blockiert",
+    "coverage": "Planabdeckung",
+    "sourceFreshness": "Quellenaktualität",
+    "lastExercise": "Letzte Übung",
+    "recoveryPoint": "Recovery Point",
+    "unknown": "Unbekannt",
+    "evidence": "Nachweise"
+  },
+  "readiness": {
+    "eyebrow": "Bereitschaft statt Theater",
+    "title": "Ein Score mit Konsequenzen.",
+    "body": "Erkennen Sie das Gesamtbild, ohne die technische Wahrheit darunter zu verlieren. Storm Harbor hält binäre Kontrollen sichtbar, erklärt jeden Befund und zeigt genau, warum ein Service blockiert ist.",
+    "pointOne": "RTO und RPO je Service, verknüpft mit realen Recovery Points",
+    "pointTwo": "Jede Beziehung enthält Quelle, Konfidenz und Beobachtungszeit",
+    "pointThree": "Signierte Nachweise verbinden Eingabe, Entscheidung, Akteur, Aktion und Ergebnis"
+  },
+  "architecture": {
+    "eyebrow": "Architektur",
+    "title": "Föderiert konzipiert. Außerhalb des Ausfallbereichs.",
+    "body": "Jedes System bleibt in seiner Domäne maßgeblich. Die Control Plane materialisiert einen aktuellen Betriebsindex, fixiert einen Recovery-Plan und koordiniert Arbeit über versionierte Adapter.",
+    "sourcesTitle": "Autoritative Quellen",
+    "sourcesBody": "Liest Soll-Zustand, Ist-Zustand, Richtlinien und Recovery Points dort, wo sie liegen.",
+    "controlTitle": "Korrelieren und bewerten",
+    "controlBody": "Normalisiert Assets, ordnet Abhängigkeiten zu und bewertet Aktualität, Drift und Richtlinien.",
+    "recoverTitle": "Über Gates wiederherstellen",
+    "recoverBody": "Führt idempotente Phasen mit Freigaben, Timeouts, Allowlists und Kill Switch aus.",
+    "proofTitle": "Validieren und belegen",
+    "proofBody": "Misst Ziele und bewahrt signierte, unveränderliche Nachweise außerhalb der Fehlerdomäne auf.",
+    "outside": "Die Recovery-Steuerung läuft außerhalb des Clusters, den sie möglicherweise neu aufbauen muss."
+  },
+  "principles": {
+    "eyebrow": "Integrierte Leitplanken",
+    "title": "Sicher durch Architektur, nicht durch Konvention.",
+    "body": "Echte Recovery wird nie implizit aktiviert. Berechtigungen sind kurzlebig, Entscheidungen fallen sicher aus und jede Änderung ist unterbrechbar und auditierbar.",
+    "federatedTitle": "Föderierte Autorität",
+    "federatedBody": "Git, Cloud-APIs, Vaults und Nachweisspeicher behalten die Kontrolle über ihre Domänen.",
+    "identityTitle": "Kurzlebige Identität",
+    "identityBody": "OIDC und Workload Identity ersetzen persistente Cloud-Schlüssel und weitreichende Anmeldedaten.",
+    "closedTitle": "Sicher ausfallen",
+    "closedBody": "Fehlende Evidenz, veraltete Daten, Richtlinienfehler oder nicht verfügbare Quellen erscheinen niemals gesund.",
+    "evidenceTitle": "Nachweise zuerst",
+    "evidenceBody": "Eingaben, Richtlinienentscheidungen, Zeiten, Aktionen und Ergebnisse sind verknüpft und integritätsgeprüft."
+  },
+  "audience": {
+    "eyebrow": "Für gemeinsames Vertrauen gebaut",
+    "title": "Eine Sicht. Unterschiedliche Entscheidungen.",
+    "body": "Technische Tiefe für diejenigen, die Systeme wiederherstellen; klare Ergebnisse für Verantwortliche der Kontinuität.",
+    "platformTitle": "Plattformteams",
+    "platformBody": "Terraform, GCP, GKE und GitOps in wiederholbare Recovery-Pfade abbilden, ohne bestehende Abläufe zu ersetzen.",
+    "sreTitle": "SRE und Betrieb",
+    "sreBody": "Runbooks üben, Abhängigkeitslücken aufdecken und Recovery-Ziele an echten Kontrollpunkten messen.",
+    "riskTitle": "Risiko und Audit",
+    "riskBody": "Jede Entscheidung bis zu Quelle, Richtlinie, Freigabe, Identität, Nachweis und unveränderlicher Revision verfolgen.",
+    "leadersTitle": "Engineering-Führung",
+    "leadersBody": "Investitionen mit einer servicespezifischen Sicht auf Bereitschaft, Blocker und Testaktualität priorisieren."
+  },
+  "openSource": {
+    "eyebrow": "Open Source · Apache-Lizenz 2.0",
+    "title": "Prüfen Sie die Recovery-Steuerung.",
+    "body": "Kritische Kontinuitätsinfrastruktur sollte verständlich, erweiterbar und überprüfbar sein. Erkunden Sie die Architektur, führen Sie sichere Simulationen aus und gestalten Sie Provider-Verträge offen mit.",
+    "githubCta": "Auf GitHub erkunden"
+  },
+  "finalCta": {
+    "title": "Machen Sie Wiederherstellbarkeit zur Tatsache.",
+    "body": "Beginnen Sie mit Architektur und sicherer Simulationsbasis. Erfahren Sie, wie Storm Harbor fragmentierte Zustände in kontinuierliche Recovery-Bereitschaft verwandelt.",
+    "docs": "Dokumentation lesen",
+    "github": "Repository öffnen"
+  },
+  "footer": {
+    "tagline": "Abhängigkeiten erkennen. Wiederherstellbarkeit belegen. Recovery orchestrieren.",
+    "openSource": "Kontinuierliche Open-Source-Disaster-Recovery-Bereitschaft"
+  }
+}
