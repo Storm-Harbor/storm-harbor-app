@@ -14,7 +14,7 @@ export function Brand({compact = false, className = ""}: BrandProps) {
       aria-label="Storm Harbor — by iot.Erax"
     >
       <Image
-        src="/logo.svg"
+        src="/logo.png"
         alt=""
         width={42}
         height={42}

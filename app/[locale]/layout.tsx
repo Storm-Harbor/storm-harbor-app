@@ -26,7 +26,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
     title: t("title"),
     description: t("description"),
     metadataBase: new URL("https://storm-harbor.github.io"),
-    icons: {icon: "/logo.svg"},
+    icons: {icon: "/logo.png"},
     openGraph: {
       title: t("title"),
       description: t("description"),
