@@ -2,8 +2,6 @@ import type {Metadata} from "next";
 import {hasLocale, NextIntlClientProvider} from "next-intl";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 import {notFound} from "next/navigation";
-import {Header} from "@/components/Header";
-import {LanguageSwitcher} from "@/components/LanguageSwitcher";
 import {LocalStorageSync} from "@/components/LocalStorageSync";
 import {routing} from "@/i18n/routing";
 import "../globals.css";
@@ -46,10 +44,8 @@ export default async function LocaleLayout({children, params}: Props) {
       <body>
         <NextIntlClientProvider>
           <a href="#main-content" className="skip-link">{t("skipContent")}</a>
-          <Header />
           <LocalStorageSync />
           <div id="main-content">{children}</div>
-          <LanguageSwitcher />
         </NextIntlClientProvider>
       </body>
     </html>

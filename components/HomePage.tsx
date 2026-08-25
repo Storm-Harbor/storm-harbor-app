@@ -274,7 +274,7 @@ export function HomePage() {
             </div>
           </div>
           <div className="mt-10 flex flex-col gap-2 border-t border-white/10 pt-5 font-mono text-[9px] uppercase tracking-wider text-slate-600 sm:flex-row sm:justify-between">
-            <span>© 2026 Storm Harbor · by iot.Erax</span>
+            <span>© 2026 Storm Harbor · by iot.EraX</span>
             <span>{t("footer.openSource")}</span>
           </div>
         </div>

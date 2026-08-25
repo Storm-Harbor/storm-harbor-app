@@ -4,12 +4,14 @@ import {useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
 import {Brand} from "./Brand";
 import {CloseIcon, GithubIcon, MenuIcon} from "./Icons";
+import {Link} from "@/i18n/navigation";
 
 const githubUrl = "https://github.com/Storm-Harbor/storm-harbor-control-plane";
 const docsUrl = "https://storm-harbor.github.io/storm-harbor-control-plane/";
 
 export function Header() {
   const t = useTranslations("nav");
+  const authT = useTranslations("auth");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -43,6 +45,9 @@ export function Header() {
             <GithubIcon className="size-4" />
             {t("github")}
           </a>
+          <Link href="/login" className="button button-primary h-10 px-4 text-xs">
+            {authT("signIn")}
+          </Link>
         </div>
 
         <button
@@ -76,6 +81,9 @@ export function Header() {
               <a href={githubUrl} target="_blank" rel="noreferrer" className="button button-primary">
                 <GithubIcon className="size-4" />{t("github")}
               </a>
+              <Link href="/login" onClick={() => setOpen(false)} className="button button-light col-span-2">
+                {authT("signIn")}
+              </Link>
             </div>
           </nav>
         </div>
