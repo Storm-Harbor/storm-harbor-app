@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Storm Harbor — Continuous Disaster Recovery Readiness",
-    "description": "Discover dependencies, prove recoverability, and orchestrate auditable recovery across Terraform, Google Cloud, Kubernetes, and GitOps."
+    "description": "Discover dependencies, prove recoverability, and orchestrate auditable recovery across Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes, and GitOps."
   },
   "language": {
     "choose": "Choose language",
@@ -26,7 +26,8 @@
     "docs": "Documentation",
     "github": "View on GitHub",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "support": "Support the project"
   },
   "hero": {
     "eyebrow": "Open-source continuous DR readiness",
@@ -36,9 +37,10 @@
     "body": "Storm Harbor connects code, cloud, clusters, backups, and policy into one continuously reconciled view of what can recover — and what stands in the way.",
     "primaryCta": "Explore the control plane",
     "secondaryCta": "View the source",
-    "noLockIn": "No source-of-truth lock-in"
+    "noLockIn": "No source-of-truth lock-in",
+    "cloudAgnostic": "Cloud-independent"
   },
-  "integrations": {"label": "Federates the tools you already run"},
+  "integrations": {"label": "Planned cloud and tool adapters"},
   "problem": {
     "eyebrow": "The operational gap",
     "title": "A runbook is not proof.",
@@ -50,7 +52,7 @@
     "title": "Know. Prove. Recover.",
     "body": "Move from disconnected disaster-recovery plans to a living, evidence-driven operating model.",
     "discoverTitle": "Discover dependencies",
-    "discoverBody": "Build a service-first inventory and typed dependency graph from GitHub, Terraform, GCP, Kubernetes, and GitOps — with provenance and freshness attached.",
+    "discoverBody": "Build a service-first inventory and typed dependency graph from GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes, and GitOps — with provenance and freshness attached.",
     "proveTitle": "Prove recoverability",
     "proveBody": "Evaluate coverage, drift, recovery points, access, test recency, and measured objectives. A score never hides a mandatory blocked gate.",
     "orchestrateTitle": "Orchestrate safely",
@@ -68,7 +70,8 @@
     "lastExercise": "Last exercise",
     "recoveryPoint": "Recovery point",
     "unknown": "Unknown",
-    "evidence": "Evidence"
+    "evidence": "Evidence",
+    "preview": "Illustrative preview · sample data"
   },
   "readiness": {
     "eyebrow": "Readiness, not theater",
@@ -110,7 +113,7 @@
     "title": "One view. Different decisions.",
     "body": "Technical depth for the people who recover systems; clear outcomes for the people accountable for continuity.",
     "platformTitle": "Platform teams",
-    "platformBody": "Map Terraform, GCP, GKE, and GitOps into repeatable recovery paths without replacing existing workflows.",
+    "platformBody": "Map Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes, and GitOps into repeatable recovery paths without replacing existing workflows.",
     "sreTitle": "SRE and operations",
     "sreBody": "Exercise runbooks, expose dependency gaps, and measure recovery objectives from real checkpoints.",
     "riskTitle": "Risk and audit",
@@ -222,5 +225,16 @@
       "maya": {"eyebrow": "Operational intelligence", "title": "Maya operations", "body": "Investigate findings and prepare controlled, explainable remediation actions."},
       "settings": {"eyebrow": "Governance", "title": "Security and settings", "body": "Manage project access, integrations, policies, and recovery guardrails."}
     }
+  },
+  "platform": {
+    "eyebrow": "Platform direction",
+    "title": "Your infrastructure. Your choices.",
+    "status": "Designed capabilities. The current release provides safe simulations; production adapters and recovery runtime are in development.",
+    "privateTitle": "Private projects",
+    "privateBody": "Any organization can connect authorized private repositories and infrastructure while retaining control of its data and knowledge.",
+    "aiTitle": "Bring your own AI",
+    "aiBody": "Connect project-owned AI, RAG or bounded CLI tools. Keep knowledge in your environment and share only authorized results. AI remains optional.",
+    "declarativeTitle": "YAML journeys. Go controllers.",
+    "declarativeBody": "Declare recovery in versioned YAML. Extend resource kinds and Go controllers, with native Kubernetes CRDs through an adapter."
   }
 }

@@ -141,3 +141,12 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Generated public website inputs and output
+website/public/
+website/next-env.d.ts
+.DS_Store
+._*
+website/preview/
+playwright-report/
+test-results/

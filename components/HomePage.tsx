@@ -86,7 +86,7 @@ export function HomePage() {
 
             <div className="mt-9 flex flex-wrap items-center gap-x-5 gap-y-2 text-[11px] font-medium text-slate-500">
               <span className="flex items-center gap-1.5"><CheckIcon className="size-3.5 text-blue-400" />Apache 2.0</span>
-              <span className="flex items-center gap-1.5"><CheckIcon className="size-3.5 text-blue-400" />GCP-first</span>
+              <span className="flex items-center gap-1.5"><CheckIcon className="size-3.5 text-blue-400" />{t("hero.cloudAgnostic")}</span>
               <span className="flex items-center gap-1.5"><CheckIcon className="size-3.5 text-blue-400" />{t("hero.noLockIn")}</span>
             </div>
           </div>
@@ -103,13 +103,30 @@ export function HomePage() {
           <div className="flex items-center border-b border-white/10 px-5 py-5 sm:border-b-0 sm:border-r sm:px-8 lg:px-12">
             <span className="font-mono text-[9px] font-semibold uppercase leading-relaxed tracking-[0.16em] text-slate-500">{t("integrations.label")}</span>
           </div>
-          <div className="grid grid-cols-2 divide-x divide-y divide-white/10 sm:grid-cols-5 sm:divide-y-0">
-            {["GitHub", "Terraform", "Google Cloud", "Kubernetes", "FluxCD"].map((name) => (
+          <div className="grid grid-cols-2 divide-x divide-y divide-white/10 sm:grid-cols-4 lg:grid-cols-8">
+            {["AWS", "Azure", "DigitalOcean", "Oracle Cloud", "GCP", "Terraform", "Kubernetes", "GitHub"].map((name) => (
               <div key={name} className="flex min-h-16 items-center justify-center px-3 font-mono text-[10px] font-semibold uppercase tracking-[0.08em] text-slate-400 sm:min-h-20">
                 {name}
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section-shell border-b border-white/10 bg-[#151e28]">
+        <SectionHeading eyebrow={t("platform.eyebrow")} title={t("platform.title")} body={t("platform.status")} />
+        <div className="mt-12 grid gap-8 lg:grid-cols-3">
+          {[
+            {icon: ShieldCheckIcon, title: t("platform.privateTitle"), body: t("platform.privateBody")},
+            {icon: NetworkIcon, title: t("platform.aiTitle"), body: t("platform.aiBody")},
+            {icon: CodeIcon, title: t("platform.declarativeTitle"), body: t("platform.declarativeBody")},
+          ].map(({icon: Icon, title, body}) => (
+            <article key={title} className="border-t border-blue-400/40 pt-6">
+              <Icon className="size-6 text-blue-400" />
+              <h3 className="mt-6 text-xl font-semibold tracking-tight text-white">{title}</h3>
+              <p className="mt-4 text-sm leading-7 text-slate-400">{body}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -170,7 +187,7 @@ export function HomePage() {
 
           <div className="architecture-flow mt-16 grid gap-4 lg:grid-cols-[1fr_40px_1.2fr_40px_1fr_40px_1fr] lg:items-stretch lg:gap-0">
             {[
-              {index: "01", title: t("architecture.sourcesTitle"), body: t("architecture.sourcesBody"), meta: "GitHub · TF · GCP · K8s"},
+              {index: "01", title: t("architecture.sourcesTitle"), body: t("architecture.sourcesBody"), meta: "GitHub · TF · cloud · K8s"},
               {index: "02", title: t("architecture.controlTitle"), body: t("architecture.controlBody"), meta: "inventory · graph · policy"},
               {index: "03", title: t("architecture.recoverTitle"), body: t("architecture.recoverBody"), meta: "DAG · gates · cleanup"},
               {index: "04", title: t("architecture.proofTitle"), body: t("architecture.proofBody"), meta: "SHA-256 · KMS · WORM"},
@@ -269,6 +286,7 @@ export function HomePage() {
             </div>
             <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold text-slate-400">
               <a href={docsUrl} target="_blank" rel="noreferrer" className="hover:text-white">{t("nav.docs")}</a>
+              <a href={`${docsUrl}community/sponsorship/`} target="_blank" rel="noreferrer" className="hover:text-white">{t("nav.support")}</a>
               <a href={githubUrl} target="_blank" rel="noreferrer" className="hover:text-white">GitHub</a>
               <a href={licenseUrl} target="_blank" rel="noreferrer" className="hover:text-white">Apache 2.0</a>
             </div>

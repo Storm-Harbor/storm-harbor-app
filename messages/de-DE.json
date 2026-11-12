@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Storm Harbor — Kontinuierliche Disaster-Recovery-Bereitschaft",
-    "description": "Abhängigkeiten erkennen, Wiederherstellbarkeit belegen und auditierbare Recovery über Terraform, Google Cloud, Kubernetes und GitOps orchestrieren."
+    "description": "Abhängigkeiten erkennen, Wiederherstellbarkeit belegen und auditierbare Recovery über Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes und GitOps orchestrieren."
   },
   "language": {
     "choose": "Sprache wählen",
@@ -26,7 +26,8 @@
     "docs": "Dokumentation",
     "github": "Auf GitHub ansehen",
     "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen"
+    "closeMenu": "Menü schließen",
+    "support": "Projekt unterstützen"
   },
   "hero": {
     "eyebrow": "Kontinuierliche Open-Source-DR-Bereitschaft",
@@ -36,9 +37,10 @@
     "body": "Storm Harbor verbindet Code, Cloud, Cluster, Backups und Richtlinien zu einer laufend abgeglichenen Sicht darauf, was wiederherstellbar ist — und was im Weg steht.",
     "primaryCta": "Control Plane erkunden",
     "secondaryCta": "Quellcode ansehen",
-    "noLockIn": "Kein Lock-in der Source of Truth"
+    "noLockIn": "Kein Lock-in der Source of Truth",
+    "cloudAgnostic": "Cloud-unabhängig"
   },
-  "integrations": {"label": "Föderiert die bereits genutzten Werkzeuge"},
+  "integrations": {"label": "Geplante Cloud- und Werkzeugadapter"},
   "problem": {
     "eyebrow": "Die operative Lücke",
     "title": "Ein Runbook ist kein Beweis.",
@@ -50,7 +52,7 @@
     "title": "Erkennen. Belegen. Wiederherstellen.",
     "body": "Von getrennten Disaster-Recovery-Plänen zu einem lebendigen, evidenzbasierten Betriebsmodell.",
     "discoverTitle": "Abhängigkeiten erkennen",
-    "discoverBody": "Erstellen Sie ein serviceorientiertes Inventar und einen typisierten Graphen aus GitHub, Terraform, GCP, Kubernetes und GitOps — mit Herkunft und Aktualität.",
+    "discoverBody": "Erstellen Sie ein serviceorientiertes Inventar und einen typisierten Graphen aus GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes und GitOps — mit Herkunft und Aktualität.",
     "proveTitle": "Wiederherstellbarkeit belegen",
     "proveBody": "Bewerten Sie Abdeckung, Drift, Recovery Points, Zugriff, Testaktualität und gemessene Ziele. Ein Score verbirgt niemals eine zwingende Sperre.",
     "orchestrateTitle": "Sicher orchestrieren",
@@ -68,7 +70,8 @@
     "lastExercise": "Letzte Übung",
     "recoveryPoint": "Recovery Point",
     "unknown": "Unbekannt",
-    "evidence": "Nachweise"
+    "evidence": "Nachweise",
+    "preview": "Illustrative Vorschau · Beispieldaten"
   },
   "readiness": {
     "eyebrow": "Bereitschaft statt Theater",
@@ -110,7 +113,7 @@
     "title": "Eine Sicht. Unterschiedliche Entscheidungen.",
     "body": "Technische Tiefe für diejenigen, die Systeme wiederherstellen; klare Ergebnisse für Verantwortliche der Kontinuität.",
     "platformTitle": "Plattformteams",
-    "platformBody": "Terraform, GCP, GKE und GitOps in wiederholbare Recovery-Pfade abbilden, ohne bestehende Abläufe zu ersetzen.",
+    "platformBody": "Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes und GitOps in wiederholbare Recovery-Pfade abbilden, ohne bestehende Abläufe zu ersetzen.",
     "sreTitle": "SRE und Betrieb",
     "sreBody": "Runbooks üben, Abhängigkeitslücken aufdecken und Recovery-Ziele an echten Kontrollpunkten messen.",
     "riskTitle": "Risiko und Audit",
@@ -153,5 +156,16 @@
     "maya": {"advisory": "Beratungsmodus", "title": "Ein Risiko benötigt Aufmerksamkeit.", "body": "Maya korreliert Nachweise und erklärt blockierte Gates, bevor Aktionen vorgeschlagen werden.", "finding": "Aktuelles Finding", "findingBody": "Der Recovery Point von checkout-api hat kein verifiziertes Integritätsergebnis.", "humanReview": "Menschliche Prüfung vor Behebung erforderlich", "review": "Mit Maya prüfen"},
     "path": {"title": "Recovery-Pfad", "body": "Unveränderliche Phasen laufen erst nach bestandenem Health Gate weiter.", "planFrozen": "Plan eingefroren"},
     "sections": {"services": {"eyebrow": "Inventar", "title": "Geschützte Services", "body": "Verbinden Sie Ownership, Abhängigkeiten, Ziele und Recovery-Pläne."}, "environments": {"eyebrow": "Ziele", "title": "Umgebungen", "body": "Ordnen Sie geschützte und Recovery-Umgebungen über Projekte und Regionen zu."}, "recovery": {"eyebrow": "Orchestrierung", "title": "Recovery-Läufe", "body": "Planen, genehmigen und verfolgen Sie deterministische Phasen und Health Gates."}, "evidence": {"eyebrow": "Audit", "title": "Recovery-Nachweise", "body": "Prüfen Sie Inputs, Entscheidungen, Aktionen und Ergebnisse mit Integritätsnachweis."}, "maya": {"eyebrow": "Operative Intelligenz", "title": "Maya Operations", "body": "Untersuchen Sie Findings und bereiten Sie kontrollierte, erklärbare Behebungen vor."}, "settings": {"eyebrow": "Governance", "title": "Sicherheit und Einstellungen", "body": "Verwalten Sie Zugriff, Integrationen, Richtlinien und Guardrails."}}
+  },
+  "platform": {
+    "eyebrow": "Ausrichtung der Plattform",
+    "title": "Ihre Infrastruktur. Ihre Entscheidungen.",
+    "status": "Geplante Funktionen. Die aktuelle Version bietet sichere Simulationen; Produktionsadapter und Wiederherstellungslaufzeit befinden sich in Entwicklung.",
+    "privateTitle": "Private Projekte",
+    "privateBody": "Jede Organisation kann autorisierte private Repositorys und Infrastruktur anbinden und behält die Kontrolle über ihre Daten und ihr Wissen.",
+    "aiTitle": "Eigene KI einbinden",
+    "aiBody": "Binden Sie projekteigene KI, RAG oder begrenzte CLI-Werkzeuge an. Wissen bleibt in Ihrer Umgebung; nur autorisierte Ergebnisse werden geteilt. KI ist optional.",
+    "declarativeTitle": "YAML-Abläufe. Go-Controller.",
+    "declarativeBody": "Definieren Sie Wiederherstellung in versioniertem YAML. Erweitern Sie Ressourcentypen und Go-Controller; native Kubernetes-CRDs werden über einen Adapter angebunden."
   }
 }

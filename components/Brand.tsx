@@ -11,7 +11,7 @@ export function Brand({compact = false, className = ""}: BrandProps) {
     <span className={`group inline-flex items-center gap-3 ${className}`}>
       <Link href="/" aria-label="Storm Harbor home">
         <Image
-          src="/logo.png"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.png`}
           alt=""
           width={42}
           height={42}

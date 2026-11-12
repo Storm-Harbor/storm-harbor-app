@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Storm Harbor — Préparation continue à la reprise d'activité",
-    "description": "Découvrez les dépendances, prouvez la récupérabilité et orchestrez une reprise auditable sur Terraform, Google Cloud, Kubernetes et GitOps."
+    "description": "Découvrez les dépendances, prouvez la récupérabilité et orchestrez une reprise auditable sur Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes et GitOps."
   },
   "language": {
     "choose": "Choisir la langue",
@@ -26,7 +26,8 @@
     "docs": "Documentation",
     "github": "Voir sur GitHub",
     "openMenu": "Ouvrir le menu",
-    "closeMenu": "Fermer le menu"
+    "closeMenu": "Fermer le menu",
+    "support": "Soutenir le projet"
   },
   "hero": {
     "eyebrow": "Préparation continue au DR en open source",
@@ -36,9 +37,10 @@
     "body": "Storm Harbor relie code, cloud, clusters, sauvegardes et politiques dans une vue continuellement réconciliée de ce qui peut être restauré — et de ce qui l'empêche.",
     "primaryCta": "Explorer le control plane",
     "secondaryCta": "Voir le code source",
-    "noLockIn": "Aucun verrouillage de la source de vérité"
+    "noLockIn": "Aucun verrouillage de la source de vérité",
+    "cloudAgnostic": "Indépendant du cloud"
   },
-  "integrations": {"label": "Fédère les outils que vous utilisez déjà"},
+  "integrations": {"label": "Adaptateurs cloud et outils prévus"},
   "problem": {
     "eyebrow": "L'écart opérationnel",
     "title": "Un runbook n'est pas une preuve.",
@@ -50,7 +52,7 @@
     "title": "Connaître. Prouver. Restaurer.",
     "body": "Passez de plans de reprise déconnectés à un modèle opérationnel vivant et piloté par les preuves.",
     "discoverTitle": "Découvrir les dépendances",
-    "discoverBody": "Créez un inventaire centré sur les services et un graphe typé depuis GitHub, Terraform, GCP, Kubernetes et GitOps, avec provenance et fraîcheur associées.",
+    "discoverBody": "Créez un inventaire centré sur les services et un graphe typé depuis GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes et GitOps, avec provenance et fraîcheur associées.",
     "proveTitle": "Prouver la récupérabilité",
     "proveBody": "Évaluez couverture, drift, points de reprise, accès, récence des tests et objectifs mesurés. Un score ne masque jamais un blocage obligatoire.",
     "orchestrateTitle": "Orchestrer en sécurité",
@@ -68,7 +70,8 @@
     "lastExercise": "Dernier exercice",
     "recoveryPoint": "Point de reprise",
     "unknown": "Inconnu",
-    "evidence": "Preuves"
+    "evidence": "Preuves",
+    "preview": "Aperçu illustratif · données d’exemple"
   },
   "readiness": {
     "eyebrow": "Préparation, pas mise en scène",
@@ -110,7 +113,7 @@
     "title": "Une vue. Des décisions différentes.",
     "body": "La profondeur technique pour ceux qui restaurent les systèmes ; des résultats clairs pour les responsables de la continuité.",
     "platformTitle": "Équipes plateforme",
-    "platformBody": "Cartographiez Terraform, GCP, GKE et GitOps en parcours de reprise répétables sans remplacer les workflows existants.",
+    "platformBody": "Cartographiez Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes et GitOps en parcours de reprise répétables sans remplacer les workflows existants.",
     "sreTitle": "SRE et opérations",
     "sreBody": "Testez les runbooks, exposez les lacunes de dépendances et mesurez les objectifs depuis des points de contrôle réels.",
     "riskTitle": "Risque et audit",
@@ -153,5 +156,16 @@
     "maya": {"advisory": "Mode consultatif", "title": "Un risque requiert votre attention.", "body": "Maya corrèle les preuves et explique pourquoi un gate est bloqué avant de proposer une action.", "finding": "Finding actuel", "findingBody": "Le point de reprise de checkout-api ne possède aucun résultat d'intégrité vérifié.", "humanReview": "Revue humaine obligatoire avant remédiation", "review": "Examiner avec Maya"},
     "path": {"title": "Parcours de reprise", "body": "Les phases immuables avancent uniquement après validation de leur health gate.", "planFrozen": "Plan figé"},
     "sections": {"services": {"eyebrow": "Inventaire", "title": "Services protégés", "body": "Reliez ownership, dépendances, objectifs et plans de reprise."}, "environments": {"eyebrow": "Cibles", "title": "Environnements", "body": "Cartographiez les environnements protégés et de reprise entre projets et régions."}, "recovery": {"eyebrow": "Orchestration", "title": "Exécutions de reprise", "body": "Planifiez, approuvez et suivez les phases déterministes et health gates."}, "evidence": {"eyebrow": "Audit", "title": "Preuves de reprise", "body": "Examinez les entrées, décisions, actions et résultats dont l'intégrité est vérifiée."}, "maya": {"eyebrow": "Intelligence opérationnelle", "title": "Opérations Maya", "body": "Analysez les findings et préparez des remédiations contrôlées et explicables."}, "settings": {"eyebrow": "Gouvernance", "title": "Sécurité et paramètres", "body": "Gérez les accès, intégrations, politiques et guardrails."}}
+  },
+  "platform": {
+    "eyebrow": "Orientation de la plateforme",
+    "title": "Votre infrastructure. Vos choix.",
+    "status": "Fonctionnalités prévues. La version actuelle propose des simulations sûres ; les adaptateurs de production et le moteur de reprise sont en développement.",
+    "privateTitle": "Projets privés",
+    "privateBody": "Toute organisation peut connecter des dépôts privés autorisés et son infrastructure tout en gardant le contrôle de ses données et connaissances.",
+    "aiTitle": "Utilisez votre propre IA",
+    "aiBody": "Connectez l’IA, le RAG ou les outils CLI délimités du projet. Conservez les connaissances dans votre environnement et partagez uniquement les résultats autorisés. L’IA reste facultative.",
+    "declarativeTitle": "Parcours YAML. Contrôleurs Go.",
+    "declarativeBody": "Déclarez la reprise en YAML versionné. Étendez les types de ressources et les contrôleurs Go, avec des CRD Kubernetes natives via un adaptateur."
   }
 }
