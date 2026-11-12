@@ -1,7 +1,7 @@
 # Storm Harbor
 
 Public website and authenticated control panel for **Storm Harbor**, an
-open-source continuous disaster-recovery platform by
+open-source declarative multicloud recovery platform created by
 [iot.EraX](https://ioterax.com).
 
 ## Requirements
@@ -20,6 +20,49 @@ yarn dev
 The app is built with Next.js 16, React 19, Tailwind CSS 4, and `next-intl`.
 All ten supported locales live under `messages/` and are validated for key
 parity during `yarn check`.
+
+## Product direction and runtime boundary
+
+Storm Harbor is designed for any organization and private projects. AWS, Azure,
+DigitalOcean, Oracle Cloud and GCP integrate through provider adapters; optional
+project-owned AI/RAG/CLI keeps knowledge under the project's control. Versioned
+YAML drives the guided journey and extensible resources/controllers.
+
+**Go 1.26.x is the official language/release line for runtime applications,
+APIs, controllers/operators, agents, CLIs and SDKs.** The current Next.js
+authentication/BFF is a transitional scaffold awaiting a behavior-preserving Go
+migration. The public static website uses browser HTML/CSS/JavaScript and
+frontend build tools, with no Node.js production server. Production recovery
+adapters and the Go runtime are not implemented yet.
+
+Technical documentation remains in English. See the
+[platform contract](https://storm-harbor.github.io/storm-harbor-control-plane/architecture/platform-contract/).
+
+## Public website and GitHub Pages
+
+```bash
+yarn build:website
+yarn check:website
+```
+
+`website/app` exposes only the public locale pages and reuses the existing design
+and translations. The export at `website/out` contains ten locale directories,
+a language-selecting root entry point, assets, a 404 page, robots and sitemap.
+Explicit locale URLs retain the chosen language. Authentication APIs, login and
+customer console routes are excluded; sign-in links are hidden in this build.
+
+`PAGES_BASE_PATH` selects the repository subpath (empty for a custom domain), and
+`WEBSITE_URL` sets the absolute HTTPS site URL. The `Website` workflow validates
+the existing application and exports/deploys public content after updates to
+`develop`; pull requests build and validate without deploying. GitHub Actions
+dependencies are pinned by commit SHA.
+
+For `stormharbor.io`, configure the Pages custom domain after DNS points to
+GitHub. The apex needs GitHub Pages A records (`185.199.108.153`,
+`185.199.109.153`, `185.199.110.153`, `185.199.111.153`) or a supported equivalent;
+`www` can CNAME to `storm-harbor.github.io`. Domain verification TXT alone does
+not provide website routing. Never put Stripe credentials or customer data in
+the static site; sponsorship links must use verified hosted payment URLs.
 
 ## Product surfaces
 

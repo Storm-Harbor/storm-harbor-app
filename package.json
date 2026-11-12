@@ -12,6 +12,9 @@
     "check:runtime": "node scripts/check-runtime.mjs",
     "dev": "next dev --webpack",
     "build": "next build --webpack",
+    "build:website": "node scripts/build-website.mjs",
+    "check:website": "node scripts/check-website.mjs",
+    "test:website": "playwright test",
     "start": "next start",
     "lint": "eslint .",
     "check:locales": "node scripts/check-locale-parity.mjs",
@@ -26,6 +29,7 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@playwright/test": "1.65.0",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "^26.0.0",
     "@types/react": "^19.2.0",

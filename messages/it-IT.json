@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Storm Harbor — Preparazione continua al Disaster Recovery",
-    "description": "Scopri le dipendenze, dimostra la recuperabilità e orchestra recovery verificabili su Terraform, Google Cloud, Kubernetes e GitOps."
+    "description": "Scopri le dipendenze, dimostra la recuperabilità e orchestra recovery verificabili su Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes e GitOps."
   },
   "language": {
     "choose": "Scegli la lingua",
@@ -26,7 +26,8 @@
     "docs": "Documentazione",
     "github": "Vedi su GitHub",
     "openMenu": "Apri menu",
-    "closeMenu": "Chiudi menu"
+    "closeMenu": "Chiudi menu",
+    "support": "Sostieni il progetto"
   },
   "hero": {
     "eyebrow": "Preparazione continua al DR open source",
@@ -36,9 +37,10 @@
     "body": "Storm Harbor collega codice, cloud, cluster, backup e policy in una vista continuamente riconciliata di ciò che può essere recuperato e di ciò che lo impedisce.",
     "primaryCta": "Esplora il control plane",
     "secondaryCta": "Vedi il codice sorgente",
-    "noLockIn": "Nessun lock-in della fonte di verità"
+    "noLockIn": "Nessun lock-in della fonte di verità",
+    "cloudAgnostic": "Indipendente dal cloud"
   },
-  "integrations": {"label": "Federa gli strumenti che già utilizzi"},
+  "integrations": {"label": "Adattatori cloud e strumenti previsti"},
   "problem": {
     "eyebrow": "Il divario operativo",
     "title": "Un runbook non è una prova.",
@@ -50,7 +52,7 @@
     "title": "Conosci. Dimostra. Recupera.",
     "body": "Passa da piani di disaster recovery scollegati a un modello operativo vivo e basato sulle evidenze.",
     "discoverTitle": "Scopri le dipendenze",
-    "discoverBody": "Crea un inventario incentrato sui servizi e un grafo tipizzato da GitHub, Terraform, GCP, Kubernetes e GitOps, con provenienza e aggiornamento associati.",
+    "discoverBody": "Crea un inventario incentrato sui servizi e un grafo tipizzato da GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes e GitOps, con provenienza e aggiornamento associati.",
     "proveTitle": "Dimostra la recuperabilità",
     "proveBody": "Valuta copertura, drift, punti di ripristino, accesso, attualità dei test e obiettivi misurati. Un punteggio non nasconde mai un blocco obbligatorio.",
     "orchestrateTitle": "Orchestra in sicurezza",
@@ -68,7 +70,8 @@
     "lastExercise": "Ultima esercitazione",
     "recoveryPoint": "Punto di ripristino",
     "unknown": "Sconosciuto",
-    "evidence": "Evidenze"
+    "evidence": "Evidenze",
+    "preview": "Anteprima illustrativa · dati di esempio"
   },
   "readiness": {
     "eyebrow": "Preparazione, non apparenza",
@@ -110,7 +113,7 @@
     "title": "Una vista. Decisioni diverse.",
     "body": "Profondità tecnica per chi recupera i sistemi; risultati chiari per chi risponde della continuità.",
     "platformTitle": "Team di piattaforma",
-    "platformBody": "Mappa Terraform, GCP, GKE e GitOps in percorsi di recovery ripetibili senza sostituire i workflow esistenti.",
+    "platformBody": "Mappa Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes e GitOps in percorsi di recovery ripetibili senza sostituire i workflow esistenti.",
     "sreTitle": "SRE e operations",
     "sreBody": "Esercita i runbook, scopri le lacune nelle dipendenze e misura gli obiettivi da checkpoint reali.",
     "riskTitle": "Rischio e audit",
@@ -153,5 +156,16 @@
     "maya": {"advisory": "Modalità consultiva", "title": "Un rischio richiede attenzione.", "body": "Maya correla le evidenze e spiega perché un gate è bloccato prima di proporre azioni.", "finding": "Finding attuale", "findingBody": "Il recovery point di checkout-api non ha un risultato di integrità verificato.", "humanReview": "Revisione umana obbligatoria prima della remediation", "review": "Rivedi con Maya"},
     "path": {"title": "Percorso di recovery", "body": "Le fasi immutabili avanzano solo dopo il superamento del relativo health gate.", "planFrozen": "Piano congelato"},
     "sections": {"services": {"eyebrow": "Inventario", "title": "Servizi protetti", "body": "Collega ownership, dipendenze, obiettivi e piani di recovery."}, "environments": {"eyebrow": "Target", "title": "Ambienti", "body": "Mappa ambienti protetti e di recovery tra progetti e regioni."}, "recovery": {"eyebrow": "Orchestrazione", "title": "Esecuzioni di recovery", "body": "Pianifica, approva e segui fasi deterministiche e health gate."}, "evidence": {"eyebrow": "Audit", "title": "Evidenze di recovery", "body": "Esamina input, decisioni, azioni e risultati con integrità verificata."}, "maya": {"eyebrow": "Intelligenza operativa", "title": "Operazioni Maya", "body": "Indaga i finding e prepara remediation controllate e spiegabili."}, "settings": {"eyebrow": "Governance", "title": "Sicurezza e impostazioni", "body": "Gestisci accessi, integrazioni, policy e guardrail."}}
+  },
+  "platform": {
+    "eyebrow": "Direzione della piattaforma",
+    "title": "La tua infrastruttura. Le tue scelte.",
+    "status": "Funzionalità previste. La versione attuale offre simulazioni sicure; gli adattatori di produzione e il motore di ripristino sono in sviluppo.",
+    "privateTitle": "Progetti privati",
+    "privateBody": "Qualsiasi organizzazione può collegare repository privati autorizzati e infrastruttura mantenendo il controllo dei propri dati e conoscenze.",
+    "aiTitle": "Usa la tua IA",
+    "aiBody": "Collega IA, RAG o strumenti CLI delimitati del progetto. Mantieni le conoscenze nel tuo ambiente e condividi solo risultati autorizzati. L’IA è facoltativa.",
+    "declarativeTitle": "Percorsi YAML. Controller Go.",
+    "declarativeBody": "Dichiara il ripristino in YAML versionato. Estendi tipi di risorse e controller Go, con CRD native di Kubernetes tramite un adattatore."
   }
 }

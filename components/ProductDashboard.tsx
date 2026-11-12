@@ -6,6 +6,7 @@ export function ProductDashboard() {
 
   return (
     <div className="product-window" aria-label={t("ariaLabel")}>
+      <div className="border-b border-white/10 bg-blue-400/10 px-4 py-2 text-center text-[10px] text-blue-200">{t("preview")}</div>
       <div className="flex h-11 items-center justify-between border-b border-white/10 bg-[#151e28] px-4">
         <div className="flex gap-1.5" aria-hidden="true">
           <span className="size-2 rounded-full bg-slate-600" />
@@ -47,7 +48,7 @@ export function ProductDashboard() {
             </g>
             <g className="dashboard-node">
               <rect x="12" y="158" width="88" height="44" rx="3" />
-              <text x="56" y="176" textAnchor="middle">GCP API</text>
+              <text x="56" y="176" textAnchor="middle">CLOUD API</text>
               <text className="node-sub" x="56" y="190" textAnchor="middle">actual state</text>
             </g>
             <g className="dashboard-node dashboard-node-core">
@@ -57,11 +58,11 @@ export function ProductDashboard() {
             </g>
             <g className="dashboard-node">
               <rect x="368" y="27" width="88" height="42" rx="3" />
-              <text x="412" y="53" textAnchor="middle">CLOUD SQL</text>
+              <text x="412" y="53" textAnchor="middle">DATABASE</text>
             </g>
             <g className="dashboard-node">
               <rect x="382" y="97" width="78" height="42" rx="3" />
-              <text x="421" y="123" textAnchor="middle">GKE</text>
+              <text x="421" y="123" textAnchor="middle">CLUSTER</text>
             </g>
             <g className="dashboard-node">
               <rect x="368" y="169" width="88" height="42" rx="3" />

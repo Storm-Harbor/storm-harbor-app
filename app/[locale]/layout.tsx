@@ -23,8 +23,12 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL("https://storm-harbor.github.io"),
-    icons: {icon: "/logo.png"},
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://stormharbor.io"),
+    icons: {icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.png`},
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/${locale}/`,
+      languages: Object.fromEntries(routing.locales.map(code => [code, `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/${code}/`])),
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),

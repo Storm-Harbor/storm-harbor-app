@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Storm Harbor — Preparació contínua per a Disaster Recovery",
-    "description": "Descobreix dependències, demostra la recuperabilitat i orquestra recuperacions auditables amb Terraform, Google Cloud, Kubernetes i GitOps."
+    "description": "Descobreix dependències, demostra la recuperabilitat i orquestra recuperacions auditables amb Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes i GitOps."
   },
   "language": {
     "choose": "Tria l'idioma",
@@ -26,7 +26,8 @@
     "docs": "Documentació",
     "github": "Veure a GitHub",
     "openMenu": "Obre el menú",
-    "closeMenu": "Tanca el menú"
+    "closeMenu": "Tanca el menú",
+    "support": "Dona suport al projecte"
   },
   "hero": {
     "eyebrow": "Preparació contínua per a DR en codi obert",
@@ -36,9 +37,10 @@
     "body": "Storm Harbor connecta codi, cloud, clústers, còpies de seguretat i polítiques en una visió contínuament reconciliada de què es pot recuperar i què ho impedeix.",
     "primaryCta": "Explora el control plane",
     "secondaryCta": "Consulta el codi font",
-    "noLockIn": "Sense dependència d'una única font de veritat"
+    "noLockIn": "Sense dependència d'una única font de veritat",
+    "cloudAgnostic": "Independent del núvol"
   },
-  "integrations": {"label": "Federa les eines que ja utilitzes"},
+  "integrations": {"label": "Adaptadors de núvol i eines previstos"},
   "problem": {
     "eyebrow": "La bretxa operativa",
     "title": "Un runbook no és una prova.",
@@ -50,7 +52,7 @@
     "title": "Coneix. Demostra. Recupera.",
     "body": "Passa de plans de disaster recovery desconnectats a un model operatiu viu i basat en evidències.",
     "discoverTitle": "Descobreix dependències",
-    "discoverBody": "Crea un inventari centrat en serveis i un graf tipat des de GitHub, Terraform, GCP, Kubernetes i GitOps, amb procedència i vigència associades.",
+    "discoverBody": "Crea un inventari centrat en serveis i un graf tipat des de GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes i GitOps, amb procedència i vigència associades.",
     "proveTitle": "Demostra la recuperació",
     "proveBody": "Avalua cobertura, drift, punts de recuperació, accés, vigència de les proves i objectius mesurats. Una puntuació mai no oculta un bloqueig obligatori.",
     "orchestrateTitle": "Orquestra amb seguretat",
@@ -68,7 +70,8 @@
     "lastExercise": "Últim exercici",
     "recoveryPoint": "Punt de recuperació",
     "unknown": "Desconegut",
-    "evidence": "Evidències"
+    "evidence": "Evidències",
+    "preview": "Vista il·lustrativa · dades d’exemple"
   },
   "readiness": {
     "eyebrow": "Preparació, no teatre",
@@ -110,7 +113,7 @@
     "title": "Una visió. Decisions diferents.",
     "body": "Profunditat tècnica per a qui recupera sistemes; resultats clars per a qui respon per la continuïtat.",
     "platformTitle": "Equips de plataforma",
-    "platformBody": "Mapeja Terraform, GCP, GKE i GitOps en rutes de recuperació repetibles sense substituir els fluxos existents.",
+    "platformBody": "Mapeja Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes i GitOps en rutes de recuperació repetibles sense substituir els fluxos existents.",
     "sreTitle": "SRE i operacions",
     "sreBody": "Exercita runbooks, exposa bretxes de dependències i mesura objectius des de punts de control reals.",
     "riskTitle": "Risc i auditoria",
@@ -153,5 +156,16 @@
     "maya": {"advisory": "Mode consultiu", "title": "Un risc necessita atenció.", "body": "Maya correlaciona les evidències i explica per què un gate està bloquejat abans de proposar accions.", "finding": "Finding actual", "findingBody": "El punt de recuperació de checkout-api no té un resultat d'integritat verificat.", "humanReview": "Revisió humana obligatòria abans de remediar", "review": "Revisa amb Maya"},
     "path": {"title": "Ruta de recuperació", "body": "Les fases immutables avancen només quan passa el seu health gate.", "planFrozen": "Pla congelat"},
     "sections": {"services": {"eyebrow": "Inventari", "title": "Serveis protegits", "body": "Connecta ownership, dependències, objectius i plans de recuperació."}, "environments": {"eyebrow": "Destinacions", "title": "Entorns", "body": "Mapeja entorns protegits i de recuperació entre projectes i regions."}, "recovery": {"eyebrow": "Orquestració", "title": "Execucions de recuperació", "body": "Planifica, aprova i segueix fases deterministes i health gates."}, "evidence": {"eyebrow": "Auditoria", "title": "Evidències de recuperació", "body": "Inspecciona entrades, decisions, accions i resultats amb integritat verificada."}, "maya": {"eyebrow": "Intel·ligència operativa", "title": "Operacions de Maya", "body": "Investiga findings i prepara remediacions controlades i explicables."}, "settings": {"eyebrow": "Governança", "title": "Seguretat i configuració", "body": "Gestiona accessos, integracions, polítiques i guardrails."}}
+  },
+  "platform": {
+    "eyebrow": "Direcció de la plataforma",
+    "title": "La teva infraestructura. Les teves decisions.",
+    "status": "Capacitats previstes. La versió actual ofereix simulacions segures; els adaptadors de producció i el motor de recuperació estan en desenvolupament.",
+    "privateTitle": "Projectes privats",
+    "privateBody": "Qualsevol organització pot connectar repositoris privats autoritzats i infraestructura mantenint el control de les seves dades i coneixement.",
+    "aiTitle": "Utilitza la teva pròpia IA",
+    "aiBody": "Connecta la IA, el RAG o les eines CLI delimitades del projecte. Mantén el coneixement al teu entorn i comparteix només resultats autoritzats. La IA és opcional.",
+    "declarativeTitle": "Fluxos YAML. Controladors Go.",
+    "declarativeBody": "Declara la recuperació en YAML versionat. Amplia tipus de recursos i controladors Go, amb CRD natives de Kubernetes mitjançant un adaptador."
   }
 }
