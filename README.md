@@ -1,8 +1,7 @@
 # Storm Harbor
 
 Public website and authenticated control panel for **Storm Harbor**, an
-open-source declarative multicloud recovery platform created by
-[iot.EraX](https://ioterax.com).
+open-source declarative multicloud recovery platform.
 
 ## Requirements
 
@@ -18,8 +17,10 @@ yarn dev
 ```
 
 The app is built with Next.js 16, React 19, Tailwind CSS 4, and `next-intl`.
-All ten supported locales live under `messages/` and are validated for key
-parity during `yarn check`.
+All twenty-five supported public locales live under `messages/` and are validated
+for key and interpolation parity during `yarn check`. Public copy is translated;
+new locales retain English fallback for the transitional authenticated scaffold,
+which is excluded from the static website and is not qualified by these checks.
 
 ## Product direction and runtime boundary
 
@@ -46,10 +47,17 @@ yarn check:website
 ```
 
 `website/app` exposes only the public locale pages and reuses the existing design
-and translations. The export at `website/out` contains ten locale directories,
+and translations. The export at `website/out` contains twenty-five locale directories,
 a language-selecting root entry point, assets, a 404 page, robots and sitemap.
 Explicit locale URLs retain the chosen language. Authentication APIs, login and
 customer console routes are excluded; sign-in links are hidden in this build.
+
+The language selector shows native language names, supports keyboard navigation
+and scrolls within the viewport. Arabic, Hebrew and Urdu use right-to-left layout.
+`zh-Hans` denotes Simplified Chinese; browser matching respects script, so a
+Traditional Chinese preference does not implicitly select Simplified Chinese.
+Hindi, Hebrew, Urdu and Afrikaans are the owner-authorized choices for the
+country/region requests. Technical documentation stays in English.
 
 `PAGES_BASE_PATH` selects the repository subpath (empty for a custom domain), and
 `WEBSITE_URL` sets the absolute HTTPS site URL. The `Website` workflow validates

@@ -379,6 +379,10 @@ button:focus-visible,
   z-index: 90;
   width: max-content;
   min-width: 10.5rem;
+  max-width: calc(100vw - 2rem);
+  max-height: min(32rem, var(--radix-dropdown-menu-content-available-height, 75dvh));
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 0.4rem;
   border: 1px solid rgba(132, 167, 239, 0.22);
   border-radius: 6px;

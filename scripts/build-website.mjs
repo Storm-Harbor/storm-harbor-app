@@ -2,7 +2,7 @@ import {cp, mkdir, readFile, readdir, readlink, symlink, unlink, writeFile} from
 import {createRequire} from "node:module";
 import {resolve} from "node:path";
 import {spawnSync} from "node:child_process";
-import {defaultLocale, locales, localeStorageKey} from "../i18n/config.ts";
+import {defaultLocale, locales, localeStorageKey, matchBrowserLocale} from "../i18n/config.ts";
 
 const require = createRequire(import.meta.url);
 const root = resolve(import.meta.dirname, "..");
@@ -44,14 +44,14 @@ if (basePath) {
 const defaultMessages = JSON.parse(await readFile(resolve(root, `messages/${defaultLocale}.json`), "utf8"));
 const languageLinks = await Promise.all(locales.map(async (locale) => {
   const messages = JSON.parse(await readFile(resolve(root, `messages/${locale}.json`), "utf8"));
-  return `<li><a href="${basePath}/${locale}/" lang="${locale}">${messages.language[locale]}</a></li>`;
+  return `<li><a href="${basePath}/${locale}/" lang="${locale}" dir="auto">${messages.language[locale]}</a></li>`;
 }));
 await writeFile(resolve(output, "index.html"), `<!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Storm Harbor</title>
 <meta name="description" content="Declarative multicloud recovery for private projects."><link rel="icon" href="${basePath}/logo.png">
 <style>body{font:1rem system-ui;background:#111820;color:#fff;max-width:40rem;margin:12vh auto;padding:2rem}a{color:#84a7ef}li{margin:.7rem 0}</style></head>
 <body><h1>Storm Harbor</h1><p>${defaultMessages.language.choose}</p><ul>${languageLinks.join("")}</ul>
-<script>(()=>{const locales=${JSON.stringify(locales)};let saved;try{saved=localStorage.getItem(${JSON.stringify(localeStorageKey)})}catch{}const browser=navigator.languages||[navigator.language];const preferred=locales.includes(saved)?saved:browser.map(l=>locales.find(x=>x.toLowerCase()===l.toLowerCase())||locales.find(x=>x.split('-')[0]===l.split('-')[0])).find(Boolean)||${JSON.stringify(defaultLocale)};location.replace(${JSON.stringify(basePath)}+'/'+preferred+'/'+location.search+location.hash)})();</script>
+<script>(()=>{const locales=${JSON.stringify(locales)};const matchBrowserLocale=${matchBrowserLocale.toString()};let saved;try{saved=localStorage.getItem(${JSON.stringify(localeStorageKey)})}catch{}const browser=navigator.languages||[navigator.language];const preferred=locales.includes(saved)?saved:browser.map(matchBrowserLocale).find(Boolean)||${JSON.stringify(defaultLocale)};location.replace(${JSON.stringify(basePath)}+'/'+preferred+'/'+location.search+location.hash)})();</script>
 </body></html>`);
 await writeFile(resolve(output, ".nojekyll"), "");
 await writeFile(resolve(output, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${new URL("sitemap.xml", siteUrl).href}\n`);

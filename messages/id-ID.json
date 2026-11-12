@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Kesiapan pemulihan bencana berkelanjutan",
+    "description": "Temukan dependensi, buktikan kemampuan pemulihan, dan koordinasikan pemulihan yang dapat diaudit di Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes, dan GitOps."
+  },
+  "language": {
+    "choose": "Pilih bahasa",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "ca-ES": "Català",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Русский",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+    "uk-UA": "Українська",
+    "et-EE": "Eesti",
+    "pl-PL": "Polski",
+    "bg-BG": "Български",
+    "zh-Hans": "简体中文",
+    "hi-IN": "हिन्दी",
+    "ja-JP": "日本語",
+    "he-IL": "עברית",
+    "ur-PK": "اردو",
+    "af-ZA": "Afrikaans",
+    "ar": "العربية",
+    "ko-KR": "한국어",
+    "tr-TR": "Türkçe",
+    "id-ID": "Bahasa Indonesia",
+    "vi-VN": "Tiếng Việt"
+  },
+  "nav": {
+    "primaryLabel": "Navigasi utama",
+    "skipContent": "Langsung ke konten",
+    "product": "Produk",
+    "capabilities": "Kemampuan",
+    "architecture": "Arsitektur",
+    "openSource": "Sumber terbuka",
+    "docs": "Dokumentasi",
+    "github": "Lihat di GitHub",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "support": "Dukung proyek"
+  },
+  "hero": {
+    "eyebrow": "Kesiapan pemulihan berkelanjutan dengan sumber terbuka",
+    "status": "Kerangka simulasi aman",
+    "title": "Pemulihan bukan lagi",
+    "titleAccent": "sekadar janji.",
+    "body": "Storm Harbor menghubungkan kode, cloud, klaster, cadangan, dan kebijakan dalam gambaran yang terus diselaraskan tentang apa yang dapat dipulihkan dan penghalangnya.",
+    "primaryCta": "Jelajahi bidang kendali",
+    "secondaryCta": "Lihat kode sumber",
+    "noLockIn": "Tanpa ketergantungan pada satu sumber kebenaran",
+    "cloudAgnostic": "Tidak terikat cloud"
+  },
+  "integrations": {
+    "label": "Adaptor cloud dan alat yang direncanakan"
+  },
+  "problem": {
+    "eyebrow": "Kesenjangan operasional",
+    "title": "Panduan bukan bukti.",
+    "body": "Repositori menyatakan tujuan, API menampilkan keadaan aktual, sedangkan cadangan dan bukti pengujian tersebar. Storm Harbor menghubungkannya tanpa mengambil kewenangan sistem pemilik.",
+    "question": "Bisakah layanan ini dipulihkan sekarang dalam RTO dan RPO yang disepakati?"
+  },
+  "capabilities": {
+    "eyebrow": "Satu bidang kendali · tiga hasil",
+    "title": "Ketahui. Buktikan. Pulihkan.",
+    "body": "Beralih dari rencana terpisah menuju model operasional yang terus diperbarui berdasarkan bukti.",
+    "discoverTitle": "Temukan dependensi",
+    "discoverBody": "Bangun inventaris berpusat pada layanan dan graf dependensi bertipe dari GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes, dan GitOps beserta asal serta kemutakhirannya.",
+    "proveTitle": "Buktikan kemampuan pemulihan",
+    "proveBody": "Nilai cakupan, penyimpangan, titik pemulihan, akses, dan sasaran terukur. Skor tidak menyembunyikan pemeriksaan wajib yang terblokir.",
+    "orchestrateTitle": "Koordinasikan dengan aman",
+    "orchestrateBody": "Tetapkan revisi tetap, jalankan tahap idempoten melalui pemeriksaan kesehatan, hentikan dengan aman, serta pertahankan pembersihan dan bukti untuk setiap hasil."
+  },
+  "dashboard": {
+    "ariaLabel": "Pratinjau kesiapan pemulihan Storm Harbor",
+    "graphAriaLabel": "Graf yang menghubungkan sumber otoritatif dengan bukti pemulihan",
+    "reconciled": "Diselaraskan",
+    "dependencyGraph": "Graf dependensi",
+    "readiness": "Kesiapan pemulihan",
+    "blocked": "Terblokir",
+    "coverage": "Cakupan rencana",
+    "sourceFreshness": "Kemutakhiran sumber",
+    "lastExercise": "Latihan terakhir",
+    "recoveryPoint": "Titik pemulihan",
+    "unknown": "Tidak diketahui",
+    "evidence": "Bukti",
+    "preview": "Pratinjau ilustratif · data contoh"
+  },
+  "readiness": {
+    "eyebrow": "Kesiapan yang dibuktikan",
+    "title": "Skor yang mengarahkan keputusan.",
+    "body": "Lihat gambaran umum tanpa kehilangan ketepatan teknis. Storm Harbor menampilkan pemeriksaan wajib dan menjelaskan setiap temuan serta penghalang layanan.",
+    "pointOne": "RTO dan RPO layanan terkait titik pemulihan aktual",
+    "pointTwo": "Setiap hubungan memuat sumber, keyakinan, dan waktu pengamatan",
+    "pointThree": "Bukti bertanda tangan menghubungkan masukan, keputusan, pelaku, tindakan, dan hasil"
+  },
+  "architecture": {
+    "eyebrow": "Arsitektur",
+    "title": "Dirancang secara federatif. Di luar dampak kegagalan.",
+    "body": "Setiap sistem tetap berwenang dalam ranahnya. Bidang kendali membangun indeks terkini, membekukan rencana, dan mengoordinasikan adaptor berversi.",
+    "sourcesTitle": "Sumber otoritatif",
+    "sourcesBody": "Baca keadaan yang diinginkan dan aktual, kebijakan, serta titik pemulihan di tempat asalnya.",
+    "controlTitle": "Hubungkan dan nilai",
+    "controlBody": "Normalkan aset, petakan dependensi, lalu nilai kemutakhiran, penyimpangan, dan kebijakan.",
+    "recoverTitle": "Pulihkan melalui gerbang pemeriksaan",
+    "recoverBody": "Jalankan tahap idempoten dengan persetujuan, batas waktu, daftar izin, dan penghentian darurat.",
+    "proofTitle": "Validasi dan buktikan",
+    "proofBody": "Ukur sasaran dan simpan bukti tetap bertanda tangan di luar ranah kegagalan.",
+    "outside": "Kendali pemulihan berjalan di luar klaster yang mungkin harus dibangunnya kembali."
+  },
+  "principles": {
+    "eyebrow": "Pengamanan bawaan",
+    "title": "Aman sejak arsitektur.",
+    "body": "Pemulihan nyata tidak aktif secara tersirat. Izin berumur pendek, keputusan tidak pasti ditolak, dan setiap perubahan dapat dihentikan serta diaudit.",
+    "federatedTitle": "Kewenangan terdistribusi",
+    "federatedBody": "Git, API cloud, brankas rahasia, dan penyimpanan bukti mempertahankan kepemilikan ranahnya.",
+    "identityTitle": "Identitas sementara",
+    "identityBody": "OIDC dan identitas beban kerja menggantikan kunci cloud permanen serta kredensial yang terlalu luas.",
+    "closedTitle": "Tolak saat tidak pasti",
+    "closedBody": "Bukti hilang, data usang, kegagalan kebijakan, atau sumber tidak tersedia tidak pernah dianggap sehat.",
+    "evidenceTitle": "Utamakan bukti",
+    "evidenceBody": "Masukan, keputusan kebijakan, waktu, tindakan, dan hasil dihubungkan serta diperiksa integritasnya."
+  },
+  "audience": {
+    "eyebrow": "Keyakinan bersama",
+    "title": "Satu pandangan. Beragam keputusan.",
+    "body": "Kedalaman teknis bagi pelaksana pemulihan dan hasil jelas bagi penanggung jawab kelangsungan.",
+    "platformTitle": "Tim platform",
+    "platformBody": "Petakan Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes, dan GitOps ke jalur pemulihan berulang tanpa mengganti alur kerja.",
+    "sreTitle": "SRE dan operasional",
+    "sreBody": "Latih panduan, ungkap celah dependensi, dan ukur sasaran melalui titik pemeriksaan nyata.",
+    "riskTitle": "Risiko dan audit",
+    "riskBody": "Telusuri setiap keputusan ke sumber, kebijakan, persetujuan, identitas, bukti, dan revisi tetap.",
+    "leadersTitle": "Pemimpin rekayasa",
+    "leadersBody": "Prioritaskan investasi berdasarkan kesiapan layanan, penghalang, dan kemutakhiran pengujian."
+  },
+  "openSource": {
+    "eyebrow": "Sumber terbuka · Apache License 2.0",
+    "title": "Periksa mekanisme pemulihan.",
+    "body": "Infrastruktur kelangsungan kritis harus mudah dipahami, diperluas, dan ditinjau. Jelajahi arsitektur, jalankan simulasi aman, dan bantu membentuk kontrak adaptor secara terbuka.",
+    "githubCta": "Jelajahi di GitHub"
+  },
+  "finalCta": {
+    "title": "Jadikan kemampuan pemulihan sebuah fakta.",
+    "body": "Mulai dari arsitektur dan kerangka simulasi aman. Lihat bagaimana Storm Harbor mengubah keadaan terpencar menjadi kesiapan berkelanjutan.",
+    "docs": "Baca dokumentasi",
+    "github": "Buka repositori"
+  },
+  "footer": {
+    "tagline": "Temukan dependensi. Buktikan kemampuan pemulihan. Koordinasikan pemulihan.",
+    "openSource": "Kesiapan pemulihan bencana berkelanjutan dengan sumber terbuka"
+  },
+  "auth": {
+    "shellEyebrow": "Storm Harbor control plane",
+    "shellTitle": "Operate recovery with confidence.",
+    "shellBody": "Enter the operational workspace where teams map dependencies, prove readiness and coordinate auditable recovery.",
+    "shellPointOne": "One identity across the Storm Harbor ecosystem",
+    "shellPointTwo": "MFA challenges and credentials remain in api-auth",
+    "shellPointThree": "Product access is isolated by organisation and project",
+    "securityEyebrow": "Identity protection",
+    "securityTitle": "A secure gate before every action.",
+    "securityBody": "Authentication is separated from recovery execution so access can be revoked without weakening the control plane.",
+    "securityPointOne": "Short-lived, HttpOnly product sessions",
+    "securityPointTwo": "TOTP and single-use recovery codes",
+    "securityPointThree": "Correlated and auditable access decisions",
+    "loginEyebrow": "Welcome back",
+    "loginTitle": "Sign in",
+    "loginBody": "Use your Storm Harbor identity to continue to the control plane.",
+    "registerEyebrow": "Create your identity",
+    "registerTitle": "Start with Storm Harbor",
+    "registerBody": "Create an identity now. Organisation and project access are granted separately.",
+    "publicEmailAllowed": "A corporate email is not required. Any valid email address can be used.",
+    "verifyEmailEyebrow": "Confirm your identity",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailBody": "Enter the six-digit code sent by Storm Harbor.",
+    "mfaTitle": "Two-factor authentication",
+    "mfaBody": "Enter the code from your authenticator or use one of your single-use recovery codes.",
+    "email": "Email address",
+    "recoveryEmail": "Recovery email",
+    "recoveryEmailHint": "Use a different address that you can access if the primary account is unavailable.",
+    "password": "Password",
+    "passwordHint": "Use at least 8 characters. The server applies the authoritative password policy.",
+    "securityCode": "Security code",
+    "verificationCode": "Verification code",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account…",
+    "confirmEmail": "Confirm email",
+    "verifyAndContinue": "Verify and continue",
+    "verifying": "Verifying…",
+    "resendCode": "Resend code",
+    "verificationSent": "If the identity exists, a new verification code has been sent.",
+    "noAccount": "New to Storm Harbor?",
+    "hasAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "verifyNow": "Verify now.",
+    "sessionSecurity": "Credentials are sent only to the Storm Harbor BFF. Access tokens are never exposed to browser storage.",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "emailNotVerified": "Confirm your primary email before signing in.",
+      "rateLimited": "Too many attempts. Wait a moment and try again.",
+      "authUnavailable": "The identity service is temporarily unavailable.",
+      "genericError": "The request could not be completed. Try again.",
+      "identityExists": "An identity already exists for this email. Sign in instead.",
+      "invalidRegistration": "Review the email addresses and password, then try again.",
+      "recoveryMustDiffer": "The recovery email must be different from the primary email.",
+      "invalidMfaCode": "The security code or MFA challenge is invalid or expired.",
+      "invalidVerificationCode": "The verification code is invalid or expired."
+    }
+  },
+  "console": {
+    "primaryNavigation": "Control plane navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "organization": "Organisation",
+    "project": "Project",
+    "production": "Production",
+    "operational": "Operational",
+    "account": "Account",
+    "controlPlane": "Control plane",
+    "signOut": "Sign out",
+    "lastSync": "Last sync",
+    "viewAll": "View all",
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "environments": "Environments",
+      "recovery": "Recovery",
+      "evidence": "Evidence",
+      "maya": "Maya operations",
+      "settings": "Security & settings"
+    },
+    "overview": {
+      "eyebrow": "Recovery operations",
+      "title": "Control plane overview",
+      "body": "A service-centred view of recoverability, dependencies, active blockers and recent recovery evidence.",
+      "newRecovery": "Plan recovery"
+    },
+    "preview": {
+      "label": "Preview workspace",
+      "body": "Sample operational data is shown until the Storm Harbor APIs are connected."
+    },
+    "metrics": {
+      "label": "Recovery readiness metrics",
+      "readiness": "Readiness",
+      "services": "Protected services",
+      "lastExercise": "Last exercise",
+      "evidence": "Evidence bundles",
+      "blocked": "One mandatory gate blocked",
+      "covered": "All services have a plan",
+      "withinCadence": "Within the exercise cadence",
+      "integrityChecked": "Integrity checked"
+    },
+    "status": {
+      "blocked": "Blocked",
+      "ready": "Ready"
+    },
+    "services": {
+      "title": "Service readiness",
+      "body": "Critical services ordered by recovery status.",
+      "service": "Service",
+      "status": "Status",
+      "readiness": "Readiness"
+    },
+    "maya": {
+      "advisory": "Advisory mode",
+      "title": "One risk needs attention.",
+      "body": "Maya correlates current evidence and explains why a recovery gate is blocked before any action is proposed.",
+      "finding": "Current finding",
+      "findingBody": "The checkout-api recovery point has no verified integrity result.",
+      "humanReview": "Human review required before remediation",
+      "review": "Review with Maya"
+    },
+    "path": {
+      "title": "Recovery path",
+      "body": "Immutable phases advance only after their health gate passes.",
+      "planFrozen": "Plan frozen"
+    },
+    "sections": {
+      "services": {
+        "eyebrow": "Inventory",
+        "title": "Protected services",
+        "body": "Connect service ownership, dependencies, objectives and recovery plans."
+      },
+      "environments": {
+        "eyebrow": "Targets",
+        "title": "Environments",
+        "body": "Map protected and recovery environments across projects and regions."
+      },
+      "recovery": {
+        "eyebrow": "Orchestration",
+        "title": "Recovery runs",
+        "body": "Plan, approve and follow deterministic recovery phases and health gates."
+      },
+      "evidence": {
+        "eyebrow": "Audit",
+        "title": "Recovery evidence",
+        "body": "Inspect integrity-checked inputs, decisions, actions and measured results."
+      },
+      "maya": {
+        "eyebrow": "Operational intelligence",
+        "title": "Maya operations",
+        "body": "Investigate findings and prepare controlled, explainable remediation actions."
+      },
+      "settings": {
+        "eyebrow": "Governance",
+        "title": "Security and settings",
+        "body": "Manage project access, integrations, policies and recovery guardrails."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "Arah platform",
+    "title": "Infrastruktur Anda. Pilihan Anda.",
+    "status": "Kemampuan yang dirancang. Versi saat ini menyediakan simulasi aman; adaptor produksi dan runtime pemulihan sedang dikembangkan.",
+    "privateTitle": "Proyek privat",
+    "privateBody": "Organisasi dapat menghubungkan repositori privat dan infrastruktur berizin sambil mempertahankan kendali atas data serta pengetahuan.",
+    "aiTitle": "Gunakan AI sendiri",
+    "aiBody": "Hubungkan AI, RAG, atau CLI terbatas milik proyek. Pengetahuan tetap di lingkungan Anda dan hanya hasil berizin dibagikan. AI bersifat opsional.",
+    "declarativeTitle": "Alur YAML. Pengendali Go.",
+    "declarativeBody": "Deklarasikan pemulihan dalam YAML berversi. Perluas jenis sumber daya dan pengendali Go dengan CRD Kubernetes native melalui adaptor."
+  }
+}

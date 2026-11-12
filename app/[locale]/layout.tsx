@@ -4,6 +4,7 @@ import {getTranslations, setRequestLocale} from "next-intl/server";
 import {notFound} from "next/navigation";
 import {LocalStorageSync} from "@/components/LocalStorageSync";
 import {routing} from "@/i18n/routing";
+import {localeDirection} from "@/i18n/config";
 import "../globals.css";
 
 type Props = {
@@ -44,7 +45,7 @@ export default async function LocaleLayout({children, params}: Props) {
   const t = await getTranslations({locale, namespace: "nav"});
 
   return (
-    <html lang={locale} className="scroll-smooth">
+    <html lang={locale} dir={localeDirection(locale)} className="scroll-smooth">
       <body>
         <NextIntlClientProvider>
           <a href="#main-content" className="skip-link">{t("skipContent")}</a>

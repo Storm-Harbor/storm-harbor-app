@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Pidev avariitaastevalmidus",
+    "description": "Avasta sõltuvused, tõenda taastatavust ja juhi auditeeritavat taastamist: Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes ja GitOps."
+  },
+  "language": {
+    "choose": "Vali keel",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "ca-ES": "Català",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Русский",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+    "uk-UA": "Українська",
+    "et-EE": "Eesti",
+    "pl-PL": "Polski",
+    "bg-BG": "Български",
+    "zh-Hans": "简体中文",
+    "hi-IN": "हिन्दी",
+    "ja-JP": "日本語",
+    "he-IL": "עברית",
+    "ur-PK": "اردو",
+    "af-ZA": "Afrikaans",
+    "ar": "العربية",
+    "ko-KR": "한국어",
+    "tr-TR": "Türkçe",
+    "id-ID": "Bahasa Indonesia",
+    "vi-VN": "Tiếng Việt"
+  },
+  "nav": {
+    "primaryLabel": "Põhinavigatsioon",
+    "skipContent": "Liigu sisu juurde",
+    "product": "Toode",
+    "capabilities": "Võimalused",
+    "architecture": "Arhitektuur",
+    "openSource": "Avatud lähtekood",
+    "docs": "Dokumentatsioon",
+    "github": "Vaata GitHubis",
+    "openMenu": "Ava menüü",
+    "closeMenu": "Sulge menüü",
+    "support": "Toeta projekti"
+  },
+  "hero": {
+    "eyebrow": "Avatud lähtekoodiga pidev taastevalmidus",
+    "status": "Ohutu simulatsiooni raamistik",
+    "title": "Taastamine pole enam",
+    "titleAccent": "pelgalt lubadus.",
+    "body": "Storm Harbor seob koodi, pilved, klastrid, varukoopiad ja poliitikad pidevalt kooskõlastatud ülevaateks sellest, mida saab taastada ning mis seda takistab.",
+    "primaryCta": "Tutvu juhtimistasandiga",
+    "secondaryCta": "Vaata lähtekoodi",
+    "noLockIn": "Ilma ühe tõeallika külge lukustumata",
+    "cloudAgnostic": "Pilveteenusest sõltumatu"
+  },
+  "integrations": {
+    "label": "Kavandatud pilve- ja tööriistaadapterid"
+  },
+  "problem": {
+    "eyebrow": "Lünk töökorras",
+    "title": "Juhend ei ole tõend.",
+    "body": "Hoidlad kirjeldavad soovitut, API-d tegelikku olekut, varukoopiad ja testitõendid asuvad mujal. Storm Harbor seob need andmed nende omanikelt otsustusõigust võtmata.",
+    "question": "Kas teenuse saab praegu taastada kokkulepitud RTO ja RPO piires?"
+  },
+  "capabilities": {
+    "eyebrow": "Üks juhtimistasand · kolm tulemust",
+    "title": "Tea. Tõenda. Taasta.",
+    "body": "Liigu eraldiseisvatelt taasteplaanidelt pidevale tõenduspõhisele töökorraldusele.",
+    "discoverTitle": "Avasta sõltuvused",
+    "discoverBody": "Koosta teenusepõhine inventar ja tüübistatud sõltuvusgraaf GitHubi, Terraformi, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetese ja GitOpsi põhjal koos päritolu ja ajakohasusega.",
+    "proveTitle": "Tõenda taastatavust",
+    "proveBody": "Hinda katvust, kõrvalekaldeid, taastepunkte, ligipääsu ja mõõdetud eesmärke. Koondhinne ei peida kohustuslikke tõkkeid.",
+    "orchestrateTitle": "Juhi turvaliselt",
+    "orchestrateBody": "Fikseeri muutumatud versioonid, käivita idempotentsed etapid kontrollväravatega, peatu ohutult ning säilita koristus ja tõendid iga tulemuse korral."
+  },
+  "dashboard": {
+    "ariaLabel": "Storm Harbori taastevalmiduse eelvaade",
+    "graphAriaLabel": "Sõltuvusgraaf autoriteetsetest allikatest taastetõenditeni",
+    "reconciled": "Kooskõlastatud",
+    "dependencyGraph": "Sõltuvusgraaf",
+    "readiness": "Taastevalmidus",
+    "blocked": "Blokeeritud",
+    "coverage": "Plaani katvus",
+    "sourceFreshness": "Allikate ajakohasus",
+    "lastExercise": "Viimane õppus",
+    "recoveryPoint": "Taastepunkt",
+    "unknown": "Teadmata",
+    "evidence": "Tõendid",
+    "preview": "Illustratiivne eelvaade · näidisandmed"
+  },
+  "readiness": {
+    "eyebrow": "Tõendatud valmidus",
+    "title": "Hinne, millel on tagajärjed.",
+    "body": "Näe üldpilti tehnilist täpsust kaotamata. Storm Harbor näitab kohustuslikke kontrolle ning selgitab iga leidu ja blokeeringut.",
+    "pointOne": "Teenuse RTO ja RPO on seotud tegelike taastepunktidega",
+    "pointTwo": "Iga seos sisaldab allikat, usaldusväärsust ja vaatlusaega",
+    "pointThree": "Allkirjastatud tõendid seovad sisendi, otsuse, tegija, toimingu ja tulemuse"
+  },
+  "architecture": {
+    "eyebrow": "Arhitektuur",
+    "title": "Hajutatud ülesehitus. Väljaspool rikkepiirkonda.",
+    "body": "Iga süsteem jääb oma valdkonna autoriteetseks allikaks. Juhtimistasand loob ajakohase indeksi, fikseerib plaani ja koordineerib versioonitud adaptereid.",
+    "sourcesTitle": "Autoriteetsed allikad",
+    "sourcesBody": "Loe soovitud ja tegelikku olekut, poliitikaid ja taastepunkte nende asukohast.",
+    "controlTitle": "Seosta ja hinda",
+    "controlBody": "Ühtlusta ressursid, kaardista sõltuvused ning hinda ajakohasust, kõrvalekaldeid ja poliitikaid.",
+    "recoverTitle": "Taasta kontrollväravate kaudu",
+    "recoverBody": "Käivita idempotentsed etapid kinnituste, ajalimiitide, lubatud loendite ja hädaseiskamisega.",
+    "proofTitle": "Kontrolli ja tõenda",
+    "proofBody": "Mõõda eesmärke ning hoia allkirjastatud muutumatuid tõendeid väljaspool rikkedomeeni.",
+    "outside": "Taastejuhtimine töötab väljaspool klastrit, mida võib olla vaja taastada."
+  },
+  "principles": {
+    "eyebrow": "Sisseehitatud kaitsepiirid",
+    "title": "Turvalisus algab arhitektuurist.",
+    "body": "Päris taastamine ei käivitu vaikimisi. Õigused aeguvad kiiresti, ebaselged otsused keelatakse ja iga muudatus on peatatav ning auditeeritav.",
+    "federatedTitle": "Hajutatud vastutus",
+    "federatedBody": "Git, pilve-API-d, saladuste hoidlad ja tõendihoidlad säilitavad oma valdkonna kontrolli.",
+    "identityTitle": "Ajutine identiteet",
+    "identityBody": "OIDC ja töökoormuse identiteet asendavad püsivad pilvevõtmed ning laia ulatusega mandaadid.",
+    "closedTitle": "Ebaselguse korral keeld",
+    "closedBody": "Puuduvad tõendid, aegunud andmed, poliitikavead või kättesaamatu allikas ei paista kunagi tervena.",
+    "evidenceTitle": "Tõendid esikohal",
+    "evidenceBody": "Sisendid, poliitikaotsused, ajad, toimingud ja tulemused on seotud ning tervikluskontrollitud."
+  },
+  "audience": {
+    "eyebrow": "Ühine kindlustunne",
+    "title": "Üks vaade. Erinevad otsused.",
+    "body": "Tehniline sügavus taastajatele ja selged tulemused talitluspidevuse eest vastutajatele.",
+    "platformTitle": "Platvormimeeskonnad",
+    "platformBody": "Seo Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes ja GitOps korratavateks taasteteedeks olemasolevaid töövooge asendamata.",
+    "sreTitle": "SRE ja käitus",
+    "sreBody": "Harjuta juhendeid, leia sõltuvuste lüngad ja mõõda taaste-eesmärke tegelike kontrollpunktide põhjal.",
+    "riskTitle": "Risk ja audit",
+    "riskBody": "Jälita iga otsust allika, poliitika, kinnituse, identiteedi, tõendi ja muutumatu versioonini.",
+    "leadersTitle": "Arendusjuhid",
+    "leadersBody": "Sea investeeringute prioriteedid teenusevalmiduse, tõkete ja testide värskuse järgi."
+  },
+  "openSource": {
+    "eyebrow": "Avatud lähtekood · Apache License 2.0",
+    "title": "Vaata taastemootori sisse.",
+    "body": "Kriitiline talitluspidevuse taristu peab olema mõistetav, laiendatav ja kontrollitav. Uuri arhitektuuri, käivita ohutuid simulatsioone ning aita adapterilepinguid kujundada.",
+    "githubCta": "Tutvu GitHubis"
+  },
+  "finalCta": {
+    "title": "Muuda taastatavus tõsiasjaks.",
+    "body": "Alusta arhitektuurist ja ohutust simulatsiooniraamistikust. Vaata, kuidas Storm Harbor muudab killustatud oleku pidevaks taastevalmiduseks.",
+    "docs": "Loe dokumentatsiooni",
+    "github": "Ava hoidla"
+  },
+  "footer": {
+    "tagline": "Avasta sõltuvused. Tõenda taastatavust. Juhi taastamist.",
+    "openSource": "Avatud lähtekoodiga pidev avariitaastevalmidus"
+  },
+  "auth": {
+    "shellEyebrow": "Storm Harbor control plane",
+    "shellTitle": "Operate recovery with confidence.",
+    "shellBody": "Enter the operational workspace where teams map dependencies, prove readiness and coordinate auditable recovery.",
+    "shellPointOne": "One identity across the Storm Harbor ecosystem",
+    "shellPointTwo": "MFA challenges and credentials remain in api-auth",
+    "shellPointThree": "Product access is isolated by organisation and project",
+    "securityEyebrow": "Identity protection",
+    "securityTitle": "A secure gate before every action.",
+    "securityBody": "Authentication is separated from recovery execution so access can be revoked without weakening the control plane.",
+    "securityPointOne": "Short-lived, HttpOnly product sessions",
+    "securityPointTwo": "TOTP and single-use recovery codes",
+    "securityPointThree": "Correlated and auditable access decisions",
+    "loginEyebrow": "Welcome back",
+    "loginTitle": "Sign in",
+    "loginBody": "Use your Storm Harbor identity to continue to the control plane.",
+    "registerEyebrow": "Create your identity",
+    "registerTitle": "Start with Storm Harbor",
+    "registerBody": "Create an identity now. Organisation and project access are granted separately.",
+    "publicEmailAllowed": "A corporate email is not required. Any valid email address can be used.",
+    "verifyEmailEyebrow": "Confirm your identity",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailBody": "Enter the six-digit code sent by Storm Harbor.",
+    "mfaTitle": "Two-factor authentication",
+    "mfaBody": "Enter the code from your authenticator or use one of your single-use recovery codes.",
+    "email": "Email address",
+    "recoveryEmail": "Recovery email",
+    "recoveryEmailHint": "Use a different address that you can access if the primary account is unavailable.",
+    "password": "Password",
+    "passwordHint": "Use at least 8 characters. The server applies the authoritative password policy.",
+    "securityCode": "Security code",
+    "verificationCode": "Verification code",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account…",
+    "confirmEmail": "Confirm email",
+    "verifyAndContinue": "Verify and continue",
+    "verifying": "Verifying…",
+    "resendCode": "Resend code",
+    "verificationSent": "If the identity exists, a new verification code has been sent.",
+    "noAccount": "New to Storm Harbor?",
+    "hasAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "verifyNow": "Verify now.",
+    "sessionSecurity": "Credentials are sent only to the Storm Harbor BFF. Access tokens are never exposed to browser storage.",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "emailNotVerified": "Confirm your primary email before signing in.",
+      "rateLimited": "Too many attempts. Wait a moment and try again.",
+      "authUnavailable": "The identity service is temporarily unavailable.",
+      "genericError": "The request could not be completed. Try again.",
+      "identityExists": "An identity already exists for this email. Sign in instead.",
+      "invalidRegistration": "Review the email addresses and password, then try again.",
+      "recoveryMustDiffer": "The recovery email must be different from the primary email.",
+      "invalidMfaCode": "The security code or MFA challenge is invalid or expired.",
+      "invalidVerificationCode": "The verification code is invalid or expired."
+    }
+  },
+  "console": {
+    "primaryNavigation": "Control plane navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "organization": "Organisation",
+    "project": "Project",
+    "production": "Production",
+    "operational": "Operational",
+    "account": "Account",
+    "controlPlane": "Control plane",
+    "signOut": "Sign out",
+    "lastSync": "Last sync",
+    "viewAll": "View all",
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "environments": "Environments",
+      "recovery": "Recovery",
+      "evidence": "Evidence",
+      "maya": "Maya operations",
+      "settings": "Security & settings"
+    },
+    "overview": {
+      "eyebrow": "Recovery operations",
+      "title": "Control plane overview",
+      "body": "A service-centred view of recoverability, dependencies, active blockers and recent recovery evidence.",
+      "newRecovery": "Plan recovery"
+    },
+    "preview": {
+      "label": "Preview workspace",
+      "body": "Sample operational data is shown until the Storm Harbor APIs are connected."
+    },
+    "metrics": {
+      "label": "Recovery readiness metrics",
+      "readiness": "Readiness",
+      "services": "Protected services",
+      "lastExercise": "Last exercise",
+      "evidence": "Evidence bundles",
+      "blocked": "One mandatory gate blocked",
+      "covered": "All services have a plan",
+      "withinCadence": "Within the exercise cadence",
+      "integrityChecked": "Integrity checked"
+    },
+    "status": {
+      "blocked": "Blocked",
+      "ready": "Ready"
+    },
+    "services": {
+      "title": "Service readiness",
+      "body": "Critical services ordered by recovery status.",
+      "service": "Service",
+      "status": "Status",
+      "readiness": "Readiness"
+    },
+    "maya": {
+      "advisory": "Advisory mode",
+      "title": "One risk needs attention.",
+      "body": "Maya correlates current evidence and explains why a recovery gate is blocked before any action is proposed.",
+      "finding": "Current finding",
+      "findingBody": "The checkout-api recovery point has no verified integrity result.",
+      "humanReview": "Human review required before remediation",
+      "review": "Review with Maya"
+    },
+    "path": {
+      "title": "Recovery path",
+      "body": "Immutable phases advance only after their health gate passes.",
+      "planFrozen": "Plan frozen"
+    },
+    "sections": {
+      "services": {
+        "eyebrow": "Inventory",
+        "title": "Protected services",
+        "body": "Connect service ownership, dependencies, objectives and recovery plans."
+      },
+      "environments": {
+        "eyebrow": "Targets",
+        "title": "Environments",
+        "body": "Map protected and recovery environments across projects and regions."
+      },
+      "recovery": {
+        "eyebrow": "Orchestration",
+        "title": "Recovery runs",
+        "body": "Plan, approve and follow deterministic recovery phases and health gates."
+      },
+      "evidence": {
+        "eyebrow": "Audit",
+        "title": "Recovery evidence",
+        "body": "Inspect integrity-checked inputs, decisions, actions and measured results."
+      },
+      "maya": {
+        "eyebrow": "Operational intelligence",
+        "title": "Maya operations",
+        "body": "Investigate findings and prepare controlled, explainable remediation actions."
+      },
+      "settings": {
+        "eyebrow": "Governance",
+        "title": "Security and settings",
+        "body": "Manage project access, integrations, policies and recovery guardrails."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "Platvormi suund",
+    "title": "Sinu taristu. Sinu valikud.",
+    "status": "Kavandatud võimalused. Praegune versioon pakub ohutuid simulatsioone; tootmisadapterid ja taastemootor on arendamisel.",
+    "privateTitle": "Privaatsed projektid",
+    "privateBody": "Organisatsioonid saavad ühendada volitatud privaatsed hoidlad ja taristu, säilitades kontrolli andmete ja teadmiste üle.",
+    "aiTitle": "Kasuta oma tehisintellekti",
+    "aiBody": "Ühenda projekti tehisintellekt, RAG või piiratud CLI. Teadmised jäävad sinu keskkonda ja jagatakse ainult lubatud tulemusi. Tehisintellekt on valikuline.",
+    "declarativeTitle": "YAML-teekonnad. Go-kontrollerid.",
+    "declarativeBody": "Kirjelda taastamist versioonitud YAML-is. Laienda ressursitüüpe ja Go-kontrollereid; Kubernetese natiivsed CRD-d toimivad adapteri kaudu."
+  }
+}

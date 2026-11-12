@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Storm Harbor — आपदा पुनर्प्राप्ति की निरंतर तैयारी",
+    "description": "Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes और GitOps में निर्भरताएँ खोजें, पुनर्प्राप्ति क्षमता जाँचें और लेखापरीक्षण योग्य पुनर्प्राप्ति संचालित करें।"
+  },
+  "language": {
+    "choose": "भाषा चुनें",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "ca-ES": "Català",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Русский",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+    "uk-UA": "Українська",
+    "et-EE": "Eesti",
+    "pl-PL": "Polski",
+    "bg-BG": "Български",
+    "zh-Hans": "简体中文",
+    "hi-IN": "हिन्दी",
+    "ja-JP": "日本語",
+    "he-IL": "עברית",
+    "ur-PK": "اردو",
+    "af-ZA": "Afrikaans",
+    "ar": "العربية",
+    "ko-KR": "한국어",
+    "tr-TR": "Türkçe",
+    "id-ID": "Bahasa Indonesia",
+    "vi-VN": "Tiếng Việt"
+  },
+  "nav": {
+    "primaryLabel": "मुख्य नेविगेशन",
+    "skipContent": "सामग्री पर जाएँ",
+    "product": "उत्पाद",
+    "capabilities": "क्षमताएँ",
+    "architecture": "आर्किटेक्चर",
+    "openSource": "ओपन सोर्स",
+    "docs": "दस्तावेज़",
+    "github": "GitHub पर देखें",
+    "openMenu": "मेनू खोलें",
+    "closeMenu": "मेनू बंद करें",
+    "support": "परियोजना को सहयोग दें"
+  },
+  "hero": {
+    "eyebrow": "ओपन सोर्स निरंतर पुनर्प्राप्ति तैयारी",
+    "status": "सुरक्षित सिमुलेशन ढाँचा",
+    "title": "पुनर्प्राप्ति अब",
+    "titleAccent": "सिर्फ़ वादा नहीं।",
+    "body": "Storm Harbor कोड, क्लाउड, क्लस्टर, बैकअप और नीतियों को जोड़कर लगातार समन्वित दृश्य देता है कि क्या पुनर्प्राप्त हो सकता है और क्या बाधाएँ हैं।",
+    "primaryCta": "नियंत्रण तल देखें",
+    "secondaryCta": "स्रोत कोड देखें",
+    "noLockIn": "एक सत्य स्रोत पर निर्भरता नहीं",
+    "cloudAgnostic": "क्लाउड से स्वतंत्र"
+  },
+  "integrations": {
+    "label": "नियोजित क्लाउड और उपकरण अडैप्टर"
+  },
+  "problem": {
+    "eyebrow": "संचालन का अंतर",
+    "title": "रनबुक प्रमाण नहीं है।",
+    "body": "रिपॉज़िटरी इच्छित स्थिति बताती हैं, API वास्तविक स्थिति दिखाते हैं और बैकअप व परीक्षण प्रमाण अलग रहते हैं। Storm Harbor मूल प्रणालियों का अधिकार बनाए रखते हुए इन्हें जोड़ता है।",
+    "question": "क्या यह सेवा अभी सहमत RTO और RPO के भीतर बहाल हो सकती है?"
+  },
+  "capabilities": {
+    "eyebrow": "एक नियंत्रण तल · तीन परिणाम",
+    "title": "जानें। साबित करें। बहाल करें।",
+    "body": "अलग-अलग योजनाओं से प्रमाण-आधारित, लगातार अद्यतन संचालन की ओर बढ़ें।",
+    "discoverTitle": "निर्भरताएँ खोजें",
+    "discoverBody": "GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes और GitOps से स्रोत और ताज़गी सहित सेवा-केंद्रित सूची व प्रकारबद्ध निर्भरता ग्राफ़ बनाएँ।",
+    "proveTitle": "पुनर्प्राप्ति क्षमता सिद्ध करें",
+    "proveBody": "कवरेज, विचलन, पुनर्प्राप्ति बिंदु, पहुँच और मापे गए लक्ष्य जाँचें। स्कोर अनिवार्य अवरोध नहीं छिपाता।",
+    "orchestrateTitle": "सुरक्षित समन्वय करें",
+    "orchestrateBody": "अपरिवर्तनीय संस्करण तय करें, स्वास्थ्य जाँचों के साथ पुनरावृत्ति-सुरक्षित चरण चलाएँ, सुरक्षित रुकें और हर परिणाम में सफ़ाई व प्रमाण सुरक्षित रखें।"
+  },
+  "dashboard": {
+    "ariaLabel": "Storm Harbor पुनर्प्राप्ति तैयारी का पूर्वावलोकन",
+    "graphAriaLabel": "प्रामाणिक स्रोतों को पुनर्प्राप्ति प्रमाण से जोड़ने वाला ग्राफ़",
+    "reconciled": "समन्वित",
+    "dependencyGraph": "निर्भरता ग्राफ़",
+    "readiness": "पुनर्प्राप्ति की तैयारी",
+    "blocked": "अवरुद्ध",
+    "coverage": "योजना कवरेज",
+    "sourceFreshness": "स्रोत की ताज़गी",
+    "lastExercise": "अंतिम अभ्यास",
+    "recoveryPoint": "पुनर्प्राप्ति बिंदु",
+    "unknown": "अज्ञात",
+    "evidence": "प्रमाण",
+    "preview": "उदाहरण पूर्वावलोकन · नमूना डेटा"
+  },
+  "readiness": {
+    "eyebrow": "प्रमाणित तैयारी",
+    "title": "निर्णयों को दिशा देने वाला स्कोर।",
+    "body": "तकनीकी सटीकता के साथ पूरी स्थिति देखें। Storm Harbor अनिवार्य जाँचें दिखाता है और सेवा के अवरुद्ध होने का कारण समझाता है।",
+    "pointOne": "सेवा के RTO और RPO वास्तविक पुनर्प्राप्ति बिंदुओं से जुड़े हैं",
+    "pointTwo": "हर संबंध में स्रोत, विश्वसनीयता और अवलोकन का समय है",
+    "pointThree": "हस्ताक्षरित प्रमाण इनपुट, निर्णय, कर्ता, कार्रवाई और परिणाम जोड़ते हैं"
+  },
+  "architecture": {
+    "eyebrow": "आर्किटेक्चर",
+    "title": "संघीय डिज़ाइन। विफलता क्षेत्र से बाहर।",
+    "body": "हर प्रणाली अपने क्षेत्र में प्रामाणिक रहती है। नियंत्रण तल वर्तमान सूचकांक बनाता, योजना स्थिर करता और संस्करणबद्ध अडैप्टरों का समन्वय करता है।",
+    "sourcesTitle": "प्रामाणिक स्रोत",
+    "sourcesBody": "इच्छित व वास्तविक स्थिति, नीतियाँ और पुनर्प्राप्ति बिंदु उनके मूल स्थान से पढ़ें।",
+    "controlTitle": "जोड़ें और आकलन करें",
+    "controlBody": "संसाधन मानकीकृत करें, निर्भरताएँ जोड़ें और ताज़गी, विचलन व नीतियाँ जाँचें।",
+    "recoverTitle": "जाँच द्वारों से बहाल करें",
+    "recoverBody": "अनुमोदन, समय सीमा, अनुमति सूचियों और आपात रोक के साथ पुनरावृत्ति-सुरक्षित चरण चलाएँ।",
+    "proofTitle": "जाँचें और सिद्ध करें",
+    "proofBody": "लक्ष्य मापें और हस्ताक्षरित, अपरिवर्तनीय प्रमाण विफलता क्षेत्र से बाहर रखें।",
+    "outside": "पुनर्प्राप्ति नियंत्रण उस क्लस्टर से बाहर चलता है जिसे फिर बनाना पड़ सकता है।"
+  },
+  "principles": {
+    "eyebrow": "अंतर्निहित सुरक्षा सीमाएँ",
+    "title": "आर्किटेक्चर में सुरक्षा।",
+    "body": "वास्तविक पुनर्प्राप्ति स्वतः चालू नहीं होती। अनुमतियाँ अल्पकालिक हैं, अनिश्चित निर्णय रोके जाते हैं और हर बदलाव रोका व जाँचा जा सकता है।",
+    "federatedTitle": "वितरित अधिकार",
+    "federatedBody": "Git, क्लाउड API, गुप्त भंडार और प्रमाण भंडार अपने क्षेत्रों का नियंत्रण रखते हैं।",
+    "identityTitle": "अल्पकालिक पहचान",
+    "identityBody": "OIDC और वर्कलोड पहचान स्थायी क्लाउड कुंजियों तथा व्यापक क्रेडेंशियल का स्थान लेते हैं।",
+    "closedTitle": "अनिश्चितता में रोक",
+    "closedBody": "प्रमाण की कमी, पुराना डेटा, नीति विफलता या अनुपलब्ध स्रोत स्वस्थ नहीं माने जाते।",
+    "evidenceTitle": "पहले प्रमाण",
+    "evidenceBody": "इनपुट, नीति निर्णय, समय, कार्रवाइयाँ और परिणाम जुड़े हैं तथा अखंडता जाँची जाती है।"
+  },
+  "audience": {
+    "eyebrow": "साझा भरोसे के लिए",
+    "title": "एक दृश्य। अलग निर्णय।",
+    "body": "पुनर्प्राप्ति करने वालों के लिए तकनीकी गहराई और निरंतरता के जिम्मेदारों के लिए स्पष्ट परिणाम।",
+    "platformTitle": "प्लेटफ़ॉर्म टीमें",
+    "platformBody": "मौजूदा वर्कफ़्लो बदले बिना Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes और GitOps को दोहराने योग्य पुनर्प्राप्ति पथों में जोड़ें।",
+    "sreTitle": "SRE और संचालन",
+    "sreBody": "रनबुक का अभ्यास करें, निर्भरता की कमियाँ खोजें और वास्तविक जाँच बिंदुओं से लक्ष्य मापें।",
+    "riskTitle": "जोखिम और लेखापरीक्षा",
+    "riskBody": "हर निर्णय को स्रोत, नीति, अनुमोदन, पहचान, प्रमाण और अपरिवर्तनीय संस्करण तक खोजें।",
+    "leadersTitle": "इंजीनियरिंग नेतृत्व",
+    "leadersBody": "सेवा तैयारी, बाधाओं और परीक्षण की ताज़गी के आधार पर निवेश तय करें।"
+  },
+  "openSource": {
+    "eyebrow": "ओपन सोर्स · Apache License 2.0",
+    "title": "पुनर्प्राप्ति तंत्र समझें।",
+    "body": "महत्वपूर्ण निरंतरता बुनियादी ढाँचा समझने, बढ़ाने और जाँचने योग्य होना चाहिए। आर्किटेक्चर देखें, सुरक्षित सिमुलेशन चलाएँ और अडैप्टर अनुबंधों में योगदान दें।",
+    "githubCta": "GitHub पर खोजें"
+  },
+  "finalCta": {
+    "title": "पुनर्प्राप्ति क्षमता को तथ्य बनाएँ।",
+    "body": "आर्किटेक्चर और सुरक्षित सिमुलेशन से शुरुआत करें। देखें कैसे Storm Harbor बिखरी स्थिति को निरंतर तैयारी में बदलता है।",
+    "docs": "दस्तावेज़ पढ़ें",
+    "github": "रिपॉज़िटरी खोलें"
+  },
+  "footer": {
+    "tagline": "निर्भरताएँ खोजें। पुनर्प्राप्ति क्षमता सिद्ध करें। पुनर्प्राप्ति संचालित करें।",
+    "openSource": "ओपन सोर्स निरंतर आपदा पुनर्प्राप्ति तैयारी"
+  },
+  "auth": {
+    "shellEyebrow": "Storm Harbor control plane",
+    "shellTitle": "Operate recovery with confidence.",
+    "shellBody": "Enter the operational workspace where teams map dependencies, prove readiness and coordinate auditable recovery.",
+    "shellPointOne": "One identity across the Storm Harbor ecosystem",
+    "shellPointTwo": "MFA challenges and credentials remain in api-auth",
+    "shellPointThree": "Product access is isolated by organisation and project",
+    "securityEyebrow": "Identity protection",
+    "securityTitle": "A secure gate before every action.",
+    "securityBody": "Authentication is separated from recovery execution so access can be revoked without weakening the control plane.",
+    "securityPointOne": "Short-lived, HttpOnly product sessions",
+    "securityPointTwo": "TOTP and single-use recovery codes",
+    "securityPointThree": "Correlated and auditable access decisions",
+    "loginEyebrow": "Welcome back",
+    "loginTitle": "Sign in",
+    "loginBody": "Use your Storm Harbor identity to continue to the control plane.",
+    "registerEyebrow": "Create your identity",
+    "registerTitle": "Start with Storm Harbor",
+    "registerBody": "Create an identity now. Organisation and project access are granted separately.",
+    "publicEmailAllowed": "A corporate email is not required. Any valid email address can be used.",
+    "verifyEmailEyebrow": "Confirm your identity",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailBody": "Enter the six-digit code sent by Storm Harbor.",
+    "mfaTitle": "Two-factor authentication",
+    "mfaBody": "Enter the code from your authenticator or use one of your single-use recovery codes.",
+    "email": "Email address",
+    "recoveryEmail": "Recovery email",
+    "recoveryEmailHint": "Use a different address that you can access if the primary account is unavailable.",
+    "password": "Password",
+    "passwordHint": "Use at least 8 characters. The server applies the authoritative password policy.",
+    "securityCode": "Security code",
+    "verificationCode": "Verification code",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account…",
+    "confirmEmail": "Confirm email",
+    "verifyAndContinue": "Verify and continue",
+    "verifying": "Verifying…",
+    "resendCode": "Resend code",
+    "verificationSent": "If the identity exists, a new verification code has been sent.",
+    "noAccount": "New to Storm Harbor?",
+    "hasAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "verifyNow": "Verify now.",
+    "sessionSecurity": "Credentials are sent only to the Storm Harbor BFF. Access tokens are never exposed to browser storage.",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "emailNotVerified": "Confirm your primary email before signing in.",
+      "rateLimited": "Too many attempts. Wait a moment and try again.",
+      "authUnavailable": "The identity service is temporarily unavailable.",
+      "genericError": "The request could not be completed. Try again.",
+      "identityExists": "An identity already exists for this email. Sign in instead.",
+      "invalidRegistration": "Review the email addresses and password, then try again.",
+      "recoveryMustDiffer": "The recovery email must be different from the primary email.",
+      "invalidMfaCode": "The security code or MFA challenge is invalid or expired.",
+      "invalidVerificationCode": "The verification code is invalid or expired."
+    }
+  },
+  "console": {
+    "primaryNavigation": "Control plane navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "organization": "Organisation",
+    "project": "Project",
+    "production": "Production",
+    "operational": "Operational",
+    "account": "Account",
+    "controlPlane": "Control plane",
+    "signOut": "Sign out",
+    "lastSync": "Last sync",
+    "viewAll": "View all",
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "environments": "Environments",
+      "recovery": "Recovery",
+      "evidence": "Evidence",
+      "maya": "Maya operations",
+      "settings": "Security & settings"
+    },
+    "overview": {
+      "eyebrow": "Recovery operations",
+      "title": "Control plane overview",
+      "body": "A service-centred view of recoverability, dependencies, active blockers and recent recovery evidence.",
+      "newRecovery": "Plan recovery"
+    },
+    "preview": {
+      "label": "Preview workspace",
+      "body": "Sample operational data is shown until the Storm Harbor APIs are connected."
+    },
+    "metrics": {
+      "label": "Recovery readiness metrics",
+      "readiness": "Readiness",
+      "services": "Protected services",
+      "lastExercise": "Last exercise",
+      "evidence": "Evidence bundles",
+      "blocked": "One mandatory gate blocked",
+      "covered": "All services have a plan",
+      "withinCadence": "Within the exercise cadence",
+      "integrityChecked": "Integrity checked"
+    },
+    "status": {
+      "blocked": "Blocked",
+      "ready": "Ready"
+    },
+    "services": {
+      "title": "Service readiness",
+      "body": "Critical services ordered by recovery status.",
+      "service": "Service",
+      "status": "Status",
+      "readiness": "Readiness"
+    },
+    "maya": {
+      "advisory": "Advisory mode",
+      "title": "One risk needs attention.",
+      "body": "Maya correlates current evidence and explains why a recovery gate is blocked before any action is proposed.",
+      "finding": "Current finding",
+      "findingBody": "The checkout-api recovery point has no verified integrity result.",
+      "humanReview": "Human review required before remediation",
+      "review": "Review with Maya"
+    },
+    "path": {
+      "title": "Recovery path",
+      "body": "Immutable phases advance only after their health gate passes.",
+      "planFrozen": "Plan frozen"
+    },
+    "sections": {
+      "services": {
+        "eyebrow": "Inventory",
+        "title": "Protected services",
+        "body": "Connect service ownership, dependencies, objectives and recovery plans."
+      },
+      "environments": {
+        "eyebrow": "Targets",
+        "title": "Environments",
+        "body": "Map protected and recovery environments across projects and regions."
+      },
+      "recovery": {
+        "eyebrow": "Orchestration",
+        "title": "Recovery runs",
+        "body": "Plan, approve and follow deterministic recovery phases and health gates."
+      },
+      "evidence": {
+        "eyebrow": "Audit",
+        "title": "Recovery evidence",
+        "body": "Inspect integrity-checked inputs, decisions, actions and measured results."
+      },
+      "maya": {
+        "eyebrow": "Operational intelligence",
+        "title": "Maya operations",
+        "body": "Investigate findings and prepare controlled, explainable remediation actions."
+      },
+      "settings": {
+        "eyebrow": "Governance",
+        "title": "Security and settings",
+        "body": "Manage project access, integrations, policies and recovery guardrails."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "प्लेटफ़ॉर्म की दिशा",
+    "title": "आपका बुनियादी ढाँचा। आपके विकल्प।",
+    "status": "नियोजित क्षमताएँ। वर्तमान संस्करण सुरक्षित सिमुलेशन देता है; उत्पादन अडैप्टर और पुनर्प्राप्ति रनटाइम विकास में हैं।",
+    "privateTitle": "निजी परियोजनाएँ",
+    "privateBody": "संगठन अपने डेटा और ज्ञान का नियंत्रण रखते हुए अधिकृत निजी रिपॉज़िटरी और बुनियादी ढाँचा जोड़ सकते हैं।",
+    "aiTitle": "अपना AI लाएँ",
+    "aiBody": "परियोजना के AI, RAG या सीमित CLI जोड़ें। ज्ञान अपने वातावरण में रखें और केवल अधिकृत परिणाम साझा करें। AI वैकल्पिक है।",
+    "declarativeTitle": "YAML यात्राएँ। Go नियंत्रक।",
+    "declarativeBody": "संस्करणबद्ध YAML में पुनर्प्राप्ति घोषित करें। अडैप्टर के ज़रिए मूल Kubernetes CRD सहित संसाधन प्रकार और Go नियंत्रक बढ़ाएँ।"
+  }
+}
