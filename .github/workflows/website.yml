@@ -33,6 +33,7 @@ jobs:
           PAGES_BASE_PATH: ${{ github.event_name == 'pull_request' && '/storm-harbor-app' || steps.pages.outputs.base_path }}
           WEBSITE_URL: ${{ steps.pages.outputs.base_url || 'https://storm-harbor.github.io/storm-harbor-app/' }}
         run: |
+          export WEBSITE_URL="${WEBSITE_URL/#http:/https:}"
           yarn build:website
           yarn check:website
           yarn playwright install --with-deps chromium
