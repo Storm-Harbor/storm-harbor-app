@@ -37,7 +37,7 @@ export function LanguageSwitcher() {
           </button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Portal>
-          <DropdownMenu.Content side="top" align="end" sideOffset={9} className="language-menu">
+          <DropdownMenu.Content side="top" align="end" sideOffset={9} collisionPadding={12} className="language-menu">
             <DropdownMenu.Label className="px-2.5 pb-2 pt-1 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-500">
               {t("choose")}
             </DropdownMenu.Label>

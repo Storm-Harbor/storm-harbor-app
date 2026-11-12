@@ -52,11 +52,11 @@ for (const locale of ["ar", "he-IL", "ur-PK", "hi-IN", "zh-Hans", "ja-JP"]) {
     await expect(page.getByRole("menuitem")).toHaveCount(locales.length);
     const dropdown = page.getByRole("menu");
     await expect(dropdown).toHaveCSS("overflow-y", "auto");
-    const bounds = await dropdown.boundingBox();
-    expect(bounds!.x).toBeGreaterThanOrEqual(0);
-    expect(bounds!.y).toBeGreaterThanOrEqual(0);
-    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(390);
-    expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(844);
+    await expect.poll(async () => {
+      const bounds = await dropdown.boundingBox();
+      return Boolean(bounds && bounds.x >= 0 && bounds.y >= 0 &&
+        bounds.x + bounds.width <= 390 && bounds.y + bounds.height <= 844);
+    }).toBe(true);
     await page.keyboard.press("End");
     await page.keyboard.press("Enter");
     await expect(page.locator("html")).toHaveAttribute("lang", "vi-VN");
