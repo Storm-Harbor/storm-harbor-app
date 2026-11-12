@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Storm Harbor — 災害復旧への継続的な備え",
+    "description": "依存関係を把握し、復旧可能性を検証して、監査可能な復旧を調整します。Terraform、AWS / Azure / DigitalOcean / Oracle Cloud / GCP、Kubernetes、GitOps に対応する設計です。"
+  },
+  "language": {
+    "choose": "言語を選択",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "ca-ES": "Català",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Русский",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+    "uk-UA": "Українська",
+    "et-EE": "Eesti",
+    "pl-PL": "Polski",
+    "bg-BG": "Български",
+    "zh-Hans": "简体中文",
+    "hi-IN": "हिन्दी",
+    "ja-JP": "日本語",
+    "he-IL": "עברית",
+    "ur-PK": "اردو",
+    "af-ZA": "Afrikaans",
+    "ar": "العربية",
+    "ko-KR": "한국어",
+    "tr-TR": "Türkçe",
+    "id-ID": "Bahasa Indonesia",
+    "vi-VN": "Tiếng Việt"
+  },
+  "nav": {
+    "primaryLabel": "メインナビゲーション",
+    "skipContent": "本文へ移動",
+    "product": "製品",
+    "capabilities": "機能",
+    "architecture": "アーキテクチャ",
+    "openSource": "オープンソース",
+    "docs": "ドキュメント",
+    "github": "GitHub で見る",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "support": "プロジェクトを支援"
+  },
+  "hero": {
+    "eyebrow": "オープンソースで継続的に復旧へ備える",
+    "status": "安全なシミュレーションの基盤",
+    "title": "復旧を、",
+    "titleAccent": "約束だけで終わらせない。",
+    "body": "Storm Harbor はコード、クラウド、クラスター、バックアップ、ポリシーを関連付け、復旧できるものとその障害を継続的に確認します。",
+    "primaryCta": "コントロールプレーンを見る",
+    "secondaryCta": "ソースを見る",
+    "noLockIn": "単一の情報源に依存しない",
+    "cloudAgnostic": "クラウドに依存しない設計"
+  },
+  "integrations": {
+    "label": "開発予定のクラウド・ツール用アダプター"
+  },
+  "problem": {
+    "eyebrow": "運用に存在する情報の分断",
+    "title": "手順書だけでは証明になりません。",
+    "body": "リポジトリには意図、API には実際の状態があり、バックアップやテスト結果は別々に存在します。Storm Harbor は各システムの責任範囲を保ちながら情報を結び付けます。",
+    "question": "このサービスは今、合意した RTO と RPO の範囲内で復旧できますか？"
+  },
+  "capabilities": {
+    "eyebrow": "ひとつの制御基盤 · 3つの成果",
+    "title": "把握する。検証する。復旧する。",
+    "body": "分断された復旧計画から、証拠に基づいて更新し続ける運用モデルへ。",
+    "discoverTitle": "依存関係を把握",
+    "discoverBody": "GitHub、Terraform、AWS / Azure / DigitalOcean / OCI / GCP、Kubernetes、GitOps からサービス中心の台帳と型付き依存グラフを作り、出典と鮮度を記録します。",
+    "proveTitle": "復旧可能性を検証",
+    "proveBody": "網羅性、ドリフト、復旧時点、アクセス、実測目標を評価します。スコアが必須チェックの失敗を隠すことはありません。",
+    "orchestrateTitle": "安全に調整",
+    "orchestrateBody": "不変のリビジョンを固定し、正常性チェック付きの冪等な段階を実行します。安全に停止し、結果にかかわらず後処理と証拠を保持します。"
+  },
+  "dashboard": {
+    "ariaLabel": "Storm Harbor 復旧準備状況のプレビュー",
+    "graphAriaLabel": "正式な情報源と復旧証拠を結ぶ依存グラフ",
+    "reconciled": "整合済み",
+    "dependencyGraph": "依存関係グラフ",
+    "readiness": "復旧準備状況",
+    "blocked": "ブロック中",
+    "coverage": "計画の網羅率",
+    "sourceFreshness": "情報源の鮮度",
+    "lastExercise": "直近の訓練",
+    "recoveryPoint": "復旧時点",
+    "unknown": "不明",
+    "evidence": "証拠",
+    "preview": "表示イメージ · サンプルデータ"
+  },
+  "readiness": {
+    "eyebrow": "証拠で示す準備状況",
+    "title": "意思決定につながるスコア。",
+    "body": "技術的な正確さを保ったまま全体を把握できます。Storm Harbor は必須チェックを明示し、検出事項とサービスをブロックする理由を説明します。",
+    "pointOne": "サービスの RTO・RPO を実際の復旧時点と関連付け",
+    "pointTwo": "すべての関係に出典、信頼度、観測時刻を記録",
+    "pointThree": "署名付き証拠が入力、判断、実行者、操作、結果を関連付け"
+  },
+  "architecture": {
+    "eyebrow": "アーキテクチャ",
+    "title": "連携型の設計。障害の影響範囲の外側へ。",
+    "body": "各システムが自身の領域の正本を管理します。制御基盤は現状の索引を作り、計画を固定して、バージョン付きアダプターを調整します。",
+    "sourcesTitle": "正式な情報源",
+    "sourcesBody": "望ましい状態、実際の状態、ポリシー、復旧時点を元の場所から読み取ります。",
+    "controlTitle": "関連付けて評価",
+    "controlBody": "資産を正規化し、依存関係を対応付け、鮮度、ドリフト、ポリシーを評価します。",
+    "recoverTitle": "チェックを経て復旧",
+    "recoverBody": "承認、タイムアウト、許可リスト、緊急停止機構を備えた冪等な段階を実行します。",
+    "proofTitle": "検証して証明",
+    "proofBody": "目標を測定し、署名付きの不変な証拠を障害領域の外で保管します。",
+    "outside": "復旧を指揮する仕組みは、再構築対象のクラスターの外で動作します。"
+  },
+  "principles": {
+    "eyebrow": "組み込みの安全策",
+    "title": "アーキテクチャから安全を確保。",
+    "body": "実際の復旧を暗黙に有効化しません。権限は短期間に限定し、不確かな判断は拒否します。すべての変更は中断・監査可能です。",
+    "federatedTitle": "責任の分散",
+    "federatedBody": "Git、クラウド API、秘密情報保管庫、証拠ストアが各領域の管理を維持します。",
+    "identityTitle": "一時的な認証情報",
+    "identityBody": "OIDC とワークロード ID により、固定クラウドキーや広範囲な認証情報を置き換えます。",
+    "closedTitle": "不確実なら拒否",
+    "closedBody": "証拠の欠落、古い情報、ポリシー違反、情報源の停止を正常とは扱いません。",
+    "evidenceTitle": "証拠を優先",
+    "evidenceBody": "入力、ポリシー判断、所要時間、操作、結果を結び付け、完全性を確認します。"
+  },
+  "audience": {
+    "eyebrow": "チームで共有できる確信",
+    "title": "同じ状況から、それぞれの判断へ。",
+    "body": "復旧担当者には技術的な深さを、事業継続の責任者には明確な成果を提供します。",
+    "platformTitle": "プラットフォームチーム",
+    "platformBody": "既存ワークフローを維持しながら、Terraform、AWS / Azure / DigitalOcean / OCI / GCP、Kubernetes、GitOps を再現可能な復旧経路にまとめます。",
+    "sreTitle": "SRE・運用担当",
+    "sreBody": "手順を訓練し、依存関係の不足を見つけ、実際のチェックポイントから復旧目標を測ります。",
+    "riskTitle": "リスク・監査担当",
+    "riskBody": "判断を出典、ポリシー、承認、ID、証拠、不変のリビジョンまで追跡します。",
+    "leadersTitle": "エンジニアリング責任者",
+    "leadersBody": "サービスの準備状況、障害要因、テストの鮮度から投資の優先順位を決めます。"
+  },
+  "openSource": {
+    "eyebrow": "オープンソース · Apache License 2.0",
+    "title": "復旧の仕組みを確認。",
+    "body": "重要な事業継続基盤は理解・拡張・レビューが可能であるべきです。設計を学び、安全なシミュレーションを実行し、アダプターの契約を公開で改善しましょう。",
+    "githubCta": "GitHub で調べる"
+  },
+  "finalCta": {
+    "title": "復旧可能性を、確かな事実へ。",
+    "body": "アーキテクチャと安全なシミュレーションから始めましょう。Storm Harbor が分断された状態を継続的な準備へ変える仕組みを確認できます。",
+    "docs": "ドキュメントを読む",
+    "github": "リポジトリを開く"
+  },
+  "footer": {
+    "tagline": "依存関係を把握。復旧可能性を検証。復旧を調整。",
+    "openSource": "オープンソースの継続的な災害復旧準備"
+  },
+  "auth": {
+    "shellEyebrow": "Storm Harbor control plane",
+    "shellTitle": "Operate recovery with confidence.",
+    "shellBody": "Enter the operational workspace where teams map dependencies, prove readiness and coordinate auditable recovery.",
+    "shellPointOne": "One identity across the Storm Harbor ecosystem",
+    "shellPointTwo": "MFA challenges and credentials remain in api-auth",
+    "shellPointThree": "Product access is isolated by organisation and project",
+    "securityEyebrow": "Identity protection",
+    "securityTitle": "A secure gate before every action.",
+    "securityBody": "Authentication is separated from recovery execution so access can be revoked without weakening the control plane.",
+    "securityPointOne": "Short-lived, HttpOnly product sessions",
+    "securityPointTwo": "TOTP and single-use recovery codes",
+    "securityPointThree": "Correlated and auditable access decisions",
+    "loginEyebrow": "Welcome back",
+    "loginTitle": "Sign in",
+    "loginBody": "Use your Storm Harbor identity to continue to the control plane.",
+    "registerEyebrow": "Create your identity",
+    "registerTitle": "Start with Storm Harbor",
+    "registerBody": "Create an identity now. Organisation and project access are granted separately.",
+    "publicEmailAllowed": "A corporate email is not required. Any valid email address can be used.",
+    "verifyEmailEyebrow": "Confirm your identity",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailBody": "Enter the six-digit code sent by Storm Harbor.",
+    "mfaTitle": "Two-factor authentication",
+    "mfaBody": "Enter the code from your authenticator or use one of your single-use recovery codes.",
+    "email": "Email address",
+    "recoveryEmail": "Recovery email",
+    "recoveryEmailHint": "Use a different address that you can access if the primary account is unavailable.",
+    "password": "Password",
+    "passwordHint": "Use at least 8 characters. The server applies the authoritative password policy.",
+    "securityCode": "Security code",
+    "verificationCode": "Verification code",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account…",
+    "confirmEmail": "Confirm email",
+    "verifyAndContinue": "Verify and continue",
+    "verifying": "Verifying…",
+    "resendCode": "Resend code",
+    "verificationSent": "If the identity exists, a new verification code has been sent.",
+    "noAccount": "New to Storm Harbor?",
+    "hasAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "verifyNow": "Verify now.",
+    "sessionSecurity": "Credentials are sent only to the Storm Harbor BFF. Access tokens are never exposed to browser storage.",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "emailNotVerified": "Confirm your primary email before signing in.",
+      "rateLimited": "Too many attempts. Wait a moment and try again.",
+      "authUnavailable": "The identity service is temporarily unavailable.",
+      "genericError": "The request could not be completed. Try again.",
+      "identityExists": "An identity already exists for this email. Sign in instead.",
+      "invalidRegistration": "Review the email addresses and password, then try again.",
+      "recoveryMustDiffer": "The recovery email must be different from the primary email.",
+      "invalidMfaCode": "The security code or MFA challenge is invalid or expired.",
+      "invalidVerificationCode": "The verification code is invalid or expired."
+    }
+  },
+  "console": {
+    "primaryNavigation": "Control plane navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "organization": "Organisation",
+    "project": "Project",
+    "production": "Production",
+    "operational": "Operational",
+    "account": "Account",
+    "controlPlane": "Control plane",
+    "signOut": "Sign out",
+    "lastSync": "Last sync",
+    "viewAll": "View all",
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "environments": "Environments",
+      "recovery": "Recovery",
+      "evidence": "Evidence",
+      "maya": "Maya operations",
+      "settings": "Security & settings"
+    },
+    "overview": {
+      "eyebrow": "Recovery operations",
+      "title": "Control plane overview",
+      "body": "A service-centred view of recoverability, dependencies, active blockers and recent recovery evidence.",
+      "newRecovery": "Plan recovery"
+    },
+    "preview": {
+      "label": "Preview workspace",
+      "body": "Sample operational data is shown until the Storm Harbor APIs are connected."
+    },
+    "metrics": {
+      "label": "Recovery readiness metrics",
+      "readiness": "Readiness",
+      "services": "Protected services",
+      "lastExercise": "Last exercise",
+      "evidence": "Evidence bundles",
+      "blocked": "One mandatory gate blocked",
+      "covered": "All services have a plan",
+      "withinCadence": "Within the exercise cadence",
+      "integrityChecked": "Integrity checked"
+    },
+    "status": {
+      "blocked": "Blocked",
+      "ready": "Ready"
+    },
+    "services": {
+      "title": "Service readiness",
+      "body": "Critical services ordered by recovery status.",
+      "service": "Service",
+      "status": "Status",
+      "readiness": "Readiness"
+    },
+    "maya": {
+      "advisory": "Advisory mode",
+      "title": "One risk needs attention.",
+      "body": "Maya correlates current evidence and explains why a recovery gate is blocked before any action is proposed.",
+      "finding": "Current finding",
+      "findingBody": "The checkout-api recovery point has no verified integrity result.",
+      "humanReview": "Human review required before remediation",
+      "review": "Review with Maya"
+    },
+    "path": {
+      "title": "Recovery path",
+      "body": "Immutable phases advance only after their health gate passes.",
+      "planFrozen": "Plan frozen"
+    },
+    "sections": {
+      "services": {
+        "eyebrow": "Inventory",
+        "title": "Protected services",
+        "body": "Connect service ownership, dependencies, objectives and recovery plans."
+      },
+      "environments": {
+        "eyebrow": "Targets",
+        "title": "Environments",
+        "body": "Map protected and recovery environments across projects and regions."
+      },
+      "recovery": {
+        "eyebrow": "Orchestration",
+        "title": "Recovery runs",
+        "body": "Plan, approve and follow deterministic recovery phases and health gates."
+      },
+      "evidence": {
+        "eyebrow": "Audit",
+        "title": "Recovery evidence",
+        "body": "Inspect integrity-checked inputs, decisions, actions and measured results."
+      },
+      "maya": {
+        "eyebrow": "Operational intelligence",
+        "title": "Maya operations",
+        "body": "Investigate findings and prepare controlled, explainable remediation actions."
+      },
+      "settings": {
+        "eyebrow": "Governance",
+        "title": "Security and settings",
+        "body": "Manage project access, integrations, policies and recovery guardrails."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "開発の方向性",
+    "title": "あなたの基盤。あなたの選択。",
+    "status": "設計中の機能です。現在は安全なシミュレーションを提供し、本番用アダプターと復旧ランタイムは開発中です。",
+    "privateTitle": "非公開プロジェクト",
+    "privateBody": "各組織は承認済みの非公開リポジトリと基盤を接続し、データと知識の管理を維持できます。",
+    "aiTitle": "独自の AI を接続",
+    "aiBody": "プロジェクト所有の AI、RAG、制限付き CLI を接続できます。知識は自身の環境に保ち、許可した結果のみ共有します。AI は任意です。",
+    "declarativeTitle": "YAML の復旧フロー。Go のコントローラー。",
+    "declarativeBody": "バージョン付き YAML で復旧を宣言。リソース型と Go コントローラーを拡張し、アダプター経由でネイティブ Kubernetes CRD を利用します。"
+  }
+}

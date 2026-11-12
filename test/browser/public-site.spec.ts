@@ -1,6 +1,6 @@
 import {expect, test} from "@playwright/test";
 import {readFile} from "node:fs/promises";
-import {locales, localeStorageKey} from "../../i18n/config";
+import {localeDirection, locales, localeStorageKey} from "../../i18n/config";
 
 for (const locale of locales) {
   test(`public journey renders ${locale} with styles and no authenticated entry points`, async ({page, baseURL}) => {
@@ -12,6 +12,9 @@ for (const locale of locales) {
     });
     await page.goto(new URL(`${locale}/`, baseURL).href);
     await expect(page.locator("html")).toHaveAttribute("lang", locale);
+    await expect(page.locator("html")).toHaveAttribute("dir", localeDirection(locale));
+    await expect(page.locator("body")).not.toContainText(/iot\.?erax/i);
+    await expect(page.locator('a[href*="ioterax.com"]')).toHaveCount(0);
     await expect(page.getByRole("heading", {level: 1})).toContainText(messages.hero.title);
     await expect(page.getByRole("heading", {name: messages.platform.title, exact: true})).toBeVisible();
     await expect(page.getByRole("link", {name: messages.auth.signIn, exact: true})).toHaveCount(0);
@@ -33,6 +36,42 @@ test("language selection works on static hosting and explicit URLs override stor
   await page.goto(new URL("fr-FR/", baseURL).href);
   await expect(page.locator("html")).toHaveAttribute("lang", "fr-FR");
   await expect.poll(() => page.evaluate(key => localStorage.getItem(key), localeStorageKey)).toBe("fr-FR");
+});
+
+for (const locale of ["ar", "he-IL", "ur-PK", "hi-IN", "zh-Hans", "ja-JP"]) {
+  test(`mobile layout and scrolling language selector work in ${locale}`, async ({page, baseURL}) => {
+    const messages = JSON.parse(await readFile(`messages/${locale}.json`, "utf8"));
+    await page.setViewportSize({width: 390, height: 844});
+    await page.goto(new URL(`${locale}/`, baseURL).href);
+    await page.getByRole("button", {name: messages.nav.openMenu, exact: true}).click();
+    await expect(page.locator("#mobile-navigation")).toBeVisible();
+    await page.locator("#mobile-navigation").getByRole("link", {name: messages.nav.product, exact: false}).click();
+    await expect(page.locator("#mobile-navigation")).toHaveCount(0);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.getByRole("button", {name: messages.language.choose, exact: true}).click();
+    await expect(page.getByRole("menuitem")).toHaveCount(locales.length);
+    const dropdown = page.getByRole("menu");
+    await expect(dropdown).toHaveCSS("overflow-y", "auto");
+    const bounds = await dropdown.boundingBox();
+    expect(bounds!.x).toBeGreaterThanOrEqual(0);
+    expect(bounds!.y).toBeGreaterThanOrEqual(0);
+    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(390);
+    expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(844);
+    await page.keyboard.press("End");
+    await page.keyboard.press("Enter");
+    await expect(page.locator("html")).toHaveAttribute("lang", "vi-VN");
+  });
+}
+
+test("root language selection respects Simplified Chinese script", async ({browser, baseURL}) => {
+  for (const [requested, expected] of [["zh-CN", "zh-Hans"], ["zh-TW", "en-GB"], ["he-IL", "he-IL"]]) {
+    const context = await browser.newContext({locale: requested});
+    try {
+      const page = await context.newPage();
+      await page.goto(baseURL!);
+      await expect(page.locator("html")).toHaveAttribute("lang", expected);
+    } finally { await context.close(); }
+  }
 });
 
 test("root entry resolves browser language and mobile navigation closes after selection", async ({browser, baseURL}) => {

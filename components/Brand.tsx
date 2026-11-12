@@ -8,8 +8,8 @@ type BrandProps = {
 
 export function Brand({compact = false, className = ""}: BrandProps) {
   return (
-    <span className={`group inline-flex items-center gap-3 ${className}`}>
-      <Link href="/" aria-label="Storm Harbor home">
+    <span className={`group inline-flex items-center ${compact ? "gap-2" : "gap-3"} ${className}`}>
+      <Link href="/" aria-label="Storm Harbor">
         <Image
           src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.png`}
           alt=""
@@ -23,19 +23,6 @@ export function Brand({compact = false, className = ""}: BrandProps) {
         <Link href="/" className="text-[15px] font-bold leading-none tracking-[-0.03em] text-white sm:text-base">
           Storm Harbor
         </Link>
-        {!compact && (
-          <span className="mt-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-slate-400">
-            by{" "}
-            <a
-              href="https://ioterax.com"
-              target="_blank"
-              rel="noreferrer"
-              className="transition-colors hover:text-blue-300"
-            >
-              iot.EraX
-            </a>
-          </span>
-        )}
       </span>
     </span>
   );

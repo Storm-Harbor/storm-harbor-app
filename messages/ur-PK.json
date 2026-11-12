@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Storm Harbor — آفات سے بحالی کی مسلسل تیاری",
+    "description": "Terraform، AWS / Azure / DigitalOcean / Oracle Cloud / GCP، Kubernetes اور GitOps میں انحصار دریافت کریں، بحالی کی صلاحیت ثابت کریں اور قابلِ آڈٹ بحالی منظم کریں۔"
+  },
+  "language": {
+    "choose": "زبان منتخب کریں",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "ca-ES": "Català",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Русский",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+    "uk-UA": "Українська",
+    "et-EE": "Eesti",
+    "pl-PL": "Polski",
+    "bg-BG": "Български",
+    "zh-Hans": "简体中文",
+    "hi-IN": "हिन्दी",
+    "ja-JP": "日本語",
+    "he-IL": "עברית",
+    "ur-PK": "اردو",
+    "af-ZA": "Afrikaans",
+    "ar": "العربية",
+    "ko-KR": "한국어",
+    "tr-TR": "Türkçe",
+    "id-ID": "Bahasa Indonesia",
+    "vi-VN": "Tiếng Việt"
+  },
+  "nav": {
+    "primaryLabel": "مرکزی رہنمائی",
+    "skipContent": "مواد پر جائیں",
+    "product": "پروڈکٹ",
+    "capabilities": "صلاحیتیں",
+    "architecture": "ساخت",
+    "openSource": "اوپن سورس",
+    "docs": "دستاویزات",
+    "github": "GitHub پر دیکھیں",
+    "openMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں",
+    "support": "منصوبے کی مدد کریں"
+  },
+  "hero": {
+    "eyebrow": "اوپن سورس مسلسل بحالی کی تیاری",
+    "status": "محفوظ سیمولیشن کا ڈھانچا",
+    "title": "بحالی اب",
+    "titleAccent": "صرف وعدہ نہیں۔",
+    "body": "Storm Harbor کوڈ، کلاؤڈ، کلسٹر، بیک اپ اور پالیسی کو مسلسل ہم آہنگ منظر میں جوڑتا ہے تاکہ بحالی کی صلاحیت اور رکاوٹیں واضح ہوں۔",
+    "primaryCta": "کنٹرول پلین دریافت کریں",
+    "secondaryCta": "سورس کوڈ دیکھیں",
+    "noLockIn": "ایک ہی ماخذِ حقیقت کی پابندی نہیں",
+    "cloudAgnostic": "کلاؤڈ سے آزاد"
+  },
+  "integrations": {
+    "label": "منصوبہ بند کلاؤڈ اور ٹول اڈاپٹر"
+  },
+  "problem": {
+    "eyebrow": "عملی کام کا خلا",
+    "title": "ہدایات ثبوت نہیں ہوتیں۔",
+    "body": "ریپوزٹری ارادہ، API حقیقی حالت دکھاتے ہیں، جبکہ بیک اپ اور آزمائشی ثبوت الگ ہوتے ہیں۔ Storm Harbor اصل نظاموں کا اختیار برقرار رکھتے ہوئے انہیں جوڑتا ہے۔",
+    "question": "کیا یہ سروس ابھی طے شدہ RTO اور RPO کے اندر بحال ہو سکتی ہے؟"
+  },
+  "capabilities": {
+    "eyebrow": "ایک کنٹرول پلین · تین نتائج",
+    "title": "جانیں۔ ثابت کریں۔ بحال کریں۔",
+    "body": "الگ منصوبوں سے مسلسل تازہ ہونے والے ثبوت پر مبنی عملی ماڈل کی طرف آئیں۔",
+    "discoverTitle": "انحصار دریافت کریں",
+    "discoverBody": "GitHub، Terraform، AWS / Azure / DigitalOcean / OCI / GCP، Kubernetes اور GitOps سے ماخذ اور تازگی سمیت سروس پر مبنی فہرست اور نوعیت بند انحصاری گراف بنائیں۔",
+    "proveTitle": "بحالی کی صلاحیت ثابت کریں",
+    "proveBody": "کوریج، انحراف، بحالی کے نقاط، رسائی اور ناپے گئے اہداف جانچیں۔ اسکور لازمی رکاوٹیں نہیں چھپاتا۔",
+    "orchestrateTitle": "محفوظ طریقے سے منظم کریں",
+    "orchestrateBody": "غیر متغیر نسخے مقرر کریں، صحت کی جانچ کے ساتھ تکرار محفوظ مراحل چلائیں، محفوظ رکیں اور ہر نتیجے میں صفائی اور ثبوت برقرار رکھیں۔"
+  },
+  "dashboard": {
+    "ariaLabel": "Storm Harbor بحالی کی تیاری کا پیش منظر",
+    "graphAriaLabel": "مستند ذرائع کو بحالی کے ثبوت سے جوڑنے والا گراف",
+    "reconciled": "ہم آہنگ",
+    "dependencyGraph": "انحصاری گراف",
+    "readiness": "بحالی کی تیاری",
+    "blocked": "مسدود",
+    "coverage": "منصوبے کی کوریج",
+    "sourceFreshness": "ذرائع کی تازگی",
+    "lastExercise": "آخری مشق",
+    "recoveryPoint": "بحالی کا نقطہ",
+    "unknown": "نامعلوم",
+    "evidence": "ثبوت",
+    "preview": "وضاحتی پیش منظر · نمونہ ڈیٹا"
+  },
+  "readiness": {
+    "eyebrow": "ثبوت کے ساتھ تیاری",
+    "title": "فیصلوں پر اثر انداز اسکور۔",
+    "body": "تکنیکی درستگی کے ساتھ مکمل منظر دیکھیں۔ Storm Harbor لازمی جانچیں دکھاتا ہے اور ہر نتیجے اور رکاوٹ کی وجہ واضح کرتا ہے۔",
+    "pointOne": "سروس کے RTO اور RPO حقیقی بحالی کے نقاط سے منسلک ہیں",
+    "pointTwo": "ہر تعلق میں ماخذ، اعتماد اور مشاہدے کا وقت شامل ہے",
+    "pointThree": "دستخط شدہ ثبوت ان پٹ، فیصلہ، عامل، عمل اور نتیجہ جوڑتے ہیں"
+  },
+  "architecture": {
+    "eyebrow": "ساخت",
+    "title": "وفاقی ڈیزائن۔ خرابی کے دائرے سے باہر۔",
+    "body": "ہر نظام اپنے شعبے میں مستند رہتا ہے۔ کنٹرول پلین تازہ اشاریہ بناتا، منصوبہ مقرر کرتا اور نسخہ بند اڈاپٹر منظم کرتا ہے۔",
+    "sourcesTitle": "مستند ذرائع",
+    "sourcesBody": "مطلوبہ اور حقیقی حالت، پالیسی اور بحالی کے نقاط ان کی اصل جگہ سے پڑھیں۔",
+    "controlTitle": "جوڑیں اور جانچیں",
+    "controlBody": "وسائل یکساں بنائیں، انحصار کا نقشہ بنائیں اور تازگی، انحراف اور پالیسی جانچیں۔",
+    "recoverTitle": "جانچ کے دروازوں سے بحال کریں",
+    "recoverBody": "منظوری، وقت کی حد، اجازت کی فہرست اور ہنگامی بندش کے ساتھ تکرار محفوظ مراحل چلائیں۔",
+    "proofTitle": "جانچیں اور ثابت کریں",
+    "proofBody": "اہداف ناپیں اور دستخط شدہ غیر متغیر ثبوت خرابی کے دائرے سے باہر رکھیں۔",
+    "outside": "بحالی کا انتظام اس کلسٹر سے باہر چلتا ہے جسے دوبارہ بنانا پڑ سکتا ہے۔"
+  },
+  "principles": {
+    "eyebrow": "شامل حفاظتی حدود",
+    "title": "ساخت میں پیوست حفاظت۔",
+    "body": "حقیقی بحالی خود بخود فعال نہیں ہوتی۔ اجازتیں مختصر ہوتی ہیں، غیر یقینی فیصلے روکے جاتے ہیں اور ہر تبدیلی روکی اور آڈٹ کی جا سکتی ہے۔",
+    "federatedTitle": "تقسیم شدہ اختیار",
+    "federatedBody": "Git، کلاؤڈ API، رازوں کے والٹ اور ثبوت کے ذخیرے اپنے شعبوں پر اختیار رکھتے ہیں۔",
+    "identityTitle": "عارضی شناخت",
+    "identityBody": "OIDC اور ورک لوڈ شناخت مستقل کلاؤڈ چابیوں اور وسیع اسناد کی جگہ لیتے ہیں۔",
+    "closedTitle": "غیر یقینی پر روک",
+    "closedBody": "نامکمل ثبوت، پرانا ڈیٹا، پالیسی کی ناکامی یا غیر دستیاب ماخذ کو درست نہیں دکھایا جاتا۔",
+    "evidenceTitle": "پہلے ثبوت",
+    "evidenceBody": "ان پٹ، پالیسی فیصلے، اوقات، اعمال اور نتائج منسلک ہیں اور سالمیت جانچی جاتی ہے۔"
+  },
+  "audience": {
+    "eyebrow": "مشترکہ اعتماد",
+    "title": "ایک منظر۔ مختلف فیصلے۔",
+    "body": "بحالی کرنے والوں کے لیے تکنیکی گہرائی اور تسلسل کے ذمہ داروں کے لیے واضح نتائج۔",
+    "platformTitle": "پلیٹ فارم ٹیمیں",
+    "platformBody": "موجودہ کام کے طریقے بدلے بغیر Terraform، AWS / Azure / DigitalOcean / OCI / GCP، Kubernetes اور GitOps کو قابلِ تکرار بحالی کے راستوں میں جوڑیں۔",
+    "sreTitle": "SRE اور آپریشنز",
+    "sreBody": "ہدایات کی مشق کریں، انحصار کی کمی سامنے لائیں اور حقیقی جانچ کے نقاط سے اہداف ناپیں۔",
+    "riskTitle": "خطرہ اور آڈٹ",
+    "riskBody": "ہر فیصلے کو ماخذ، پالیسی، منظوری، شناخت، ثبوت اور غیر متغیر نسخے تک تلاش کریں۔",
+    "leadersTitle": "انجینئرنگ قیادت",
+    "leadersBody": "سروس کی تیاری، رکاوٹوں اور آزمائش کی تازگی کے مطابق سرمایہ کاری طے کریں۔"
+  },
+  "openSource": {
+    "eyebrow": "اوپن سورس · Apache License 2.0",
+    "title": "بحالی کا نظام سمجھیں۔",
+    "body": "اہم تسلسل کا بنیادی ڈھانچا قابلِ فہم، قابلِ توسیع اور قابلِ جائزہ ہونا چاہیے۔ ساخت دیکھیں، محفوظ سیمولیشن چلائیں اور اڈاپٹر معاہدے بہتر بنانے میں حصہ لیں۔",
+    "githubCta": "GitHub پر دریافت کریں"
+  },
+  "finalCta": {
+    "title": "بحالی کی صلاحیت کو حقیقت بنائیں۔",
+    "body": "ساخت اور محفوظ سیمولیشن سے شروع کریں۔ دیکھیں Storm Harbor بکھری حالت کو مسلسل تیاری میں کیسے بدلتا ہے۔",
+    "docs": "دستاویزات پڑھیں",
+    "github": "ریپوزٹری کھولیں"
+  },
+  "footer": {
+    "tagline": "انحصار دریافت کریں۔ بحالی ثابت کریں۔ بحالی منظم کریں۔",
+    "openSource": "اوپن سورس مسلسل آفات سے بحالی کی تیاری"
+  },
+  "auth": {
+    "shellEyebrow": "Storm Harbor control plane",
+    "shellTitle": "Operate recovery with confidence.",
+    "shellBody": "Enter the operational workspace where teams map dependencies, prove readiness and coordinate auditable recovery.",
+    "shellPointOne": "One identity across the Storm Harbor ecosystem",
+    "shellPointTwo": "MFA challenges and credentials remain in api-auth",
+    "shellPointThree": "Product access is isolated by organisation and project",
+    "securityEyebrow": "Identity protection",
+    "securityTitle": "A secure gate before every action.",
+    "securityBody": "Authentication is separated from recovery execution so access can be revoked without weakening the control plane.",
+    "securityPointOne": "Short-lived, HttpOnly product sessions",
+    "securityPointTwo": "TOTP and single-use recovery codes",
+    "securityPointThree": "Correlated and auditable access decisions",
+    "loginEyebrow": "Welcome back",
+    "loginTitle": "Sign in",
+    "loginBody": "Use your Storm Harbor identity to continue to the control plane.",
+    "registerEyebrow": "Create your identity",
+    "registerTitle": "Start with Storm Harbor",
+    "registerBody": "Create an identity now. Organisation and project access are granted separately.",
+    "publicEmailAllowed": "A corporate email is not required. Any valid email address can be used.",
+    "verifyEmailEyebrow": "Confirm your identity",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailBody": "Enter the six-digit code sent by Storm Harbor.",
+    "mfaTitle": "Two-factor authentication",
+    "mfaBody": "Enter the code from your authenticator or use one of your single-use recovery codes.",
+    "email": "Email address",
+    "recoveryEmail": "Recovery email",
+    "recoveryEmailHint": "Use a different address that you can access if the primary account is unavailable.",
+    "password": "Password",
+    "passwordHint": "Use at least 8 characters. The server applies the authoritative password policy.",
+    "securityCode": "Security code",
+    "verificationCode": "Verification code",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account…",
+    "confirmEmail": "Confirm email",
+    "verifyAndContinue": "Verify and continue",
+    "verifying": "Verifying…",
+    "resendCode": "Resend code",
+    "verificationSent": "If the identity exists, a new verification code has been sent.",
+    "noAccount": "New to Storm Harbor?",
+    "hasAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "verifyNow": "Verify now.",
+    "sessionSecurity": "Credentials are sent only to the Storm Harbor BFF. Access tokens are never exposed to browser storage.",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "emailNotVerified": "Confirm your primary email before signing in.",
+      "rateLimited": "Too many attempts. Wait a moment and try again.",
+      "authUnavailable": "The identity service is temporarily unavailable.",
+      "genericError": "The request could not be completed. Try again.",
+      "identityExists": "An identity already exists for this email. Sign in instead.",
+      "invalidRegistration": "Review the email addresses and password, then try again.",
+      "recoveryMustDiffer": "The recovery email must be different from the primary email.",
+      "invalidMfaCode": "The security code or MFA challenge is invalid or expired.",
+      "invalidVerificationCode": "The verification code is invalid or expired."
+    }
+  },
+  "console": {
+    "primaryNavigation": "Control plane navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "organization": "Organisation",
+    "project": "Project",
+    "production": "Production",
+    "operational": "Operational",
+    "account": "Account",
+    "controlPlane": "Control plane",
+    "signOut": "Sign out",
+    "lastSync": "Last sync",
+    "viewAll": "View all",
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "environments": "Environments",
+      "recovery": "Recovery",
+      "evidence": "Evidence",
+      "maya": "Maya operations",
+      "settings": "Security & settings"
+    },
+    "overview": {
+      "eyebrow": "Recovery operations",
+      "title": "Control plane overview",
+      "body": "A service-centred view of recoverability, dependencies, active blockers and recent recovery evidence.",
+      "newRecovery": "Plan recovery"
+    },
+    "preview": {
+      "label": "Preview workspace",
+      "body": "Sample operational data is shown until the Storm Harbor APIs are connected."
+    },
+    "metrics": {
+      "label": "Recovery readiness metrics",
+      "readiness": "Readiness",
+      "services": "Protected services",
+      "lastExercise": "Last exercise",
+      "evidence": "Evidence bundles",
+      "blocked": "One mandatory gate blocked",
+      "covered": "All services have a plan",
+      "withinCadence": "Within the exercise cadence",
+      "integrityChecked": "Integrity checked"
+    },
+    "status": {
+      "blocked": "Blocked",
+      "ready": "Ready"
+    },
+    "services": {
+      "title": "Service readiness",
+      "body": "Critical services ordered by recovery status.",
+      "service": "Service",
+      "status": "Status",
+      "readiness": "Readiness"
+    },
+    "maya": {
+      "advisory": "Advisory mode",
+      "title": "One risk needs attention.",
+      "body": "Maya correlates current evidence and explains why a recovery gate is blocked before any action is proposed.",
+      "finding": "Current finding",
+      "findingBody": "The checkout-api recovery point has no verified integrity result.",
+      "humanReview": "Human review required before remediation",
+      "review": "Review with Maya"
+    },
+    "path": {
+      "title": "Recovery path",
+      "body": "Immutable phases advance only after their health gate passes.",
+      "planFrozen": "Plan frozen"
+    },
+    "sections": {
+      "services": {
+        "eyebrow": "Inventory",
+        "title": "Protected services",
+        "body": "Connect service ownership, dependencies, objectives and recovery plans."
+      },
+      "environments": {
+        "eyebrow": "Targets",
+        "title": "Environments",
+        "body": "Map protected and recovery environments across projects and regions."
+      },
+      "recovery": {
+        "eyebrow": "Orchestration",
+        "title": "Recovery runs",
+        "body": "Plan, approve and follow deterministic recovery phases and health gates."
+      },
+      "evidence": {
+        "eyebrow": "Audit",
+        "title": "Recovery evidence",
+        "body": "Inspect integrity-checked inputs, decisions, actions and measured results."
+      },
+      "maya": {
+        "eyebrow": "Operational intelligence",
+        "title": "Maya operations",
+        "body": "Investigate findings and prepare controlled, explainable remediation actions."
+      },
+      "settings": {
+        "eyebrow": "Governance",
+        "title": "Security and settings",
+        "body": "Manage project access, integrations, policies and recovery guardrails."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "پلیٹ فارم کی سمت",
+    "title": "آپ کا بنیادی ڈھانچا۔ آپ کے انتخاب۔",
+    "status": "منصوبہ بند صلاحیتیں۔ موجودہ نسخہ محفوظ سیمولیشن دیتا ہے؛ پروڈکشن اڈاپٹر اور بحالی رن ٹائم زیرِ تعمیر ہیں۔",
+    "privateTitle": "نجی منصوبے",
+    "privateBody": "تنظیمیں اپنے ڈیٹا اور علم کا اختیار رکھتے ہوئے مجاز نجی ریپوزٹری اور بنیادی ڈھانچا جوڑ سکتی ہیں۔",
+    "aiTitle": "اپنا AI لائیں",
+    "aiBody": "منصوبے کے AI، RAG یا محدود CLI جوڑیں۔ علم اپنے ماحول میں رکھیں اور صرف مجاز نتائج بانٹیں۔ AI اختیاری ہے۔",
+    "declarativeTitle": "YAML سفر۔ Go کنٹرولر۔",
+    "declarativeBody": "نسخہ بند YAML میں بحالی بیان کریں۔ اڈاپٹر کے ذریعے مقامی Kubernetes CRD سمیت وسائل کی اقسام اور Go کنٹرولر بڑھائیں۔"
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Storm Harbor — Ciągła gotowość do odtwarzania awaryjnego",
+    "description": "Odkrywaj zależności, potwierdzaj odtwarzalność i koordynuj audytowalne odzyskiwanie: Terraform, AWS / Azure / DigitalOcean / Oracle Cloud / GCP, Kubernetes i GitOps."
+  },
+  "language": {
+    "choose": "Wybierz język",
+    "en-GB": "English (UK)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "ca-ES": "Català",
+    "pt-PT": "Português (PT)",
+    "pt-BR": "Português (BR)",
+    "it-IT": "Italiano",
+    "ru-RU": "Русский",
+    "de-DE": "Deutsch",
+    "fr-FR": "Français",
+    "uk-UA": "Українська",
+    "et-EE": "Eesti",
+    "pl-PL": "Polski",
+    "bg-BG": "Български",
+    "zh-Hans": "简体中文",
+    "hi-IN": "हिन्दी",
+    "ja-JP": "日本語",
+    "he-IL": "עברית",
+    "ur-PK": "اردو",
+    "af-ZA": "Afrikaans",
+    "ar": "العربية",
+    "ko-KR": "한국어",
+    "tr-TR": "Türkçe",
+    "id-ID": "Bahasa Indonesia",
+    "vi-VN": "Tiếng Việt"
+  },
+  "nav": {
+    "primaryLabel": "Nawigacja główna",
+    "skipContent": "Przejdź do treści",
+    "product": "Produkt",
+    "capabilities": "Możliwości",
+    "architecture": "Architektura",
+    "openSource": "Otwarty kod",
+    "docs": "Dokumentacja",
+    "github": "Zobacz na GitHub",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "support": "Wesprzyj projekt"
+  },
+  "hero": {
+    "eyebrow": "Otwarta platforma ciągłej gotowości do odtwarzania",
+    "status": "Szkielet bezpiecznych symulacji",
+    "title": "Odzyskiwanie przestaje być",
+    "titleAccent": "samą obietnicą.",
+    "body": "Storm Harbor łączy kod, chmury, klastry, kopie zapasowe i polityki w stale uzgadniany obraz możliwości oraz przeszkód odzyskiwania.",
+    "primaryCta": "Poznaj płaszczyznę sterowania",
+    "secondaryCta": "Zobacz kod",
+    "noLockIn": "Bez uzależnienia od jednego źródła prawdy",
+    "cloudAgnostic": "Niezależność od chmury"
+  },
+  "integrations": {
+    "label": "Planowane adaptery chmur i narzędzi"
+  },
+  "problem": {
+    "eyebrow": "Luka operacyjna",
+    "title": "Instrukcja nie jest dowodem.",
+    "body": "Repozytoria opisują zamiar, API pokazują stan rzeczywisty, a kopie i dowody testów są rozproszone. Storm Harbor łączy je, zachowując odpowiedzialność systemów źródłowych.",
+    "question": "Czy usługę można teraz odtworzyć w uzgodnionych granicach RTO i RPO?"
+  },
+  "capabilities": {
+    "eyebrow": "Jedna płaszczyzna sterowania · trzy rezultaty",
+    "title": "Poznaj. Udowodnij. Odzyskaj.",
+    "body": "Przejdź od rozłącznych planów awaryjnych do aktualnego modelu działania opartego na dowodach.",
+    "discoverTitle": "Odkrywaj zależności",
+    "discoverBody": "Buduj inwentarz usług i typowany graf zależności z GitHub, Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes i GitOps, z pochodzeniem oraz czasem aktualizacji.",
+    "proveTitle": "Potwierdzaj odtwarzalność",
+    "proveBody": "Oceniaj pokrycie, rozbieżności, punkty odzyskiwania, dostęp i zmierzone cele. Wynik nie ukrywa zablokowanych obowiązkowych kontroli.",
+    "orchestrateTitle": "Koordynuj bezpiecznie",
+    "orchestrateBody": "Zamrażaj niezmienne wersje, wykonuj idempotentne etapy z kontrolami stanu, zatrzymuj je bezpiecznie i zachowuj porządkowanie oraz dowody przy każdym wyniku."
+  },
+  "dashboard": {
+    "ariaLabel": "Podgląd gotowości Storm Harbor",
+    "graphAriaLabel": "Graf łączący źródła autorytatywne z dowodami odzyskiwania",
+    "reconciled": "Uzgodniono",
+    "dependencyGraph": "Graf zależności",
+    "readiness": "Gotowość do odzyskiwania",
+    "blocked": "Zablokowano",
+    "coverage": "Pokrycie planem",
+    "sourceFreshness": "Aktualność źródeł",
+    "lastExercise": "Ostatnie ćwiczenie",
+    "recoveryPoint": "Punkt odzyskiwania",
+    "unknown": "Nieznane",
+    "evidence": "Dowody",
+    "preview": "Podgląd poglądowy · dane przykładowe"
+  },
+  "readiness": {
+    "eyebrow": "Gotowość poparta dowodami",
+    "title": "Wynik, który wpływa na decyzje.",
+    "body": "Zobacz całość bez utraty szczegółów technicznych. Storm Harbor pokazuje obowiązkowe kontrole i wyjaśnia każdą przeszkodę blokującą usługę.",
+    "pointOne": "RTO i RPO usługi powiązane z rzeczywistymi punktami odzyskiwania",
+    "pointTwo": "Każda relacja zawiera źródło, poziom pewności i czas obserwacji",
+    "pointThree": "Podpisane dowody łączą dane wejściowe, decyzję, wykonawcę, działanie i wynik"
+  },
+  "architecture": {
+    "eyebrow": "Architektura",
+    "title": "Federacja z założenia. Poza obszarem awarii.",
+    "body": "Każdy system zachowuje kontrolę nad własną domeną. Płaszczyzna sterowania tworzy aktualny indeks, zamraża plan i koordynuje wersjonowane adaptery.",
+    "sourcesTitle": "Źródła autorytatywne",
+    "sourcesBody": "Czytaj stan pożądany i rzeczywisty, polityki oraz punkty odzyskiwania tam, gdzie się znajdują.",
+    "controlTitle": "Koreluj i oceniaj",
+    "controlBody": "Normalizuj zasoby, mapuj zależności i oceniaj aktualność, rozbieżności oraz polityki.",
+    "recoverTitle": "Odzyskuj przez bramki kontroli",
+    "recoverBody": "Wykonuj idempotentne etapy z zatwierdzeniami, limitami czasu, listami dozwolonych działań i wyłącznikiem awaryjnym.",
+    "proofTitle": "Sprawdzaj i potwierdzaj",
+    "proofBody": "Mierz cele i przechowuj podpisane, niezmienne dowody poza domeną awarii.",
+    "outside": "Sterowanie odzyskiwaniem działa poza klastrem, który może wymagać odbudowy."
+  },
+  "principles": {
+    "eyebrow": "Wbudowane zabezpieczenia",
+    "title": "Bezpieczeństwo wpisane w architekturę.",
+    "body": "Rzeczywiste odzyskiwanie nie uruchamia się domyślnie. Uprawnienia są krótkotrwałe, niepewne decyzje blokowane, a każdą zmianę można zatrzymać i audytować.",
+    "federatedTitle": "Rozdzielona odpowiedzialność",
+    "federatedBody": "Git, chmurowe API, sejfy sekretów i magazyny dowodów zachowują własne domeny.",
+    "identityTitle": "Tożsamość tymczasowa",
+    "identityBody": "OIDC i tożsamość obciążenia zastępują stałe klucze chmurowe oraz zbyt szerokie poświadczenia.",
+    "closedTitle": "Blokowanie przy niepewności",
+    "closedBody": "Brak dowodów, stare dane, błąd polityki lub niedostępne źródło nigdy nie oznaczają poprawnego stanu.",
+    "evidenceTitle": "Dowody na pierwszym miejscu",
+    "evidenceBody": "Dane, decyzje polityk, czasy, działania i wyniki są powiązane oraz sprawdzane pod kątem integralności."
+  },
+  "audience": {
+    "eyebrow": "Wspólne zaufanie",
+    "title": "Jeden widok. Różne decyzje.",
+    "body": "Szczegóły techniczne dla wykonawców i jasne rezultaty dla osób odpowiedzialnych za ciągłość działania.",
+    "platformTitle": "Zespoły platformowe",
+    "platformBody": "Łącz Terraform, AWS / Azure / DigitalOcean / OCI / GCP, Kubernetes i GitOps w powtarzalne ścieżki odzyskiwania bez zastępowania procesów.",
+    "sreTitle": "SRE i operacje",
+    "sreBody": "Ćwicz procedury, ujawniaj luki zależności i mierz cele na podstawie rzeczywistych punktów kontrolnych.",
+    "riskTitle": "Ryzyko i audyt",
+    "riskBody": "Prześledź każdą decyzję do źródła, polityki, zatwierdzenia, tożsamości, dowodów i niezmiennej wersji.",
+    "leadersTitle": "Liderzy inżynierii",
+    "leadersBody": "Ustalaj priorytety na podstawie gotowości usług, blokad i aktualności testów."
+  },
+  "openSource": {
+    "eyebrow": "Otwarty kod · Apache License 2.0",
+    "title": "Sprawdź mechanizm odzyskiwania.",
+    "body": "Krytyczna infrastruktura ciągłości powinna być zrozumiała, rozszerzalna i możliwa do przeglądu. Poznaj architekturę, uruchamiaj bezpieczne symulacje i rozwijaj kontrakty adapterów.",
+    "githubCta": "Przeglądaj na GitHub"
+  },
+  "finalCta": {
+    "title": "Niech odtwarzalność stanie się faktem.",
+    "body": "Zacznij od architektury i bezpiecznych symulacji. Zobacz, jak Storm Harbor zamienia rozproszony stan w ciągłą gotowość.",
+    "docs": "Czytaj dokumentację",
+    "github": "Otwórz repozytorium"
+  },
+  "footer": {
+    "tagline": "Odkrywaj zależności. Potwierdzaj odtwarzalność. Koordynuj odzyskiwanie.",
+    "openSource": "Otwarta platforma ciągłej gotowości do odtwarzania awaryjnego"
+  },
+  "auth": {
+    "shellEyebrow": "Storm Harbor control plane",
+    "shellTitle": "Operate recovery with confidence.",
+    "shellBody": "Enter the operational workspace where teams map dependencies, prove readiness and coordinate auditable recovery.",
+    "shellPointOne": "One identity across the Storm Harbor ecosystem",
+    "shellPointTwo": "MFA challenges and credentials remain in api-auth",
+    "shellPointThree": "Product access is isolated by organisation and project",
+    "securityEyebrow": "Identity protection",
+    "securityTitle": "A secure gate before every action.",
+    "securityBody": "Authentication is separated from recovery execution so access can be revoked without weakening the control plane.",
+    "securityPointOne": "Short-lived, HttpOnly product sessions",
+    "securityPointTwo": "TOTP and single-use recovery codes",
+    "securityPointThree": "Correlated and auditable access decisions",
+    "loginEyebrow": "Welcome back",
+    "loginTitle": "Sign in",
+    "loginBody": "Use your Storm Harbor identity to continue to the control plane.",
+    "registerEyebrow": "Create your identity",
+    "registerTitle": "Start with Storm Harbor",
+    "registerBody": "Create an identity now. Organisation and project access are granted separately.",
+    "publicEmailAllowed": "A corporate email is not required. Any valid email address can be used.",
+    "verifyEmailEyebrow": "Confirm your identity",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailBody": "Enter the six-digit code sent by Storm Harbor.",
+    "mfaTitle": "Two-factor authentication",
+    "mfaBody": "Enter the code from your authenticator or use one of your single-use recovery codes.",
+    "email": "Email address",
+    "recoveryEmail": "Recovery email",
+    "recoveryEmailHint": "Use a different address that you can access if the primary account is unavailable.",
+    "password": "Password",
+    "passwordHint": "Use at least 8 characters. The server applies the authoritative password policy.",
+    "securityCode": "Security code",
+    "verificationCode": "Verification code",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "creatingAccount": "Creating account…",
+    "confirmEmail": "Confirm email",
+    "verifyAndContinue": "Verify and continue",
+    "verifying": "Verifying…",
+    "resendCode": "Resend code",
+    "verificationSent": "If the identity exists, a new verification code has been sent.",
+    "noAccount": "New to Storm Harbor?",
+    "hasAccount": "Already have an account?",
+    "backToLogin": "Back to sign in",
+    "verifyNow": "Verify now.",
+    "sessionSecurity": "Credentials are sent only to the Storm Harbor BFF. Access tokens are never exposed to browser storage.",
+    "errors": {
+      "invalidCredentials": "The email or password is incorrect.",
+      "emailNotVerified": "Confirm your primary email before signing in.",
+      "rateLimited": "Too many attempts. Wait a moment and try again.",
+      "authUnavailable": "The identity service is temporarily unavailable.",
+      "genericError": "The request could not be completed. Try again.",
+      "identityExists": "An identity already exists for this email. Sign in instead.",
+      "invalidRegistration": "Review the email addresses and password, then try again.",
+      "recoveryMustDiffer": "The recovery email must be different from the primary email.",
+      "invalidMfaCode": "The security code or MFA challenge is invalid or expired.",
+      "invalidVerificationCode": "The verification code is invalid or expired."
+    }
+  },
+  "console": {
+    "primaryNavigation": "Control plane navigation",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "organization": "Organisation",
+    "project": "Project",
+    "production": "Production",
+    "operational": "Operational",
+    "account": "Account",
+    "controlPlane": "Control plane",
+    "signOut": "Sign out",
+    "lastSync": "Last sync",
+    "viewAll": "View all",
+    "nav": {
+      "overview": "Overview",
+      "services": "Services",
+      "environments": "Environments",
+      "recovery": "Recovery",
+      "evidence": "Evidence",
+      "maya": "Maya operations",
+      "settings": "Security & settings"
+    },
+    "overview": {
+      "eyebrow": "Recovery operations",
+      "title": "Control plane overview",
+      "body": "A service-centred view of recoverability, dependencies, active blockers and recent recovery evidence.",
+      "newRecovery": "Plan recovery"
+    },
+    "preview": {
+      "label": "Preview workspace",
+      "body": "Sample operational data is shown until the Storm Harbor APIs are connected."
+    },
+    "metrics": {
+      "label": "Recovery readiness metrics",
+      "readiness": "Readiness",
+      "services": "Protected services",
+      "lastExercise": "Last exercise",
+      "evidence": "Evidence bundles",
+      "blocked": "One mandatory gate blocked",
+      "covered": "All services have a plan",
+      "withinCadence": "Within the exercise cadence",
+      "integrityChecked": "Integrity checked"
+    },
+    "status": {
+      "blocked": "Blocked",
+      "ready": "Ready"
+    },
+    "services": {
+      "title": "Service readiness",
+      "body": "Critical services ordered by recovery status.",
+      "service": "Service",
+      "status": "Status",
+      "readiness": "Readiness"
+    },
+    "maya": {
+      "advisory": "Advisory mode",
+      "title": "One risk needs attention.",
+      "body": "Maya correlates current evidence and explains why a recovery gate is blocked before any action is proposed.",
+      "finding": "Current finding",
+      "findingBody": "The checkout-api recovery point has no verified integrity result.",
+      "humanReview": "Human review required before remediation",
+      "review": "Review with Maya"
+    },
+    "path": {
+      "title": "Recovery path",
+      "body": "Immutable phases advance only after their health gate passes.",
+      "planFrozen": "Plan frozen"
+    },
+    "sections": {
+      "services": {
+        "eyebrow": "Inventory",
+        "title": "Protected services",
+        "body": "Connect service ownership, dependencies, objectives and recovery plans."
+      },
+      "environments": {
+        "eyebrow": "Targets",
+        "title": "Environments",
+        "body": "Map protected and recovery environments across projects and regions."
+      },
+      "recovery": {
+        "eyebrow": "Orchestration",
+        "title": "Recovery runs",
+        "body": "Plan, approve and follow deterministic recovery phases and health gates."
+      },
+      "evidence": {
+        "eyebrow": "Audit",
+        "title": "Recovery evidence",
+        "body": "Inspect integrity-checked inputs, decisions, actions and measured results."
+      },
+      "maya": {
+        "eyebrow": "Operational intelligence",
+        "title": "Maya operations",
+        "body": "Investigate findings and prepare controlled, explainable remediation actions."
+      },
+      "settings": {
+        "eyebrow": "Governance",
+        "title": "Security and settings",
+        "body": "Manage project access, integrations, policies and recovery guardrails."
+      }
+    }
+  },
+  "platform": {
+    "eyebrow": "Kierunek rozwoju",
+    "title": "Twoja infrastruktura. Twój wybór.",
+    "status": "Projektowane możliwości. Obecna wersja udostępnia bezpieczne symulacje; adaptery produkcyjne i silnik odzyskiwania są w budowie.",
+    "privateTitle": "Prywatne projekty",
+    "privateBody": "Organizacje podłączają upoważnione prywatne repozytoria i infrastrukturę, zachowując kontrolę nad danymi i wiedzą.",
+    "aiTitle": "Własna sztuczna inteligencja",
+    "aiBody": "Podłącz projektowe AI, RAG lub ograniczone CLI. Wiedza pozostaje u Ciebie; udostępniasz tylko dozwolone wyniki. AI jest opcjonalne.",
+    "declarativeTitle": "Ścieżki YAML. Kontrolery Go.",
+    "declarativeBody": "Deklaruj odzyskiwanie w wersjonowanym YAML. Rozszerzaj typy zasobów i kontrolery Go, korzystając z natywnych CRD Kubernetes przez adapter."
+  }
+}

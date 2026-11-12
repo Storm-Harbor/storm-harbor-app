@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import {access, readdir, readFile} from "node:fs/promises";
 import {resolve} from "node:path";
-import {locales} from "../i18n/config.ts";
+import {localeDirection, locales} from "../i18n/config.ts";
 
 const output = resolve(import.meta.dirname, "../website/out");
 const files = await readdir(output, {recursive: true});
@@ -15,6 +15,11 @@ assert.ok(!files.some(file => /(^|[/\\])(api|console|login|register|mfa|verify-e
 for (const locale of locales) {
   const html = await readFile(resolve(output, locale, "index.html"), "utf8");
   assert.ok(html.includes(`lang="${locale}"`), `${locale}: language must match the URL`);
+  assert.ok(html.includes(`dir="${localeDirection(locale)}"`), `${locale}: reading direction must match the language`);
+  assert.ok(!/iot\.?erax|ioterax\.com/i.test(html), `${locale}: corporate attribution must not be exported`);
+  for (const alternate of locales) {
+    assert.ok(html.includes(`hrefLang="${alternate}"`) || html.includes(`hreflang="${alternate}"`), `${locale}: missing alternate ${alternate}`);
+  }
   assert.ok(html.includes("Storm Harbor") && html.includes("DigitalOcean"), `${locale}: product and multicloud content must be rendered`);
   assert.ok(!/href="[^"]*\/(login|console)(\/|\")/.test(html), `${locale}: public site must not advertise unavailable authentication`);
   for (const match of html.matchAll(/(?:src|href)="([^"?#]+)(?:\?[^"#]*)?(?:#[^"]*)?"/g)) {

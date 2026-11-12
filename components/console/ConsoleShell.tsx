@@ -51,7 +51,7 @@ export function ConsoleShell({children}: ConsoleShellProps) {
         <button className="mt-2 flex w-full items-center gap-3 rounded-sm border border-white/10 bg-white/[0.035] px-3 py-2.5 text-left" type="button">
           <span className="flex size-7 items-center justify-center rounded-sm bg-blue-500/15 text-[10px] font-bold text-blue-300">IE</span>
           <span className="min-w-0">
-            <span className="block truncate text-xs font-semibold text-white">iot.EraX</span>
+            <span className="block truncate text-xs font-semibold text-white">org-example</span>
             <span className="block truncate font-mono text-[8px] uppercase tracking-wider text-slate-500">storm-harbor</span>
           </span>
           <span className="ml-auto text-[10px] text-slate-500">⌄</span>

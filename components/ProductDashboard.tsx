@@ -81,7 +81,7 @@ export function ProductDashboard() {
           <div className="mt-4 flex items-end justify-between border-b border-white/10 pb-5">
             <div>
               <span className="text-5xl font-semibold tracking-[-0.06em] text-white">84</span>
-              <span className="ml-1 text-sm text-slate-500">/100</span>
+              <span className="ms-1 text-sm text-slate-500">/100</span>
             </div>
             <span className="mb-1 rounded-sm border border-amber-400/20 bg-amber-400/10 px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-amber-300">
               {t("blocked")}
@@ -100,7 +100,7 @@ export function ProductDashboard() {
                   {item.state === "ok" ? <CheckIcon className="size-3" /> : <span className="text-[10px] font-bold">!</span>}
                 </span>
                 <span className="text-slate-400">{item.label}</span>
-                <span className="ml-auto font-mono text-[10px] text-slate-200">{item.value}</span>
+                <span className="ms-auto font-mono text-[10px] text-slate-200">{item.value}</span>
               </div>
             ))}
           </div>
