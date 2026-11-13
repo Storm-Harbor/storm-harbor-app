@@ -2,7 +2,7 @@ name: Website
 
 on:
   push:
-    branches: [develop]
+    branches: [develop, master]
   pull_request:
   workflow_dispatch:
 
@@ -26,11 +26,11 @@ jobs:
       - name: Validate existing application and locales
         run: yarn check
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         id: pages
       - name: Export public website only
         env:
-          PAGES_BASE_PATH: ${{ github.event_name == 'pull_request' && '/storm-harbor-app' || steps.pages.outputs.base_path }}
+          PAGES_BASE_PATH: ${{ github.ref != 'refs/heads/master' && '/storm-harbor-app' || steps.pages.outputs.base_path }}
           WEBSITE_URL: ${{ steps.pages.outputs.base_url || 'https://storm-harbor.github.io/storm-harbor-app/' }}
         run: |
           export WEBSITE_URL="${WEBSITE_URL/#http:/https:}"
@@ -39,12 +39,12 @@ jobs:
           yarn playwright install --with-deps chromium
           yarn test:website
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         with:
           path: website/out
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
     needs: build
     runs-on: ubuntu-latest
     permissions:
